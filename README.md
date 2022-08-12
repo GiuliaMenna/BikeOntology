@@ -1,2 +1,2 @@
 # BikeOntology
-Website for the exam in Knowledge Organization and Representation
+Website for the exam in Knowledge Representation and Extraction

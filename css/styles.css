@@ -11388,11 +11388,26 @@ hr.divider-light {
     color: #f4623a;
   }
 }
-
+header.containermultimedia{
+  right: 0;
+  bottom: 0;
+  margin-top: 8vh;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background: no-repeat;
+  background-size: cover;
+  z-index: 0;
+}
+#startcycling{
+  margin: -20rem 50rem;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-masthead.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11400,6 +11415,9 @@ header.masthead {
 }
 header.masthead h1, header.masthead .h1 {
   font-size: 2.25rem;
+}
+.blue-text{
+  color: #2299CD;
 }
 @media (min-width: 992px) {
   header.masthead {

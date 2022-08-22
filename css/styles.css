@@ -87,6 +87,8 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 hr {
@@ -7806,11 +7808,12 @@ textarea.form-control-lg {
 .text-opacity-100 {
   --bs-text-opacity: 1;
 }
-
+/* This is the background color of id=about
 .bg-primary {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
 }
+ */
 
 .bg-secondary {
   --bs-bg-opacity: 1;
@@ -11391,22 +11394,23 @@ hr.divider-light {
 header.containermultimedia{
   right: 0;
   bottom: 0;
-  margin-top: 8vh;
   min-width: 100%;
   min-height: 100%;
   width: auto;
   height: auto;
   z-index: -100;
+  position: relative;
   background: no-repeat;
   background-size: cover;
   z-index: 0;
 }
+
 #startcycling{
   margin: -20rem 50rem;
   transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 header.masthead {
-  padding-top: 10rem;
+  padding-top: 1rem;
   padding-bottom: calc(10rem - 4.5rem);
   background-position: center;
   background-repeat: no-repeat;
@@ -11419,6 +11423,10 @@ header.masthead h1, header.masthead .h1 {
 .blue-text{
   color: #2299CD;
 }
+.orange-text{
+  color: rgb(244, 98, 58);
+}
+
 @media (min-width: 992px) {
   header.masthead {
     height: 100vh;

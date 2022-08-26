@@ -73,20 +73,48 @@ $(document).ready(function(){
     });
 });
 
-  //ScrollMagic attivation
+
+//ScrollMagic attivation
 $(document).ready(function(){
 
-  // Init ScrollMagic
-  var controller = new ScrollMagic.Controller();
+// Init ScrollMagic
+var controller = new ScrollMagic.Controller();
 
-  //build a scene
-  var ourScene = new ScrollMagic.Scene({
-      triggerElement: '#project01'
-  })
-  .setClassToggle('#project01', 'fade-in') //add class to project01
-  .addTo(controller);
+//build a scene for textual part (1)
+var ourScene = new ScrollMagic.Scene({
+    triggerElement: '#paragraph1'
+})
+.setClassToggle('#paragraph1', 'fade-in') //add class to paragraph1
+.addTo(controller);
+
+//build a scene for textual part (2)
+var oursScene = new ScrollMagic.Scene({
+    triggerElement: '#paragraph2'
+})
+.setClassToggle('#paragraph2', 'fade-in') //add class to paragraph1
+.addTo(controller);
+
+//build a scene for SVG image cacciavite
+var ourScene = new ScrollMagic.Scene({
+    triggerElement: '#SVGtools'
+})
+.setClassToggle('#SVGtools', 'fade-in') //add class to project01
+.addTo(controller);
+
+//build a scene for SVG image sellino
+var ourScene = new ScrollMagic.Scene({
+    triggerElement: '#SVGsellino'
+})
+.setClassToggle('#SVGsellino', 'fade-in') //add class to project01
+.addTo(controller);
+
+//build a scene for SVG image boywithbike
+var ourScene = new ScrollMagic.Scene({
+    triggerElement: '#SVGboywithbike'
+})
+.setClassToggle('#SVGboywithbike', 'fade-in') //add class to project01
+.addTo(controller);
 });
-
 // to know le lenght of a drawing
 // var myPath = document.getElementById("cacciavite");
 // var length = myPath.getTotalLength();

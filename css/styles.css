@@ -11409,6 +11409,8 @@ header.containermultimedia{
   margin: -20rem 50rem;
   transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
 }
+/*Start ScrollMagic CSS*/
+
 header.masthead {
   padding-top: 1rem;
   padding-bottom: calc(10rem - 4.5rem);
@@ -11416,16 +11418,59 @@ header.masthead {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-}
-
-.project{
-/*  opacity: 0; */
+  opacity: 0;
   transform: translateY(50px);
   transition: all 1s ease-out;
 }
-.project.fade-in{
+.masthead.fade-in{
   opacity: 1;
   transform: translateY(0);
+}
+
+/*cacciavite*/
+.SVGimages1{
+  opacity: 0;
+  stroke-dasharray: 6330.8154296875;
+  stroke-dashoffset: 0;
+}
+.SVGimages1.fade-in{
+  opacity: 1;
+  animation: draw 7s linear reverse;
+}
+@keyframes draw {
+  to {
+      stroke-dashoffset: 6330.8154296875;
+  }
+}
+/*sellino*/
+.SVGimages2{
+  opacity: 0;
+  stroke-dasharray: 3522.2333984375;
+  stroke-dashoffset: 0;
+}
+.SVGimages2.fade-in{
+  opacity: 1;
+  animation: draw 20s linear reverse;
+}
+@keyframes draw {
+  to {
+    stroke-dashoffset: 3522.2333984375;
+  }
+}
+/*boy with bike*/
+.SVGimages3{
+  opacity: 0;
+  stroke-dasharray: 10768.609375;
+  stroke-dashoffset: 0;
+}
+.SVGimages3.fade-in{
+  opacity: 1;
+  animation: draw 10s linear reverse;
+}
+@keyframes draw {
+  to {
+    stroke-dashoffset: 10768.609375;
+  }
 }
 
 header.masthead h1, header.masthead .h1 {
@@ -11458,38 +11503,6 @@ header.masthead h1, header.masthead .h1 {
   }
 }
 
-#cacciavite {
-      stroke-dasharray: 6330.8154296875 6330.8154296875;
-      stroke-dashoffset: 0;
-      animation: cacciavite 7s linear infinite reverse;
-    }
-    @keyframes cacciavite {
-      to {
-        stroke-dashoffset: 6330.8154296875;
-      }
-    }
-
-#boywithbike{
-  stroke-dasharray: 10768.609375 10768.609375;
-  stroke-dashoffset: 0;
-  animation: boywithbike 10s linear infinite reverse;
-}
-@keyframes boywithbike {
-  to {
-    stroke-dashoffset: 10768.609375;
-  }
-}
-
-#sellino{
-  stroke-dasharray: 3522.2333984375 3522.2333984375;
-  stroke-dashoffset: 0;
-  animation: boywithbike 10s linear infinite reverse;
-}
-@keyframes boywithbike {
-  to {
-    stroke-dashoffset: 3522.2333984375;
-  }
-}
 
 #portfolio .container-fluid, #portfolio .container-sm, #portfolio .container-md, #portfolio .container-lg, #portfolio .container-xl, #portfolio .container-xxl {
   max-width: 1920px;

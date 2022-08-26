@@ -73,7 +73,21 @@ $(document).ready(function(){
       $(".content").removeClass("d-none");
     });
 });
-    
+
+  //ScrollMagic attivation
+$(document).ready(function(){
+
+  // Init ScrollMagic
+  var controller = new ScrollMagic.Controller();
+
+  //build a scene
+  var ourScene = new ScrollMagic.Scene({
+      triggerElement: '#project01'
+  })
+  .setClassToggle('#project01', 'fade-in') //add class to project01
+  .addTo(controller);
+});
+
 // to know le lenght of a drawing
 // var myPath = document.getElementById("cacciavite");
 // var length = myPath.getTotalLength();

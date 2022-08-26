@@ -11417,6 +11417,17 @@ header.masthead {
   background-attachment: scroll;
   background-size: cover;
 }
+
+.project{
+/*  opacity: 0; */
+  transform: translateY(50px);
+  transition: all 1s ease-out;
+}
+.project.fade-in{
+  opacity: 1;
+  transform: translateY(0);
+}
+
 header.masthead h1, header.masthead .h1 {
   font-size: 2.25rem;
 }
@@ -11520,5 +11531,5 @@ p {
   column-count: 2;
 }
 .text-black-75{
-  column-count: 1; 
+  column-count: 1;
 }

@@ -56,6 +56,7 @@ window.addEventListener('DOMContentLoaded', event => {
         elements: '#portfolio a.portfolio-box'
     });
     /*adding an introductive loading screen, that contains the audio for this style*/
+  });
 $(document).ready(function(){
     $(".content").addClass("d-none");
     $("body").prepend('<div class="container loadingscreen d-block" id="loadingscreen"><p style="opacity:0.33;">(Click anywhere to skip this sequence)</p><video id="videohomepage" alt="Work music video about bicycle illustration for Palgou Monster by PANICMONK" loop autoplay playsinline="true" muted ><source src="PALGOU - MONSTER (estratto).mp4"></video><h2>BikeOntology</h2></div></div><div class="col-lg-8 align-self-baseline"><a id="startcycling" class="btn btn-primary btn-xl" href="#about">Start cycling</a>div>');

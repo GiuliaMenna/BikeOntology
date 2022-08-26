@@ -11447,6 +11447,39 @@ header.masthead h1, header.masthead .h1 {
   }
 }
 
+#cacciavite {
+      stroke-dasharray: 6330.8154296875 6330.8154296875;
+      stroke-dashoffset: 0;
+      animation: cacciavite 7s linear infinite reverse;
+    }
+    @keyframes cacciavite {
+      to {
+        stroke-dashoffset: 6330.8154296875;
+      }
+    }
+
+#boywithbike{
+  stroke-dasharray: 10768.609375 10768.609375;
+  stroke-dashoffset: 0;
+  animation: boywithbike 10s linear infinite reverse;
+}
+@keyframes boywithbike {
+  to {
+    stroke-dashoffset: 10768.609375;
+  }
+}
+
+#sellino{
+  stroke-dasharray: 3522.2333984375 3522.2333984375;
+  stroke-dashoffset: 0;
+  animation: boywithbike 10s linear infinite reverse;
+}
+@keyframes boywithbike {
+  to {
+    stroke-dashoffset: 3522.2333984375;
+  }
+}
+
 #portfolio .container-fluid, #portfolio .container-sm, #portfolio .container-md, #portfolio .container-lg, #portfolio .container-xl, #portfolio .container-xxl {
   max-width: 1920px;
 }

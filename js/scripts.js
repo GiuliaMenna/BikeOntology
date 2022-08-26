@@ -73,3 +73,8 @@ $(document).ready(function(){
       $(".content").removeClass("d-none");
     });
 });
+    
+// to know le lenght of a drawing
+// var myPath = document.getElementById("cacciavite");
+// var length = myPath.getTotalLength();
+// console.log("Result " + length);

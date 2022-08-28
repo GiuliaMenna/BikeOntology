@@ -57,21 +57,22 @@ window.addEventListener('DOMContentLoaded', event => {
     });
     /*adding an introductive loading screen, that contains the audio for this style*/
   });
-$(document).ready(function(){
+/*$(document).ready(function(){
     $(".content").addClass("d-none");
-    $("body").prepend('<div class="container loadingscreen d-block" id="loadingscreen"><p style="opacity:0.33;">(Click anywhere to skip this sequence)</p><video id="videohomepage" alt="Work music video about bicycle illustration for Palgou Monster by PANICMONK" loop autoplay playsinline="true" muted ><source src="PALGOU - MONSTER (estratto).mp4"></video><h2>BikeOntology</h2></div></div><div class="col-lg-8 align-self-baseline"><a id="startcycling" class="btn btn-primary btn-xl" href="#about">Start cycling</a></div>');
+    $("body").prepend('<div class="container loadingscreen d-block" id="loadingscreen" style="background-color: white;"><p style="opacity:0.33;">Click anywhere to start cycling</p><video id="videohomepage" alt="Work music video about bicycle illustration for Palgou Monster by PANICMONK" loop autoplay playsinline="true" muted ><source src="PALGOU - MONSTER (estratto).mp4"></video><h1>BikeOntology</h1></div></div><div class="col-lg-8 align-self-baseline"> </div>');
 
 
     timeout = setTimeout(function(){
         document.getElementById('loadingscreen').style.opacity=0;
       }, 12000);
-    /*clearing the loadingscreen by a click of the user*/
+    /*clearing the loadingscreen by a click of the user
     $(".loadingscreen").click(function(){
       clearTimeout(timeout);
       document.getElementById('loadingscreen').style.opacity=0;
       $(".content").removeClass("d-none");
+      $("#loadingscreen").remove();
     });
-});
+}); */
 
 
 //ScrollMagic attivation

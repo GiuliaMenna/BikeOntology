@@ -1,0 +1,3649 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://purl.org/ontology/bikeo" ],
+    "iri" : "urn:webprotege:ontology:39025fa1-ef5a-42e5-9186-5ac2214979e6"
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "67",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "24",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "78",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "80",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "102",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "90",
+    "type" : "owl:Class"
+  }, {
+    "id" : "99",
+    "type" : "owl:Class"
+  }, {
+    "id" : "81",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "107",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "92",
+    "type" : "owl:Class"
+  }, {
+    "id" : "143",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "88",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "96",
+    "type" : "owl:Class"
+  }, {
+    "id" : "97",
+    "type" : "owl:Class"
+  }, {
+    "id" : "95",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "105",
+    "type" : "owl:Class"
+  }, {
+    "id" : "86",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "100",
+    "type" : "owl:Class"
+  }, {
+    "id" : "65",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "98",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "210",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "219",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://purl.org/ontology/bikeo#Frame",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Frame",
+      "en" : "Frame"
+    },
+    "comment" : {
+      "undefined" : "the main component of a bicycle, onto which wheels and other components are fitted. It includes the chain stay, the top, down and seat tubes."
+    },
+    "attributes" : [ "external" ],
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#HeadTube",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HeadTube",
+      "en" : "HeadTube"
+    },
+    "comment" : {
+      "en" : "the part of frame tube that contains the headset, the bearings for the fork via its steerer tube."
+    },
+    "attributes" : [ "external" ],
+    "id" : "23",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#CommonPart",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CommonPart",
+      "en" : "CommonPart"
+    },
+    "subClasses" : [ "40", "41", "3", "6", "8", "10", "12", "14", "16", "18", "23", "1", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55" ],
+    "comment" : {
+      "en" : "is a general class referring to the principal pieces composing a bike."
+    },
+    "attributes" : [ "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#SeatTube",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SeatTube",
+      "en" : "SeatTube"
+    },
+    "comment" : {
+      "en" : "the part of frame tube that contains the seatpost of the bike, which connects to the saddle."
+    },
+    "attributes" : [ "external" ],
+    "id" : "47",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "66",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "67",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#Tire",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Tire",
+      "en" : "Tire"
+    },
+    "comment" : {
+      "en" : "a tire that fits on the wheel of a bicycle. Usually pneumatic, it provide an important source of suspension, generate the lateral forces necessary for balancing and turning, and generate the longitudinal forces necessary for propulsion and braking."
+    },
+    "attributes" : [ "external" ],
+    "id" : "48",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "68",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "24",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "69",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#SeatArea",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SeatArea",
+      "en" : "SeatArea"
+    },
+    "comment" : {
+      "undefined" : "central area of the bike including the saddle and the seat post."
+    },
+    "attributes" : [ "external" ],
+    "id" : "70",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#SeatPost",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SeatPost",
+      "en" : "SeatPost"
+    },
+    "comment" : {
+      "en" : "A bicycle seatpost, or saddle pillar, is a tube that extends upwards from the bicycle frame to the saddle."
+    },
+    "attributes" : [ "external" ],
+    "id" : "41",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#DownTube",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DownTube",
+      "en" : "DownTube"
+    },
+    "comment" : {
+      "en" : "the part of frame tube that connects the head tube to the bottom bracket shell."
+    },
+    "attributes" : [ "external" ],
+    "id" : "8",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#AdjustSeatpost",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AdjustSeatpost",
+      "en" : "AdjustSeatpost"
+    },
+    "comment" : {
+      "en" : "the possible solution to a wrong seat height that can be changed through the use of the allen key."
+    },
+    "attributes" : [ "external" ],
+    "id" : "78",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#Brand",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Brand",
+      "en" : "Brand"
+    },
+    "comment" : {
+      "en" : "a company or organization which has produced the bike or its parts."
+    },
+    "attributes" : [ "external" ],
+    "id" : "79"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#Spokes",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Spokes",
+      "en" : "Spokes"
+    },
+    "comment" : {
+      "en" : "connects wheel rim to hub. Usually wire with one end swaged to form a head and one threaded end. A typical wheel has 36 spokes."
+    },
+    "attributes" : [ "external" ],
+    "id" : "45",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#Solution",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Solution",
+      "en" : "Solution"
+    },
+    "subClasses" : [ "65", "78", "80", "62", "81", "82" ],
+    "comment" : {
+      "en" : "some possible solutions to the problems that can happen to a bike."
+    },
+    "attributes" : [ "external" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#Chain",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Chain",
+      "en" : "Chain"
+    },
+    "comment" : {
+      "en" : "a series of (usually metal) rings or links fitted into one another to make a flexible ligament."
+    },
+    "attributes" : [ "external" ],
+    "id" : "40",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#Inflate",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Inflate",
+      "en" : "Inflate"
+    },
+    "comment" : {
+      "en" : "the solution to a flat tire that needs a pump as a tool."
+    },
+    "attributes" : [ "external" ],
+    "id" : "80",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#Fork",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Fork",
+      "en" : "Fork"
+    },
+    "comment" : {
+      "en" : "A bicycle fork is the part of a bicycle that holds the front wheel."
+    },
+    "attributes" : [ "external" ],
+    "id" : "3",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#MissingSpokes",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MissingSpokes",
+      "en" : "MissingSpokes"
+    },
+    "comment" : {
+      "en" : "the problem of one or more missing spokes in a wheel."
+    },
+    "attributes" : [ "external" ],
+    "id" : "75",
+    "superClasses" : [ "83" ]
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#Problem",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Problem",
+      "en" : "Problem"
+    },
+    "subClasses" : [ "96", "97", "98", "75", "99", "100", "61" ],
+    "comment" : {
+      "en" : "is a general class describing some possible problems that could affect a bicycle."
+    },
+    "attributes" : [ "external" ],
+    "id" : "83"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#PatchTire",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PatchTire",
+      "en" : "PatchTire"
+    },
+    "comment" : {
+      "en" : "the solution to the problem of a puncture on the tire, using a patch as tool."
+    },
+    "attributes" : [ "external" ],
+    "id" : "82",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#ChainArea",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ChainArea",
+      "en" : "ChainArea"
+    },
+    "comment" : {
+      "undefined" : "the structural part of the bike, fitted together with the frame and the wheels, that includes the chain and the front derailleur."
+    },
+    "attributes" : [ "external" ],
+    "id" : "102",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#ChainStay",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ChainStay",
+      "en" : "ChainStay"
+    },
+    "comment" : {
+      "en" : "the part of the frame tube that run parallel to the chain, connecting the bottom bracket shell (which holds the axis around which the pedals and cranks rotate) to the rear fork ends or dropouts."
+    },
+    "attributes" : [ "external" ],
+    "id" : "49",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#TypeOfBike",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TypeOfBike",
+      "en" : "TypeOfBike"
+    },
+    "comment" : {
+      "en" : "class defining the possible type of bike given a specific bike model."
+    },
+    "attributes" : [ "external" ],
+    "id" : "76"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#Crank",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Crank",
+      "en" : "Crank"
+    },
+    "comment" : {
+      "en" : "is the part of a bicycle that converts the reciprocating motion of the rider's legs into rotational motion used to drive the chain or belt, which in turn drives the rear wheel."
+    },
+    "attributes" : [ "external" ],
+    "id" : "16",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#Rim",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Rim",
+      "en" : "Rim"
+    },
+    "comment" : {
+      "en" : "the part of a wheel to which the tire is attached and often forms part of the braking mechanism."
+    },
+    "attributes" : [ "external" ],
+    "id" : "18",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#Tighten",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Tighten",
+      "en" : "Tighten"
+    },
+    "comment" : {
+      "en" : "act of tightening the brakes when they are loose in a manner that the rider cannot effectively stop the bike at the instant he/she want it to."
+    },
+    "attributes" : [ "external" ],
+    "id" : "62",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#Patch",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Patch",
+      "en" : "Patch"
+    },
+    "comment" : {
+      "en" : "a piece of material used to mend or cover a hole or a weak spot."
+    },
+    "attributes" : [ "external" ],
+    "id" : "90",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#Puncture",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Puncture",
+      "en" : "Puncture"
+    },
+    "comment" : {
+      "en" : "the process where the tires lose air due to a puncture."
+    },
+    "attributes" : [ "external" ],
+    "id" : "99",
+    "superClasses" : [ "83" ]
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#RefitChain",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RefitChain",
+      "en" : "RefitChain"
+    },
+    "comment" : {
+      "en" : "act of reconnecting the chain which has previously broken and exited from its track."
+    },
+    "attributes" : [ "external" ],
+    "id" : "81",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#RearDerailleur",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RearDerailleur",
+      "en" : "RearDerailleur"
+    },
+    "comment" : {
+      "en" : "an assembly of levers, usually cable actuated, that moves the chain between sprockets on a cassette or chainring assembly. The rear derailleur moves the chain between rear sprockets and takes up chain slack caused by moving to a smaller sprocket at the rear or a smaller chainring by the front derailleur."
+    },
+    "attributes" : [ "external" ],
+    "id" : "44",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#Motor",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Motor",
+      "en" : "Motor"
+    },
+    "comment" : {
+      "en" : "is the electric motor added to an electric bike, it can be integrated on the axis of one of the two wheels, in order to help the cyclist in cases where the required propulsive action is very high."
+    },
+    "attributes" : [ "external" ],
+    "id" : "43",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#Hub",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Hub",
+      "en" : "Hub"
+    },
+    "comment" : {
+      "en" : "the core of a wheel; contains bearings and, in a traditional wheel, has drilled flanges for attachment of spokes."
+    },
+    "attributes" : [ "external" ],
+    "id" : "50",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#ShockAbsorber",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ShockAbsorber",
+      "en" : "ShockAbsorber"
+    },
+    "comment" : {
+      "en" : "for bicycles with suspensions, a device that limits the rate at which suspension rebounds after absorbing an impact."
+    },
+    "attributes" : [ "external" ],
+    "id" : "51",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#ChainLink",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ChainLink",
+      "en" : "ChainLink"
+    },
+    "comment" : {
+      "en" : "a set of inner chain plates joined to a set of outer chain plates by a rivet or pin."
+    },
+    "attributes" : [ "external" ],
+    "id" : "107",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#Saddle",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Saddle",
+      "en" : "Saddle"
+    },
+    "comment" : {
+      "en" : "a seat for the rider of a bicycle. It is commonly attached to the seatpost and the height of the saddle can usually be adjusted by the seatpost telescoping in and out of the seat tube."
+    },
+    "attributes" : [ "external" ],
+    "id" : "10",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#Wheel",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Wheel",
+      "en" : "Wheel"
+    },
+    "comment" : {
+      "undefined" : "the set of pieces, like the tire and the air chamber, that form the wheel."
+    },
+    "attributes" : [ "external" ],
+    "id" : "59",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#Glue",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Glue",
+      "en" : "Glue"
+    },
+    "comment" : {
+      "en" : "a solution of glue used for sticking things together."
+    },
+    "attributes" : [ "external" ],
+    "id" : "92",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "143",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#Pump",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Pump",
+      "en" : "Pump"
+    },
+    "comment" : {
+      "en" : "a type of positive-displacement air pump specifically designed for inflating bicycle tires."
+    },
+    "attributes" : [ "external" ],
+    "id" : "88",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#TopTube",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TopTube",
+      "en" : "TopTube"
+    },
+    "comment" : {
+      "en" : "the part of frame tube that connects the top of the head tube to the top of the seat tube."
+    },
+    "attributes" : [ "external" ],
+    "id" : "52",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#Valve",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Valve",
+      "en" : "Valve"
+    },
+    "comment" : {
+      "en" : "port for adding or releasing air from the inner tube."
+    },
+    "attributes" : [ "external" ],
+    "id" : "12",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#FlatTire",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FlatTire",
+      "en" : "FlatTire"
+    },
+    "comment" : {
+      "en" : "the process where the tubeless tires lose air."
+    },
+    "attributes" : [ "external" ],
+    "id" : "96",
+    "superClasses" : [ "83" ]
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#SnappedChain",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SnappedChain",
+      "en" : "SnappedChain"
+    },
+    "comment" : {
+      "en" : "mechanical problem consisting in the snapping of the chain that that makes the bike impossible to operate."
+    },
+    "attributes" : [ "external" ],
+    "id" : "97",
+    "superClasses" : [ "83" ]
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#FrontSet",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FrontSet",
+      "en" : "FrontSet"
+    },
+    "comment" : {
+      "undefined" : "anterior area of the bike including the pieces of the fork, front brake, handlebar grip, the head tube and the shock absorber."
+    },
+    "attributes" : [ "external" ],
+    "id" : "95",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#Battery",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Battery",
+      "en" : "Battery"
+    },
+    "comment" : {
+      "en" : "rechargeable batteries used by E-bikes in addition to electric motors and some form of control."
+    },
+    "attributes" : [ "external" ],
+    "id" : "55",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#ChainRivet",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ChainRivet",
+      "en" : "ChainRivet"
+    },
+    "comment" : {
+      "en" : "a mechanical fastener composed of a head on one end and a cylindrical stem on another (called the tail) which has the appearance of a metal pin."
+    },
+    "attributes" : [ "external" ],
+    "id" : "105",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#AllenKey",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AllenKey",
+      "en" : "AllenKey"
+    },
+    "comment" : {
+      "en" : "a simple driver for bolts or screws that have heads with internal hexagonal recesses (sockets)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "86",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#Pedal",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Pedal",
+      "en" : "Pedal"
+    },
+    "comment" : {
+      "en" : "mechanical interface between foot and crank arm that the rider pushes with their foot to propel the vehicle."
+    },
+    "attributes" : [ "external" ],
+    "id" : "6",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#Brakes",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Brakes",
+      "en" : "Brakes"
+    },
+    "comment" : {
+      "en" : "devices acting on the wheel used to stop or slow down a bicycle."
+    },
+    "attributes" : [ "external" ],
+    "id" : "14",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#BrokenPart",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BrokenPart",
+      "en" : "BrokenPart"
+    },
+    "comment" : {
+      "en" : "all the parts of a bike in need of some adjustments."
+    },
+    "attributes" : [ "external" ],
+    "id" : "100",
+    "superClasses" : [ "83" ]
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#ReplacePart",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ReplacePart",
+      "en" : "ReplacePart"
+    },
+    "comment" : {
+      "en" : "act of replacement of a damaged or broken piece with an equivalent in good condition."
+    },
+    "attributes" : [ "external" ],
+    "id" : "65",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#Bike",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "annotations" : {
+      "sameAs" : [ {
+        "identifier" : "sameAs",
+        "language" : "en",
+        "value" : "vso:Bicycle",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Bike",
+      "en" : "Bike"
+    },
+    "comment" : {
+      "en" : "A bike or bicycle is a two-wheeled steerable machine that is pedaled by the rider’s feet."
+    },
+    "attributes" : [ "external" ],
+    "id" : "77"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#SeatHeight",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SeatHeight",
+      "en" : "SeatHeight"
+    },
+    "comment" : {
+      "en" : "the adjustment needed by a cyclist in case of a seat height too high or low."
+    },
+    "attributes" : [ "external" ],
+    "id" : "98",
+    "superClasses" : [ "83" ]
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#FrontDerailleur",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FrontDerailleur",
+      "en" : "FrontDerailleur"
+    },
+    "comment" : {
+      "en" : "an assembly of levers, usually cable actuated, that moves the chain between sprockets on a cassette or chainring assembly. The front derailleur has to move the chain side to side between the front chainrings."
+    },
+    "attributes" : [ "external" ],
+    "id" : "53",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#HandlebarGrip",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HandlebarGrip",
+      "en" : "HandlebarGrip"
+    },
+    "comment" : {
+      "en" : "a lever attached, usually using an intermediary stem, to the steerer tube of the fork. Allows steering and provides a point of attachment for controls and accessories."
+    },
+    "attributes" : [ "external" ],
+    "id" : "54",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "210",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "219",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#CommonPartArea",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CommonPartArea",
+      "en" : "CommonPartArea"
+    },
+    "subClasses" : [ "0", "70", "95", "102", "59" ],
+    "comment" : {
+      "en" : "is a general class referring to all those pieces composed by many smaller parts together."
+    },
+    "attributes" : [ "external" ],
+    "id" : "1",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#Cogset",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Cogset",
+      "en" : "Cogset"
+    },
+    "comment" : {
+      "en" : "the set of rear sprockets that attaches to the hub on the rear wheel."
+    },
+    "attributes" : [ "external" ],
+    "id" : "42",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#InnerTube",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InnerTube",
+      "en" : "InnerTube"
+    },
+    "comment" : {
+      "en" : "an inflatable ring that forms the interior of some pneumatic tires."
+    },
+    "attributes" : [ "external" ],
+    "id" : "46",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#Tool",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Tool",
+      "en" : "Tool"
+    },
+    "subClasses" : [ "105", "107", "86", "88", "90", "92" ],
+    "comment" : {
+      "en" : "a device used to perform or facilitate manual or mechanical work."
+    },
+    "attributes" : [ "external" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#WornBrakes",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WornBrakes",
+      "en" : "WornBrakes"
+    },
+    "comment" : {
+      "en" : "all the possible problems connected to worn or slacken brakes."
+    },
+    "attributes" : [ "external" ],
+    "id" : "61",
+    "superClasses" : [ "83" ]
+  } ],
+  "property" : [ {
+    "id" : "2",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "58",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "60",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "63",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "64",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "71",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "72",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "73",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "74",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "36",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "37",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "84",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "85",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "87",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "91",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "93",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "94",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "101",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "103",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "104",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "106",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "108",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "109",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "110",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "111",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "112",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "113",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "114",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "115",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "116",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "117",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "118",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "119",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "120",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "121",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "122",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "123",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "124",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "125",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "126",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "127",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "128",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "129",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "130",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "131",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "132",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "133",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "134",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "34",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "135",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "136",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "137",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "138",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "139",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "31",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "140",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "141",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "142",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "144",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "145",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "146",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "147",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "148",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "149",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "150",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "27",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "151",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "152",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "153",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "154",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "155",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "156",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "157",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "158",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "159",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "160",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "161",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "162",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "163",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "164",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "165",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "166",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "167",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "168",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "169",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "170",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "171",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "172",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "173",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "174",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "175",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "38",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "176",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "177",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "178",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "179",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "180",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "181",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "182",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "183",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "184",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "25",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "185",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "186",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "187",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "188",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "189",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "190",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "191",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "192",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "193",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "194",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "195",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "196",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "197",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "198",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "199",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "200",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "201",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "202",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "203",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "204",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "205",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "206",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "207",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "208",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "209",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "211",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "212",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "213",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "214",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "215",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "216",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "217",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "218",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "220",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "221",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "39",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "222",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "223",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "224",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "225",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "226",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "227",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "228",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "26",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "229",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "230",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "231",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "232",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "30",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "233",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "234",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "235",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "236",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "237",
+    "type" : "owl:someValuesFrom"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "4",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "2"
+  }, {
+    "range" : "4",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "5"
+  }, {
+    "range" : "4",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "7"
+  }, {
+    "range" : "4",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "9"
+  }, {
+    "range" : "4",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "11"
+  }, {
+    "range" : "4",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "13"
+  }, {
+    "range" : "4",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "15"
+  }, {
+    "range" : "4",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#requests",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "requests",
+      "en" : "requests"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "20",
+    "comment" : {
+      "en" : "is a property defining which solution to a problem requests a given tool to be used."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "domain" : "24",
+    "subproperty" : [ "25", "26", "27", "28", "29", "30", "19", "31", "32", "33", "34", "35", "36", "37", "38", "39" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "22"
+  }, {
+    "range" : "4",
+    "domain" : "40",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "56"
+  }, {
+    "range" : "4",
+    "domain" : "41",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#comprises",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "comprises",
+      "en" : "comprises"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "59",
+    "comment" : {
+      "en" : "is a property defining which common part comprises a given piece."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "58"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#hasSolution",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "62",
+    "label" : {
+      "IRI-based" : "hasSolution",
+      "undefined" : "hasSolution"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "61",
+    "comment" : {
+      "en" : "is the property telling how a problem of a bike can be solved and through which tools."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "60"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isProblemOf",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "isProblemOf",
+      "en" : "isProblemOf"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "61",
+    "comment" : {
+      "en" : "is a property defining to which piece is connected a given problem."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#hasSolution",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "65",
+    "label" : {
+      "IRI-based" : "hasSolution",
+      "undefined" : "hasSolution"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "61",
+    "comment" : {
+      "en" : "is the property telling how a problem of a bike can be solved and through which tools."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#comprises",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "comprises",
+      "en" : "comprises"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "59",
+    "comment" : {
+      "en" : "is a property defining which common part comprises a given piece."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "71"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#comprises",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "comprises",
+      "en" : "comprises"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "59",
+    "comment" : {
+      "en" : "is a property defining which common part comprises a given piece."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "72"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#comprises",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "50",
+    "label" : {
+      "IRI-based" : "comprises",
+      "en" : "comprises"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "59",
+    "comment" : {
+      "en" : "is a property defining which common part comprises a given piece."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "73"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#hasProblem",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "75",
+    "label" : {
+      "IRI-based" : "hasProblem",
+      "en" : "hasProblem"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "59",
+    "comment" : {
+      "en" : "is a property defining a problem that could affect a bike or a piece of a bike."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "74"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isTypeOf",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "77",
+    "label" : {
+      "IRI-based" : "isTypeOf",
+      "en" : "isTypeOf"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "76",
+    "comment" : {
+      "en" : "this property defines that a specific bike model is a type of bike."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#hasType",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "76",
+    "label" : {
+      "IRI-based" : "hasType",
+      "en" : "hasType"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "77",
+    "comment" : {
+      "en" : "is a property that defines the specific type of bike of a bike model."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "36"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isProblemOf",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "isProblemOf",
+      "en" : "isProblemOf"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "83",
+    "comment" : {
+      "en" : "is a property defining to which piece is connected a given problem."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "37"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "69",
+    "label" : {
+      "IRI-based" : "topDataProperty"
+    },
+    "domain" : "24",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "84"
+  }, {
+    "range" : "21",
+    "domain" : "86",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "85"
+  }, {
+    "range" : "21",
+    "domain" : "88",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "87"
+  }, {
+    "range" : "21",
+    "domain" : "90",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "89"
+  }, {
+    "range" : "21",
+    "domain" : "92",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "91"
+  }, {
+    "range" : "1",
+    "domain" : "70",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "93"
+  }, {
+    "range" : "1",
+    "domain" : "95",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "94"
+  }, {
+    "range" : "1",
+    "domain" : "102",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "101"
+  }, {
+    "range" : "1",
+    "domain" : "59",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "103"
+  }, {
+    "range" : "21",
+    "domain" : "105",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "104"
+  }, {
+    "range" : "21",
+    "domain" : "107",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "106"
+  }, {
+    "range" : "83",
+    "domain" : "75",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "108"
+  }, {
+    "range" : "83",
+    "domain" : "99",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "109"
+  }, {
+    "range" : "83",
+    "domain" : "100",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "110"
+  }, {
+    "range" : "83",
+    "domain" : "61",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "111"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "112"
+  }, {
+    "range" : "20",
+    "domain" : "81",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "113"
+  }, {
+    "range" : "20",
+    "domain" : "82",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "114"
+  }, {
+    "range" : "83",
+    "domain" : "96",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "115"
+  }, {
+    "range" : "83",
+    "domain" : "97",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "116"
+  }, {
+    "range" : "83",
+    "domain" : "98",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "117"
+  }, {
+    "range" : "4",
+    "domain" : "54",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "118"
+  }, {
+    "range" : "4",
+    "domain" : "55",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "119"
+  }, {
+    "range" : "20",
+    "domain" : "65",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "120"
+  }, {
+    "range" : "20",
+    "domain" : "78",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "121"
+  }, {
+    "range" : "20",
+    "domain" : "80",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "122"
+  }, {
+    "range" : "20",
+    "domain" : "62",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "123"
+  }, {
+    "range" : "4",
+    "domain" : "50",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "124"
+  }, {
+    "range" : "4",
+    "domain" : "51",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "125"
+  }, {
+    "range" : "4",
+    "domain" : "52",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "126"
+  }, {
+    "range" : "4",
+    "domain" : "53",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "127"
+  }, {
+    "range" : "4",
+    "domain" : "43",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "128"
+  }, {
+    "range" : "4",
+    "domain" : "44",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "129"
+  }, {
+    "range" : "4",
+    "domain" : "45",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "130"
+  }, {
+    "range" : "4",
+    "domain" : "46",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "131"
+  }, {
+    "range" : "4",
+    "domain" : "47",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "132"
+  }, {
+    "range" : "4",
+    "domain" : "48",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "133"
+  }, {
+    "range" : "4",
+    "domain" : "49",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "134"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isBrandOf",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "77",
+    "label" : {
+      "IRI-based" : "isBrandOf",
+      "en" : "isBrandOf"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "79",
+    "comment" : {
+      "en" : "is a property used for specifying which specific brand owns and produces a given bike model."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#hasChainRing",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "66",
+    "label" : {
+      "IRI-based" : "hasChainRing",
+      "en" : "hasChainRing"
+    },
+    "domain" : "16",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "135"
+  }, {
+    "range" : "4",
+    "domain" : "23",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "136"
+  }, {
+    "range" : "4",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "137"
+  }, {
+    "range" : "4",
+    "domain" : "42",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "138"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isProblemOf",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "46",
+    "label" : {
+      "IRI-based" : "isProblemOf",
+      "en" : "isProblemOf"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "96",
+    "comment" : {
+      "en" : "is a property defining to which piece is connected a given problem."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "139"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#hasBrand",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "79",
+    "label" : {
+      "IRI-based" : "hasBrand",
+      "en" : "hasBrand"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "77",
+    "comment" : {
+      "en" : "is a property defining which bike in particular has a given brand."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#hasSolution",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "65",
+    "label" : {
+      "IRI-based" : "hasSolution",
+      "undefined" : "hasSolution"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "96",
+    "comment" : {
+      "en" : "is the property telling how a problem of a bike can be solved and through which tools."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "140"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#hasSolution",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "80",
+    "label" : {
+      "IRI-based" : "hasSolution",
+      "undefined" : "hasSolution"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "96",
+    "comment" : {
+      "en" : "is the property telling how a problem of a bike can be solved and through which tools."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "141"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#hasChainRing",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "143",
+    "label" : {
+      "IRI-based" : "hasChainRing",
+      "en" : "hasChainRing"
+    },
+    "domain" : "16",
+    "attributes" : [ "datatype", "someValues", "external" ],
+    "id" : "142"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isPartOf",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "77",
+    "label" : {
+      "IRI-based" : "isPartOf",
+      "en" : "isPartOf"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "4",
+    "comment" : {
+      "en" : "is a property used for specifying which common parts are included in a bike."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "144"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isComprisedIn",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "isComprisedIn",
+      "en" : "isComprisedIn"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "8",
+    "comment" : {
+      "en" : "is a property defining which piece is comprised in a given common part."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "145"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#hasProblem",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasProblem",
+      "en" : "hasProblem"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "4",
+    "comment" : {
+      "en" : "is a property defining a problem that could affect a bike or a piece of a bike."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "146"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#hasSize",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "68",
+    "label" : {
+      "IRI-based" : "hasSize",
+      "en" : "hasSize"
+    },
+    "domain" : "48",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "147"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isComprisedIn",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "isComprisedIn",
+      "en" : "isComprisedIn"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "49",
+    "comment" : {
+      "en" : "is a property defining which piece is comprised in a given common part."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "148"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#hasProblem",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "83",
+    "label" : {
+      "IRI-based" : "hasProblem",
+      "en" : "hasProblem"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "4",
+    "comment" : {
+      "en" : "is a property defining a problem that could affect a bike or a piece of a bike."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "149"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#producedBy",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "79",
+    "label" : {
+      "IRI-based" : "producedBy",
+      "en" : "producedBy"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "4",
+    "comment" : {
+      "en" : "defines the specific part of a bike that is produced by a given brand."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "150"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#hasPart",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasPart",
+      "en" : "hasPart"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "77",
+    "comment" : {
+      "en" : "is a property specifying how a bike is composed in its specific pieces."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#hasGearing",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "67",
+    "label" : {
+      "IRI-based" : "hasGearing",
+      "en" : "hasGearing"
+    },
+    "domain" : "77",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "151"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isRequestedFor",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "81",
+    "label" : {
+      "IRI-based" : "isRequestedFor",
+      "en" : "isRequestedFor"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "107",
+    "comment" : {
+      "en" : "is a property defining which tool is required in order to obtain a given solution to a problem."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "152"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#comprises",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "comprises",
+      "en" : "comprises"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "102",
+    "comment" : {
+      "en" : "is a property defining which common part comprises a given piece."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "153"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isRequestedFor",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "81",
+    "label" : {
+      "IRI-based" : "isRequestedFor",
+      "en" : "isRequestedFor"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "105",
+    "comment" : {
+      "en" : "is a property defining which tool is required in order to obtain a given solution to a problem."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "154"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isComprisedIn",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "102",
+    "label" : {
+      "IRI-based" : "isComprisedIn",
+      "en" : "isComprisedIn"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "40",
+    "comment" : {
+      "en" : "is a property defining which piece is comprised in a given common part."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "155"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isProblemOf",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "isProblemOf",
+      "en" : "isProblemOf"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "100",
+    "comment" : {
+      "en" : "is a property defining to which piece is connected a given problem."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "156"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#comprises",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "53",
+    "label" : {
+      "IRI-based" : "comprises",
+      "en" : "comprises"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "102",
+    "comment" : {
+      "en" : "is a property defining which common part comprises a given piece."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "157"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#hasProblem",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "97",
+    "label" : {
+      "IRI-based" : "hasProblem",
+      "en" : "hasProblem"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "102",
+    "comment" : {
+      "en" : "is a property defining a problem that could affect a bike or a piece of a bike."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "158"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isBrandOf",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "77",
+    "label" : {
+      "IRI-based" : "isBrandOf",
+      "en" : "isBrandOf"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "79",
+    "comment" : {
+      "en" : "is a property used for specifying which specific brand owns and produces a given bike model."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "159"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#hasSolution",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "65",
+    "label" : {
+      "IRI-based" : "hasSolution",
+      "undefined" : "hasSolution"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "100",
+    "comment" : {
+      "en" : "is the property telling how a problem of a bike can be solved and through which tools."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "160"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#produces",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "produces",
+      "en" : "produces"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "79",
+    "comment" : {
+      "en" : "is a property defining which brand produces a specific part of a bike."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "161"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#hasSolution",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "65",
+    "label" : {
+      "IRI-based" : "hasSolution",
+      "undefined" : "hasSolution"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "75",
+    "comment" : {
+      "en" : "is the property telling how a problem of a bike can be solved and through which tools."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "162"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isRequestedFor",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "82",
+    "label" : {
+      "IRI-based" : "isRequestedFor",
+      "en" : "isRequestedFor"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "90",
+    "comment" : {
+      "en" : "is a property defining which tool is required in order to obtain a given solution to a problem."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "163"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isProblemOf",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "59",
+    "label" : {
+      "IRI-based" : "isProblemOf",
+      "en" : "isProblemOf"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "75",
+    "comment" : {
+      "en" : "is a property defining to which piece is connected a given problem."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "164"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#producedBy",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "79",
+    "label" : {
+      "IRI-based" : "producedBy",
+      "en" : "producedBy"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "4",
+    "comment" : {
+      "en" : "defines the specific part of a bike that is produced by a given brand."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#hasProblem",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "83",
+    "label" : {
+      "IRI-based" : "hasProblem",
+      "en" : "hasProblem"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "4",
+    "comment" : {
+      "en" : "is a property defining a problem that could affect a bike or a piece of a bike."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#hasSolution",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "hasSolution",
+      "undefined" : "hasSolution"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "83",
+    "comment" : {
+      "en" : "is the property telling how a problem of a bike can be solved and through which tools."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "32"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#hasProblem",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "99",
+    "label" : {
+      "IRI-based" : "hasProblem",
+      "en" : "hasProblem"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "46",
+    "comment" : {
+      "en" : "is a property defining a problem that could affect a bike or a piece of a bike."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "165"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#requests",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "88",
+    "label" : {
+      "IRI-based" : "requests",
+      "en" : "requests"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "80",
+    "comment" : {
+      "en" : "is a property defining which solution to a problem requests a given tool to be used."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "166"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isComprisedIn",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "59",
+    "label" : {
+      "IRI-based" : "isComprisedIn",
+      "en" : "isComprisedIn"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "46",
+    "comment" : {
+      "en" : "is a property defining which piece is comprised in a given common part."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "167"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#hasProblem",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "96",
+    "label" : {
+      "IRI-based" : "hasProblem",
+      "en" : "hasProblem"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "46",
+    "comment" : {
+      "en" : "is a property defining a problem that could affect a bike or a piece of a bike."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "168"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isComprisedIn",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "95",
+    "label" : {
+      "IRI-based" : "isComprisedIn",
+      "en" : "isComprisedIn"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "23",
+    "comment" : {
+      "en" : "is a property defining which piece is comprised in a given common part."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "169"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isComprisedIn",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "95",
+    "label" : {
+      "IRI-based" : "isComprisedIn",
+      "en" : "isComprisedIn"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "54",
+    "comment" : {
+      "en" : "is a property defining which piece is comprised in a given common part."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "170"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isSolutionOf",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "99",
+    "label" : {
+      "IRI-based" : "isSolutionOf",
+      "en" : "isSolutionOf"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "80",
+    "comment" : {
+      "en" : "is a property defining to which piece is connected a given solution of a problem."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "171"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isComprisedIn",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "59",
+    "label" : {
+      "IRI-based" : "isComprisedIn",
+      "en" : "isComprisedIn"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "50",
+    "comment" : {
+      "en" : "is a property defining which piece is comprised in a given common part."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "172"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isRequestedFor",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "82",
+    "label" : {
+      "IRI-based" : "isRequestedFor",
+      "en" : "isRequestedFor"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "92",
+    "comment" : {
+      "en" : "is a property defining which tool is required in order to obtain a given solution to a problem."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "173"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#comprises",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "54",
+    "label" : {
+      "IRI-based" : "comprises",
+      "en" : "comprises"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "95",
+    "comment" : {
+      "en" : "is a property defining which common part comprises a given piece."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "174"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#comprises",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "51",
+    "label" : {
+      "IRI-based" : "comprises",
+      "en" : "comprises"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "95",
+    "comment" : {
+      "en" : "is a property defining which common part comprises a given piece."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "175"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isRequestedFor",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "isRequestedFor",
+      "en" : "isRequestedFor"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "21",
+    "comment" : {
+      "en" : "is a property defining which tool is required in order to obtain a given solution to a problem."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "38"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isComprisedIn",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "102",
+    "label" : {
+      "IRI-based" : "isComprisedIn",
+      "en" : "isComprisedIn"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "53",
+    "comment" : {
+      "en" : "is a property defining which piece is comprised in a given common part."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "176"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#comprises",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "comprises",
+      "en" : "comprises"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "0",
+    "comment" : {
+      "en" : "is a property defining which common part comprises a given piece."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "177"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#comprises",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "comprises",
+      "en" : "comprises"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "95",
+    "comment" : {
+      "en" : "is a property defining which common part comprises a given piece."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "178"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#comprises",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "comprises",
+      "en" : "comprises"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "95",
+    "comment" : {
+      "en" : "is a property defining which common part comprises a given piece."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "179"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#comprises",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "comprises",
+      "en" : "comprises"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "0",
+    "comment" : {
+      "en" : "is a property defining which common part comprises a given piece."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "180"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isComprisedIn",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "95",
+    "label" : {
+      "IRI-based" : "isComprisedIn",
+      "en" : "isComprisedIn"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "3",
+    "comment" : {
+      "en" : "is a property defining which piece is comprised in a given common part."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "181"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#comprises",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "comprises",
+      "en" : "comprises"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "0",
+    "comment" : {
+      "en" : "is a property defining which common part comprises a given piece."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "182"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#comprises",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "comprises",
+      "en" : "comprises"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "0",
+    "comment" : {
+      "en" : "is a property defining which common part comprises a given piece."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "183"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#comprises",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "comprises",
+      "en" : "comprises"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "70",
+    "comment" : {
+      "en" : "is a property defining which common part comprises a given piece."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "184"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isSolutionOf",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "83",
+    "label" : {
+      "IRI-based" : "isSolutionOf",
+      "en" : "isSolutionOf"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "20",
+    "comment" : {
+      "en" : "is a property defining to which piece is connected a given solution of a problem."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isComprisedIn",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "70",
+    "label" : {
+      "IRI-based" : "isComprisedIn",
+      "en" : "isComprisedIn"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "10",
+    "comment" : {
+      "en" : "is a property defining which piece is comprised in a given common part."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "185"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isProblemOf",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "isProblemOf",
+      "en" : "isProblemOf"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "98",
+    "comment" : {
+      "en" : "is a property defining to which piece is connected a given problem."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "186"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#comprises",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "comprises",
+      "en" : "comprises"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "70",
+    "comment" : {
+      "en" : "is a property defining which common part comprises a given piece."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "187"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isComprisedIn",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "59",
+    "label" : {
+      "IRI-based" : "isComprisedIn",
+      "en" : "isComprisedIn"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "18",
+    "comment" : {
+      "en" : "is a property defining which piece is comprised in a given common part."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "188"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isSolutionOf",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "75",
+    "label" : {
+      "IRI-based" : "isSolutionOf",
+      "en" : "isSolutionOf"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "65",
+    "comment" : {
+      "en" : "is a property defining to which piece is connected a given solution of a problem."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "189"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isSolutionOf",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "61",
+    "label" : {
+      "IRI-based" : "isSolutionOf",
+      "en" : "isSolutionOf"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "65",
+    "comment" : {
+      "en" : "is a property defining to which piece is connected a given solution of a problem."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "190"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isSolutionOf",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "97",
+    "label" : {
+      "IRI-based" : "isSolutionOf",
+      "en" : "isSolutionOf"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "65",
+    "comment" : {
+      "en" : "is a property defining to which piece is connected a given solution of a problem."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "191"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#requests",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "107",
+    "label" : {
+      "IRI-based" : "requests",
+      "en" : "requests"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "81",
+    "comment" : {
+      "en" : "is a property defining which solution to a problem requests a given tool to be used."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "192"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isSolutionOf",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "100",
+    "label" : {
+      "IRI-based" : "isSolutionOf",
+      "en" : "isSolutionOf"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "65",
+    "comment" : {
+      "en" : "is a property defining to which piece is connected a given solution of a problem."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "193"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isSolutionOf",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "99",
+    "label" : {
+      "IRI-based" : "isSolutionOf",
+      "en" : "isSolutionOf"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "65",
+    "comment" : {
+      "en" : "is a property defining to which piece is connected a given solution of a problem."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "194"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#hasSolution",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "82",
+    "label" : {
+      "IRI-based" : "hasSolution",
+      "undefined" : "hasSolution"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "99",
+    "comment" : {
+      "en" : "is the property telling how a problem of a bike can be solved and through which tools."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "195"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isProblemOf",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "46",
+    "label" : {
+      "IRI-based" : "isProblemOf",
+      "en" : "isProblemOf"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "99",
+    "comment" : {
+      "en" : "is a property defining to which piece is connected a given problem."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "196"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#requests",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "105",
+    "label" : {
+      "IRI-based" : "requests",
+      "en" : "requests"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "81",
+    "comment" : {
+      "en" : "is a property defining which solution to a problem requests a given tool to be used."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "197"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isSolutionOf",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "97",
+    "label" : {
+      "IRI-based" : "isSolutionOf",
+      "en" : "isSolutionOf"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "81",
+    "comment" : {
+      "en" : "is a property defining to which piece is connected a given solution of a problem."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "198"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isRequestedFor",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "82",
+    "label" : {
+      "IRI-based" : "isRequestedFor",
+      "en" : "isRequestedFor"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "88",
+    "comment" : {
+      "en" : "is a property defining which tool is required in order to obtain a given solution to a problem."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "199"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isProblemOf",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "isProblemOf",
+      "en" : "isProblemOf"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "83",
+    "comment" : {
+      "en" : "is a property defining to which piece is connected a given problem."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "200"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isRequestedFor",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "80",
+    "label" : {
+      "IRI-based" : "isRequestedFor",
+      "en" : "isRequestedFor"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "88",
+    "comment" : {
+      "en" : "is a property defining which tool is required in order to obtain a given solution to a problem."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "201"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#requests",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "92",
+    "label" : {
+      "IRI-based" : "requests",
+      "en" : "requests"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "82",
+    "comment" : {
+      "en" : "is a property defining which solution to a problem requests a given tool to be used."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "202"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isSolutionOf",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "99",
+    "label" : {
+      "IRI-based" : "isSolutionOf",
+      "en" : "isSolutionOf"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "82",
+    "comment" : {
+      "en" : "is a property defining to which piece is connected a given solution of a problem."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "203"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#requests",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "88",
+    "label" : {
+      "IRI-based" : "requests",
+      "en" : "requests"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "82",
+    "comment" : {
+      "en" : "is a property defining which solution to a problem requests a given tool to be used."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "204"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#requests",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "90",
+    "label" : {
+      "IRI-based" : "requests",
+      "en" : "requests"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "82",
+    "comment" : {
+      "en" : "is a property defining which solution to a problem requests a given tool to be used."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "205"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isComprisedIn",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "59",
+    "label" : {
+      "IRI-based" : "isComprisedIn",
+      "en" : "isComprisedIn"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "12",
+    "comment" : {
+      "en" : "is a property defining which piece is comprised in a given common part."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "206"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isTypeOf",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "77",
+    "label" : {
+      "IRI-based" : "isTypeOf",
+      "en" : "isTypeOf"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "76",
+    "comment" : {
+      "en" : "this property defines that a specific bike model is a type of bike."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "207"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#comprises",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "comprises",
+      "en" : "comprises"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "59",
+    "comment" : {
+      "en" : "is a property defining which common part comprises a given piece."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "208"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#comprises",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "46",
+    "label" : {
+      "IRI-based" : "comprises",
+      "en" : "comprises"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "59",
+    "comment" : {
+      "en" : "is a property defining which common part comprises a given piece."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "209"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isComprisedIn",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "isComprisedIn",
+      "en" : "isComprisedIn"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "52",
+    "comment" : {
+      "en" : "is a property defining which piece is comprised in a given common part."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "211"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isRequestedFor",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "isRequestedFor",
+      "en" : "isRequestedFor"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "21",
+    "comment" : {
+      "en" : "is a property defining which tool is required in order to obtain a given solution to a problem."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "212"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isRequestedFor",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "78",
+    "label" : {
+      "IRI-based" : "isRequestedFor",
+      "en" : "isRequestedFor"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "86",
+    "comment" : {
+      "en" : "is a property defining which tool is required in order to obtain a given solution to a problem."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "213"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isRequestedFor",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "62",
+    "label" : {
+      "IRI-based" : "isRequestedFor",
+      "en" : "isRequestedFor"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "86",
+    "comment" : {
+      "en" : "is a property defining which tool is required in order to obtain a given solution to a problem."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "214"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#hasBrand",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "79",
+    "label" : {
+      "IRI-based" : "hasBrand",
+      "en" : "hasBrand"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "77",
+    "comment" : {
+      "en" : "is a property defining which bike in particular has a given brand."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "215"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#hasPart",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasPart",
+      "en" : "hasPart"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "77",
+    "comment" : {
+      "en" : "is a property specifying how a bike is composed in its specific pieces."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "216"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#hasType",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "76",
+    "label" : {
+      "IRI-based" : "hasType",
+      "en" : "hasType"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "77",
+    "comment" : {
+      "en" : "is a property that defines the specific type of bike of a bike model."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "217"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#hasGearing",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "219",
+    "label" : {
+      "IRI-based" : "hasGearing",
+      "en" : "hasGearing"
+    },
+    "domain" : "77",
+    "attributes" : [ "datatype", "someValues", "external" ],
+    "id" : "218"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#hasProblem",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "61",
+    "label" : {
+      "IRI-based" : "hasProblem",
+      "en" : "hasProblem"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "14",
+    "comment" : {
+      "en" : "is a property defining a problem that could affect a bike or a piece of a bike."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "220"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isSolutionOf",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "98",
+    "label" : {
+      "IRI-based" : "isSolutionOf",
+      "en" : "isSolutionOf"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "78",
+    "comment" : {
+      "en" : "is a property defining to which piece is connected a given solution of a problem."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "221"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#produces",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "produces",
+      "en" : "produces"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "79",
+    "comment" : {
+      "en" : "is a property defining which brand produces a specific part of a bike."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#requests",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "86",
+    "label" : {
+      "IRI-based" : "requests",
+      "en" : "requests"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "78",
+    "comment" : {
+      "en" : "is a property defining which solution to a problem requests a given tool to be used."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "222"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#requests",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "86",
+    "label" : {
+      "IRI-based" : "requests",
+      "en" : "requests"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "62",
+    "comment" : {
+      "en" : "is a property defining which solution to a problem requests a given tool to be used."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "223"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isSolutionOf",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "61",
+    "label" : {
+      "IRI-based" : "isSolutionOf",
+      "en" : "isSolutionOf"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "62",
+    "comment" : {
+      "en" : "is a property defining to which piece is connected a given solution of a problem."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "224"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#hasSize",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "210",
+    "label" : {
+      "IRI-based" : "hasSize",
+      "en" : "hasSize"
+    },
+    "domain" : "48",
+    "attributes" : [ "datatype", "someValues", "external" ],
+    "id" : "225"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isComprisedIn",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "59",
+    "label" : {
+      "IRI-based" : "isComprisedIn",
+      "en" : "isComprisedIn"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "48",
+    "comment" : {
+      "en" : "is a property defining which piece is comprised in a given common part."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "226"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#requests",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "requests",
+      "en" : "requests"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "20",
+    "comment" : {
+      "en" : "is a property defining which solution to a problem requests a given tool to be used."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "227"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#hasSolution",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "65",
+    "label" : {
+      "IRI-based" : "hasSolution",
+      "undefined" : "hasSolution"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "97",
+    "comment" : {
+      "en" : "is the property telling how a problem of a bike can be solved and through which tools."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "228"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isPartOf",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "77",
+    "label" : {
+      "IRI-based" : "isPartOf",
+      "en" : "isPartOf"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "4",
+    "comment" : {
+      "en" : "is a property used for specifying which common parts are included in a bike."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isComprisedIn",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "59",
+    "label" : {
+      "IRI-based" : "isComprisedIn",
+      "en" : "isComprisedIn"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "45",
+    "comment" : {
+      "en" : "is a property defining which piece is comprised in a given common part."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "229"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isSolutionOf",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "83",
+    "label" : {
+      "IRI-based" : "isSolutionOf",
+      "en" : "isSolutionOf"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "20",
+    "comment" : {
+      "en" : "is a property defining to which piece is connected a given solution of a problem."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "230"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#hasSolution",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "81",
+    "label" : {
+      "IRI-based" : "hasSolution",
+      "undefined" : "hasSolution"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "97",
+    "comment" : {
+      "en" : "is the property telling how a problem of a bike can be solved and through which tools."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "231"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isProblemOf",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "102",
+    "label" : {
+      "IRI-based" : "isProblemOf",
+      "en" : "isProblemOf"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "97",
+    "comment" : {
+      "en" : "is a property defining to which piece is connected a given problem."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "232"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#comprises",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "comprises",
+      "en" : "comprises"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "1",
+    "comment" : {
+      "en" : "is a property defining which common part comprises a given piece."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isComprisedIn",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "isComprisedIn",
+      "en" : "isComprisedIn"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "4",
+    "comment" : {
+      "en" : "is a property defining which piece is comprised in a given common part."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isComprisedIn",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "95",
+    "label" : {
+      "IRI-based" : "isComprisedIn",
+      "en" : "isComprisedIn"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "51",
+    "comment" : {
+      "en" : "is a property defining which piece is comprised in a given common part."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "233"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isComprisedIn",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "70",
+    "label" : {
+      "IRI-based" : "isComprisedIn",
+      "en" : "isComprisedIn"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "41",
+    "comment" : {
+      "en" : "is a property defining which piece is comprised in a given common part."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "234"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#hasSolution",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "78",
+    "label" : {
+      "IRI-based" : "hasSolution",
+      "undefined" : "hasSolution"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "98",
+    "comment" : {
+      "en" : "is the property telling how a problem of a bike can be solved and through which tools."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "235"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#isComprisedIn",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "isComprisedIn",
+      "en" : "isComprisedIn"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "47",
+    "comment" : {
+      "en" : "is a property defining which piece is comprised in a given common part."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "236"
+  }, {
+    "iri" : "http://purl.org/ontology/bikeo#hasProblem",
+    "baseIri" : "http://purl.org/ontology/bikeo",
+    "range" : "98",
+    "label" : {
+      "IRI-based" : "hasProblem",
+      "en" : "hasProblem"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "41",
+    "comment" : {
+      "en" : "is a property defining a problem that could affect a bike or a piece of a bike."
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "237"
+  } ]
+}

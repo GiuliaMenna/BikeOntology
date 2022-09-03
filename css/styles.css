@@ -11545,13 +11545,13 @@ p {
   column-count: 1;
 }
 body{
-  background-color: #D0E9A7 ;
+  background-color: white ;
 }
-/*.container.content{
+.row.principal{
   background-image: url("../Documents/BikeOntology/images/David Doran trasforma idee in bellissime illustrazioni _ Collater_al.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: left;*/
+  background-position: left;
 }
 .title{
   font-family: "DESIGNERRegular";

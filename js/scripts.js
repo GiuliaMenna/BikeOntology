@@ -102,12 +102,22 @@ var ourScene = new ScrollMagic.Scene({
 .setClassToggle('#SVGtools', 'fade-in') //add class to project01
 .addTo(controller);
 
+
+
 //build a scene for SVG image sellino
-var ourScene = new ScrollMagic.Scene({
-    triggerElement: '#SVGsellino'
-})
-.setClassToggle('#SVGsellino', 'fade-in') //add class to project01
-.addTo(controller);
+//var ourScene = new ScrollMagic.Scene({
+//    triggerElement: '#SVGsellino'
+//})
+//.setClassToggle('#SVGsellino', 'fade-in') //add class to project01
+//.addTo(controller);
+
+let path = document.querySelector('#sellino')
+let pathLength = path.getTotalLength()
+
+path.style.strokeDasharray = pathLength + ' ' + pathLength;
+path.style.strokeDashoffsett = pathLength;
+
+
 
 //build a scene for SVG image boywithbike
 var ourScene = new ScrollMagic.Scene({

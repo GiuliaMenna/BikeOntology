@@ -11441,7 +11441,7 @@ header.masthead {
       stroke-dashoffset: 6330.8154296875;
   }
 }
-/*sellino*/
+/*sellino
 .SVGimages2{
   opacity: 0;
   stroke-dasharray: 3522.2333984375;
@@ -11456,6 +11456,13 @@ header.masthead {
     stroke-dashoffset: 3522.2333984375;
   }
 }
+*/
+
+#immaginesellino{
+  display: inline-block;
+  height: 50%;
+}
+
 /*boy with bike*/
 .SVGimages3{
   opacity: 0;

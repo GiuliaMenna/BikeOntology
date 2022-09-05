@@ -11426,59 +11426,6 @@ header.masthead {
   transform: translateY(0);
 }
 
-/*cacciavite*/
-.SVGimages1{
-  opacity: 0;
-  stroke-dasharray: 6330.8154296875;
-  stroke-dashoffset: 0;
-}
-.SVGimages1.fade-in{
-  opacity: 1;
-  animation: draw 7s linear;
-}
-@keyframes draw {
-  to {
-      stroke-dashoffset: 6330.8154296875;
-  }
-}
-/*sellino
-.SVGimages2{
-  opacity: 0;
-  stroke-dasharray: 3522.2333984375;
-  stroke-dashoffset: 0;
-}
-.SVGimages2.fade-in{
-  opacity: 1;
-  animation: draw 20s linear reverse;
-}
-@keyframes draw {
-  to {
-    stroke-dashoffset: 3522.2333984375;
-  }
-}
-*/
-
-#immaginesellino{
-  display: inline-block;
-  height: 50%;
-}
-
-/*boy with bike*/
-.SVGimages3{
-  opacity: 0;
-  stroke-dasharray: 10768.609375;
-  stroke-dashoffset: 0;
-}
-.SVGimages3.fade-in{
-  opacity: 1;
-  animation: draw 10s linear reverse;
-}
-@keyframes draw {
-  to {
-    stroke-dashoffset: 10768.609375;
-  }
-}
-
 header.masthead h1, header.masthead .h1 {
   font-size: 2.25rem;
 }

@@ -11532,3 +11532,8 @@ p{
 .card-text{
   column-count:1;
 }
+.masthead{
+  background-image: url('../BikeOntology/images/David Doran trasforma idee in bellissime illustrazioni _ Collater_al.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}

@@ -11428,6 +11428,7 @@ header.masthead {
 
 #cycling{
   weight: 100%;
+  pointer-events: none;
 }
 
 header.masthead h1, header.masthead .h1 {

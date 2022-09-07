@@ -11403,10 +11403,7 @@ header.containermultimedia{
   z-index: 0;
 }
 
-#startcycling{
-  margin: -20rem 50rem;
-  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
-}
+
 /*Start ScrollMagic CSS*/
 
 header.masthead {
@@ -11427,10 +11424,12 @@ header.masthead {
 }
 
 #cycling{
-  weight: 100%;
+  weight: inherit;
   pointer-events: none;
 }
-
+video{
+  weight: inherit;
+}
 header.masthead h1, header.masthead .h1 {
   font-size: 2.25rem;
 }

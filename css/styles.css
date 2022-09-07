@@ -309,7 +309,7 @@ figure {
 img,
 svg {
   vertical-align: middle;
-  padding: 0; 
+  padding: 0;
 }
 
 table {
@@ -11527,9 +11527,6 @@ p{
   padding: 30px;
   border-radius: 10px 10px 10px 10px;
   text-align: justify;
-}
-.section2{
-  margin-left: 30%;
 }
 .card-text{
   column-count:1;

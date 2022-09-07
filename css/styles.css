@@ -3051,7 +3051,7 @@ textarea.form-control-lg {
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
-  background-color: #cf5331;
+  background-color: #4381a1;
   border-color: #c34e2e;
   box-shadow: 0 0 0 0.25rem rgba(246, 122, 88, 0.5);
 }
@@ -11521,7 +11521,7 @@ p {
   margin-top: 60%;
 }
 a.btn.btn-primary{
-  background-color: #FFCB79;
+  background-color: #4381a1;
   margin-top: 50%;
 }
 p{
@@ -11543,6 +11543,6 @@ p{
 .paragraph2{
   margin-top: 100px;
 }
-nav#mainNav{
-  background-color: #F5EEAC;
+nav#mainNav, .btn-primary{
+  background-color: #4381a1;
 }

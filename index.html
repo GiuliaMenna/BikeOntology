@@ -41,7 +41,9 @@
           <video id="videohomepage" alt="Work music video about bicycle illustration for Palgou Monster by PANICMONK" loop autoplay playsinline="false" muted ><source src="PALGOU - MONSTER (estratto).mp4"></video>
         </div>
         </div>
-
+        <div class="col-lg-8 align-self-baseline">
+        <a id="startcycling" class="btn btn-primary btn-xl" href="#idea">Start cycling</a>
+        </div>
         </div>
         <!-- Opening background-->
 
@@ -64,9 +66,8 @@ Due to the absence of an existing ontology on this matter and thinking about the
             </div>
         </header>
         <!--Video cycling-->
-        <div class="container">
-          <video id="cycling" alt="Exerpt of the work music video about bicycle illustration for Palgou Monster by PANICMONK" loop autoplay playsinline="false" muted ><source src="bike loop.mp4"></video>
-        </div>
+        <video id="cycling" alt="Exerpt of the work music video about bicycle illustration for Palgou Monster by PANICMONK" loop autoplay playsinline="false" muted ><source src="bike loop.mp4"></video>
+
 
         <!-- About-->
         <section class="page-section section2"> <!-- class="page-section bg-primary"-->
@@ -137,7 +138,7 @@ Due to the absence of an existing ontology on this matter and thinking about the
                         </ul>
                         </p>
                         <p class="mb-4"><h3>Populating the A-Box</h3>
-                          Once we downloaded the free sample from the <b>99spokes website</b>, we used a python script available at this link to extract information and populate our ontology.<br> Each row of the dataset instantiates a bike and the columns describe the bike parts, as well as the brands producing these parts, or some other characteristics of the bike such as its weight. We used the Python library Pandas to process the dataset and the library rdflib to create the knowledge graph. Then from each row of the dataset, we extracted the instance of the bike by attributing URIs and modeling the data according to the ontology for each part of the bike. The result is a Turtle file (bike_abox.ttl), which we joined with the T-Box on Protege to produce the final graph bikeo_w_data.owl.
+                          Once we downloaded the free sample from the <b>99spokes website</b>, we used a python script available at this link ADD LINK to extract information and populate our ontology.<br> Each row of the dataset instantiates a bike and the columns describe the bike parts, as well as the brands producing these parts, or some other characteristics of the bike such as its weight. We used the Python library Pandas to process the dataset and the library rdflib to create the knowledge graph. Then from each row of the dataset, we extracted the instance of the bike by attributing URIs and modeling the data according to the ontology for each part of the bike. The result is a Turtle file (bike_abox.ttl), which we joined with the T-Box on Protege to produce the <b>final graph bikeo_w_data.owl</b>.</p>
 
                     </div>
                 </div>
@@ -157,17 +158,64 @@ Due to the absence of an existing ontology on this matter and thinking about the
                 <div class="row gx-4 gx-lg-5">
                     <div class="col-lg-8 text-align-left black-text">
                         <div class="mt-5">
-                            <p class="mb-4">Quel ramo del lago di Como, che volge a mezzogiorno, tra due catene non interrotte di monti, tutto a seni e a golfi, a seconda dello sporgere e del rientrare di quelli, vien, quasi a un tratto, a ristringersi, e a prender corso e figura di fiume, tra un promontorio a destra, e un’ampia costiera dall’altra parte; e il ponte, che ivi congiunge le due rive, par che renda ancor più sensibile all’occhio questa trasformazione, e segni il punto in cui il lago cessa, e l’Adda rincomincia, per ripigliar poi nome di lago dove le rive, allontanandosi di nuovo, lascian l’acqua distendersi e rallentarsi in nuovi golfi e in nuovi seni. La costiera,formata dal deposito di tre grossi torrenti, scende appoggiata a due monti contigui, l’uno detto di san Martino, l’altro, con voce lombarda, il Resegone, dai molti suoi cocuzzoli in fila, che in vero lo fanno somigliare a una sega: talché non è chi, al primo vederlo, purché sia di fronte, come per esempio di su le mura di Milano che guardano a settentrione, non lo discerna tosto, a un tal contrassegno, in quella lunga e vasta giogaia, dagli altri monti di nome più oscuro e di forma più comune. Per un buon pezzo, la costa sale con un pendii lento e continuo; poi si rompe in poggi e in valloncelli, in erte e in ispianate,secondo l’ossatura de’ due monti, e il lavoro dell’acque. Il lembo estremo, tagliato dalle foci de’ torrenti, è quasi tutto ghiaia e ciottoloni; il resto, campi e vigne, sparse di terre, di ville, di casali; in qualche parte boschi, che si prolungano su per la montagna. </p>
+                            <p class="mb-4"><h3>Publication</h3> After the ontology population, each element within Protegé was commented to obtain a finished and fully described documentation through <b>WIDOCO</b>, enabling both text and visual representation of the ontology in a W3C fashion. The ontology was then ready and downloadable as an <b>owl file</b>.
+</p>
+                            <p class="mb-4"><h3>SPARQL queries</h3> The best source to query the database about the preliminary Competency Questions, translated into SPARQL language, proved to be the <b><a href="https://jena.apache.org/index.html">Apache Jena Fuseki</a></b> tool: an already developed endpoint and SPARQL server.<br> It provides REST-style SPARQL HTTP Update, SPARQL Query, and SPARQL Update using the SPARQL protocol over HTTP. <br>This environment loads the owl file or, otherwise, the ontology file through the reference link and enables one to work on the triples, making queries and verifying the correctness of the answer.<br> In the case of BikeOntology <b>13357 triples</b> were available.
+
+</p>
+                            <p class="mb-4"><h3>Results and testing</h3> We worked on the <b>9 Competency Questions</b> re-drafted during the work and the result can be seen here below.</p>
                         </div>
                     </div>
                     </div>
                 </div>
+        </section><section class="page-section" id="futuredevelopments">
+            <div class="container px-4 px-lg-5">
+                <h2 class="text-center mt-0">Possible future developments</h2>
+                <hr class="divider" />
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-lg-8 text-align-left black-text">
+                        <div class="mt-5">
+                            <p class="mb-4">We found really interesting the idea to include in our ontology about bikes some information on <b>how to fix some common bike problems</b> that could occur.<br> Obviously, it wasn’t possible to cover so many issues and we decided to include the terminology within the T-Box but not populate the cases with pragmatic examples in the A-Box.<br> So, this implementation is only partial so that we give an idea of how the ontology could be in the future with further implementations, modeling the ontology not only as tool of knowledge representation but also as valid source for solving doubts and questions in case of problems with a bicycle. <br>
+                            On a <b>Jupyter notebook</b> we collected 7 types of problems that could affect a bike, which are <b>Broken Part</b>, <b>Flat Tire</b>, <b>Puncture</b>, <b>Snapped Chain</b>, <b>Worn Brakes</b>, <b>Seat Height</b> and <b>Missing Spokes</b> and connected them to their possible solutions into a Json file.<br> The creation of the class of <b>Tools</b> was the natural next step to complete this extension of <b>BikeO</b>. Then we added all of them on Protegé, integrating the structure with the properties <b>isProblemOf/hasProblem</b>, <b>isSolutionOf/hasSolution</b>,
+                            <b>isRequestedFor/requests</b>. </p>
+                  </div>
+                    </div>
+                    </div>
+                </div>
         </section>
+
+
+
         <!-- Portfolio-->
         <div id="portfolio">
             <div class="container-fluid p-0">
                 <div class="row g-0">
                     <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="" title="Project Name">
+                            <img class="img-fluid" src="" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Category</div>
+                                <div class="project-name">Project Name</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="" title="Project Name">
+                            <img class="img-fluid" src="" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Category</div>
+                                <div class="project-name">Project Name</div>
+                            </div>
+                        </a>
+                    </div><div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="" title="Project Name">
+                            <img class="img-fluid" src="" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Category</div>
+                                <div class="project-name">Project Name</div>
+                            </div>
+                        </a>
+                    </div><div class="col-lg-4 col-sm-6">
                         <a class="portfolio-box" href="" title="Project Name">
                             <img class="img-fluid" src="" alt="..." />
                             <div class="portfolio-box-caption">

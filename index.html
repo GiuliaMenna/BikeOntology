@@ -118,11 +118,11 @@ Due to the absence of an existing ontology on this matter and thinking about the
                         <p class="mb-4">
                         The development started with the creation of a <b>Conceptual Map</b>, focusing on the generic structure of the bike, trying to abstract all the most frequent types of bikes and all the pieces mutually present in every bicycle. From a non-specific sketch of the idea,  we rendered and then populated the map with finer details, it has been regularly modified, extended, and readapted during a step-by-step process.
                         <h3>E/R Model</h3>
-                        <img height="600px" src="../BikeOntology/images/E_Rmodel.png">
+                        <img height="600px" src="../BikeOntology/images/E_Rmodel.png" id="hover">
                         <h3>First sketch of the Theoretical model</h3>
-                        <img height="600px" src="../BikeOntology/images/TheoreticalModel.png">
+                        <img height="600px" src="../BikeOntology/images/TheoreticalModel.png" id="hover">
                         <h3>Final Theoretical model</h3>
-                        <img height="600px" src="../BikeOntology/images/lastschema.png">
+                        <img height="600px" src="../BikeOntology/images/lastschema.png" id="hover">
                         </p><p class="mb-4"><h3>Editing with Protegé</h3>
                         Once the map was completed, it was possible to edit with <b>WebProtegé</b> co-working on the population of <b>classes, data and object properties</b>, obtaining in this way the <b>T-Box</b>, the terminology component serving the future <b>knowledge base</b>.<br> Our work, therefore, initially followed a <b>Bottom-Up approach</b>: from a definition of all the terminology to the meeting with an already existing database. The selected sample of bikes provides us with a big list of items, necessary for the <b>A-Box</b> implementation, which means the assertions using the vocabulary defined by the <b>T-Box</b> and populating the ontology.<br> The sample proved to be fully described in many characteristics, such as brand, weight, type of bike, year of production, measures of the tires, measures of the shifters, and so on.  The database comes from a bike shop online and is available at the following <a href="https://99spokes.com/en-EU">link</a>.<br> Coming across these data we realized our T-box could be improved and enriched with some details missed before, in order to be compliant with the sample, such as the three data properties classes of
                         <b>hasChainRing</b>, <b>hasGearing</b> , <b>hasSize</b>, the classes <b>Motor</b> and <b>Battery</b> and we moved the individual describing the concept “type of bike” into the class <b>TypeOfBike</b>, in order to be able to directly extract this information from the database.

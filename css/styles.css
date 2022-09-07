@@ -11417,11 +11417,11 @@ header.containermultimedia{
 header.masthead {
   padding-top: 1rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background-position: center;
+  background-image: url('/Users/giuliamenna/Documents/BikeOntology/images/coverpage.jpeg');
+  background-position: contain;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-  opacity: 0;
   transform: translateY(50px);
   transition: all 1s ease-out;
 
@@ -11513,15 +11513,7 @@ p {
 .text-black-75{
   column-count: 1;
 }
-body{
-  background-color: white ;
-}
-.row.principal{
-  background-image: url("../Documents/BikeOntology/images/David Doran trasforma idee in bellissime illustrazioni _ Collater_al.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: left;
-}
+
 .title{
   font-family: "DESIGNERRegular";
   font-weight: 1200;
@@ -11543,8 +11535,7 @@ p{
 .card-text{
   column-count:1;
 }
-.masthead{
-  background-image: url('../Documents/BikeOntology/images/coverpage.jpeg');
-  background-size: cover;
-  background-repeat: no-repeat;
+
+#hover:hover{
+  transition: all 1s ease-in-out;
 }

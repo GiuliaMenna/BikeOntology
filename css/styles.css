@@ -11426,6 +11426,10 @@ header.masthead {
   transform: translateY(0);
 }
 
+#cycling{
+  weight: 100%;
+}
+
 header.masthead h1, header.masthead .h1 {
   font-size: 2.25rem;
 }

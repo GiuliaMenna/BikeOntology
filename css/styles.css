@@ -12,11 +12,12 @@
  */
 
  @font-face {
-  font-family:'BIKECHAIN';
-  src: local('BIKECHAIN'), url('../font/BIKECHAIN.ttf') format('ttf');
-  src: local('BIKECHAIN'), url('../font/BIKECHAIN.woff') format('woff');
-  src: local('BIKECHAIN'), url('../font/BIKECHAIN.woff2') format('woff2');
+  font-family:'FKChain';
+  src: local('FKChain'), url('../font/FKChain.ttf') format('ttf');
+  src: local('FKChain'), url('../font/FKChain.woff') format('woff');
+  src: local('FKChain'), url('../font/FKChain.woff2') format('woff2');
 }
+
 
 :root {
   --bs-blue: #0d6efd;
@@ -11431,7 +11432,7 @@ header.masthead {
   transform: translateY(0);
 }
 #BikeOntology{
-  font-family:'BIKECHAIN';
+  font-family:"FKChain";
 }
 
 #cycling{

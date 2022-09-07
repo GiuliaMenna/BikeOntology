@@ -11527,7 +11527,7 @@ a.btn.btn-primary{
   background-color: #4381a1;
   margin-top: 50%;
 }
-p{
+p, ul.list{
   background-color: white;
   padding: 30px;
   border-radius: 10px 10px 10px 10px;
@@ -11551,4 +11551,10 @@ body, h1, h2, h3{
 }
 body{
   background-color: #4391a1;
+}
+#hover1{
+  margin-right: 40px;
+}
+section.section2, section.section4, #futuredevelopments{
+  background-color:white;
 }

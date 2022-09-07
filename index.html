@@ -31,6 +31,7 @@
                         <li class="nav-item"><a class="nav-link" href="#idea">Idea</a></li>
                         <li class="nav-item"><a class="nav-link" href="#development">Development</a></li>
                         <li class="nav-item"><a class="nav-link" href="#documentation">Documentation</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#specification">Specification</a></li>
                         <li class="nav-item"><a class="nav-link" href="#ontology">Ontology</a></li>
                         <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
                     </ul>
@@ -41,8 +42,7 @@
             <div class="container px-4 px-lg-5 h-100">
                 <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
                     <div class="col-lg-8 align-self-end">
-                        <h1 id="BikeOntology" class="text-black font-weight-bold">Bike Ontology</h1>
-                        <hr class="divider" />
+                      <h1 id="BikeOntology">Bike Ontology</h1>
                     </div>
                     <div class="col-lg-8 align-self-baseline">
                         <a class="btn btn-primary btn-xl" href="#idea">Start cycling</a>
@@ -51,28 +51,23 @@
             </div>
         </header>
 
-        <!-- Opening background-->
-
-        </header>
         <!-- Masthead-->
-        <header id="paragraph2" class="paragraph2">
+        <div id="paragraph2" class="paragraph2">
             <div class="container px-4 px-lg-5 h-100">
                 <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center">
                     <div class="col-lg-8 align-self-end">
-                        <h1 class="font-weight-bold text-align-right blue-text" id="idea">BikeOntology </h1>
-                        <h2>The Idea</h2>
+                        <h1 class="font-weight-bold text-center text-white" id="idea">BikeOntology </h1>
+                        <object data="../images/gears_cogwheel_settings_icon_187128.svg" width="300" height="300"> </object>
+                        <h2 class="text-center text-white">The Idea</h2>
                         <hr class="divider" />
                     </div>
                     <div class="col-lg-8 align-self-baseline">
                         <p class="mb-5 blue-text"><b>BikeOntology</b>  is an ontology exploring the world of bicycles.<br> It was born by the work of three bike lovers living in the city of Bologna. The purpose was to create a useful tool describing the characteristics of bikes in general, deepening the mechanical structure mutual to every model.<br>  Then, the project evolved through the implementation of some problems that could affect a bike and how they can be fixed by changing or adjusting some pieces. Surfing the web there were some interesting ontologies on vehicles in general, but nothing bike specific.<br><a href="http://automotive-ontology.org/">Automotive ontology</a>, <a href="https://schema.org/docs/automotive.html">Schema</a>, and <a href="http://www.heppnetz.de/ontologies/vso/ns">The Vehicles Sales Ontology</a> were very useful sources for taking inspiration and reusing some existing data.
-Due to the absence of an existing ontology on this matter and thinking about the usefulness of a new environment built from scratch, the project began.
-</div>
+                        Due to the absence of an existing ontology on this matter and thinking about the usefulness of a new environment built from scratch, the project began.
+                        </div>
                     </div>
                 </div>
             </div>
-        </header>
-        <!--Video cycling-->
-        <video id="cycling" alt="Exerpt of the work music video about bicycle illustration for Palgou Monster by PANICMONK" loop autoplay playsinline="false" muted ><source src="LoopBike.mp4"></video>
 
 
         <!-- About-->
@@ -80,13 +75,12 @@ Due to the absence of an existing ontology on this matter and thinking about the
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center" id="development">
                     <div class="col-lg-8 text-align-left bike-text">
-                        <h2 class="mt-0">The Development</h2>
-                        <hr class="divider divider-light" />
-                        <p class="mb-4"><h3>First steps</h3> The first step consisted of the elaboration of some <b>Competency Questions</b> in natural language, trying to cover the most popular aspects to analyze when dealing with a bike in general.<br>
+                        <h2 class="text-center">The Development</h2>
+                        <p><h3>First steps</h3> The first step consisted of the elaboration of some <b>Competency Questions</b> in natural language, trying to cover the most popular aspects to analyze when dealing with a bike in general.<br>
                       CQs represent a <b>starting and an ending point</b>: they are the questions to ask for shaping the first draft of the ontology and the questions the ontology should be able to answer at the end through SPARQL.
                       Initial CQs:
                       </p>
-                      <ul>
+                      <ul class="list">
                         <li>What are the most common problems of a city bike?</li>
                       <li>How do I fix a flat tire?</li>
                       <li>Which are the main elements of a mountain bike?</li>
@@ -97,41 +91,45 @@ Due to the absence of an existing ontology on this matter and thinking about the
                       <li>What is the heaviest type of bikes?</li>
                       <li>How many types of wheels exist?</li>
                       <li>Which size of wheel does a citybike need?</li>
-</ul>
-                        <a class="btn btn-light btn-xl" href="#documentation">Go to the<br> documentation</a>
+                      </ul>
                     </div>
                 </div>
             </div>
         </section>
 
 
-        <!-- Sellino SVG-->
-        <div id="SVGsellino" class="SVGimages2">
-
-        </div>
         <section class="page-section section3"> <!-- class="page-section bg-primary"-->
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center" id="documentation">
-                    <div class="col-lg-8 text-align-left bike-text">
-                        <h2 class="mt-0 text-center">Documentation</h2>
+                    <div class="col-lg-8 text-center bike-text">
+                        <h2 class="mt-0 text-center text-white">Documentation</h2>
                         <hr class="divider divider-light" />
                         <p class="mb-4">
-                        The development started with the creation of a <b>Conceptual Map</b>, focusing on the generic structure of the bike, trying to abstract all the most frequent types of bikes and all the pieces mutually present in every bicycle. From a non-specific sketch of the idea,  we rendered and then populated the map with finer details, it has been regularly modified, extended, and readapted during a step-by-step process.
-                        <h3>E/R Model</h3>
-                        <img height="600px" src="../BikeOntology/images/E_Rmodel.png">
-                        <h3>First sketch of the Theoretical model</h3>
-                        <img height="600px" src="../BikeOntology/images/TheoreticalModel.png">
-                        <h3>Final Theoretical model</h3>
-                        <img height="600px" src="../BikeOntology/images/lastschema.png">
-                        </p><p class="mb-4"><h3>Editing with Protegé</h3>
+                        The development started with the creation of a <b>Conceptual Map</b>, focusing on the generic structure of the bike, trying to abstract all the most frequent types of bikes and all the pieces mutually present in every bicycle. From a non-specific sketch of the idea,  we rendered and then populated the map with finer details, it has been regularly modified, extended, and readapted during a step-by-step process.</p>
+                        <h3 class="text-white">E/R Model</h3>
+                        <img height="600px" src="../BikeOntology/images/E_Rmodel.png" id="hover1">
+                        <h3 class="text-white">First sketch of the Theoretical model</h3>
+                        <img height="600px" src="../BikeOntology/images/TheoreticalModel.png" id="hover">
+                        <h3 class="text-white">Final Theoretical model</h3>
+                        <img height="600px" src="../BikeOntology/images/lastschema.png" id="hover">
+                      </div>
+                  </div>
+              </div>
+          </section>
+          <section class="page-section section4"> <!-- class="page-section bg-primary"-->
+              <div class="container px-4 px-lg-5">
+                  <div class="row gx-4 gx-lg-5 justify-content-center" id="documentation">
+                      <div class="col-lg-8 text-center bike-text">
+                        <h3>Editing with Protegé</h3>
+                        <p class="mb-4">
                         Once the map was completed, it was possible to edit with <b>WebProtegé</b> co-working on the population of <b>classes, data and object properties</b>, obtaining in this way the <b>T-Box</b>, the terminology component serving the future <b>knowledge base</b>.<br> Our work, therefore, initially followed a <b>Bottom-Up approach</b>: from a definition of all the terminology to the meeting with an already existing database. The selected sample of bikes provides us with a big list of items, necessary for the <b>A-Box</b> implementation, which means the assertions using the vocabulary defined by the <b>T-Box</b> and populating the ontology.<br> The sample proved to be fully described in many characteristics, such as brand, weight, type of bike, year of production, measures of the tires, measures of the shifters, and so on.  The database comes from a bike shop online and is available at the following <a href="https://99spokes.com/en-EU">link</a>.<br> Coming across these data we realized our T-box could be improved and enriched with some details missed before, in order to be compliant with the sample, such as the three data properties classes of
                         <b>hasChainRing</b>, <b>hasGearing</b> , <b>hasSize</b>, the classes <b>Motor</b> and <b>Battery</b> and we moved the individual describing the concept “type of bike” into the class <b>TypeOfBike</b>, in order to be able to directly extract this information from the database.
                         <br>
                         In summary, Bike Ontology is the result of a <b>balanced mix of the Bottom-Up and the Top-Down approaches</b>: its general structure allows the ontology to dialogue with different databases, but its level of details unveils the practical nature of the ontology.
                         </p>
-                        <p class="mb-4"><h3>Redrafting the Competency Questions</h3>
+                        <h3>Redrafting the Competency Questions</h3><p class="mb-4">
                         As a result of this process, we returned to our first competency questions and adapted them to fit our ontology. For example, the sample only contains two different types of bikes and some questions didn’t make sense with the data available to us. On the other side, we included some questions relevant to the dataset that could arise for bike specialists out there.<br>
-                      </p><p class="mb-4"><ul>
+                      </p><ul class="list">
                         <li>What is the most common brand for bike cranks?</li>
                         <li>How many bikes are there for each type in the dataset?</li>
                         <li>What are the different size of tires?</li>
@@ -142,8 +140,8 @@ Due to the absence of an existing ontology on this matter and thinking about the
                         <li>How many pieces produced by Shimano are there in a Cannondale bike model Synapse Carbon 4 2022?</li>
                         <li>Which is the average weight of the bikes for each brand?</li>
                         </ul>
-                        </p>
-                        <p class="mb-4"><h3>Populating the A-Box</h3>
+                        <h3>Populating the A-Box</h3>
+                        <p class="mb-4">
                           Once we downloaded the free sample from the <b>99spokes website</b>, we used a python script available at this link ADD LINK to extract information and populate our ontology.<br> Each row of the dataset instantiates a bike and the columns describe the bike parts, as well as the brands producing these parts, or some other characteristics of the bike such as its weight. We used the Python library Pandas to process the dataset and the library rdflib to create the knowledge graph. Then from each row of the dataset, we extracted the instance of the bike by attributing URIs and modeling the data according to the ontology for each part of the bike. The result is a Turtle file (bike_abox.ttl), which we joined with the T-Box on Protege to produce the <b>final graph bikeo_w_data.owl</b>.</p>
 
                     </div>
@@ -151,25 +149,22 @@ Due to the absence of an existing ontology on this matter and thinking about the
             </div>
         </section>
 
-        <!--Boywithbike SVG-->
-          <div id="SVGboywithbike" class="SVGimages3">
-
-        </div>
 
         <!-- Services-->
         <section class="page-section" id="ontology">
             <div class="container px-4 px-lg-5">
-                <h2 class="text-center mt-0">The Ontology</h2>
+                <h2 class="text-center mt-0 text-white">The Ontology</h2>
                 <hr class="divider" />
-                <div class="row gx-4 gx-lg-5">
-                    <div class="col-lg-8 text-align-left black-text">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 text-align-justify black-text">
                         <div class="mt-5">
-                            <p class="mb-4"><h3>Publication</h3> After the ontology population, each element within Protegé was commented to obtain a finished and fully described documentation through <b>WIDOCO</b>, enabling both text and visual representation of the ontology in a W3C fashion. The ontology was then ready and downloadable as an <b>owl file</b>.
-</p>
-                            <p class="mb-4"><h3>SPARQL queries</h3> The best source to query the database about the preliminary Competency Questions, translated into SPARQL language, proved to be the <b><a href="https://jena.apache.org/index.html">Apache Jena Fuseki</a></b> tool: an already developed endpoint and SPARQL server.<br> It provides REST-style SPARQL HTTP Update, SPARQL Query, and SPARQL Update using the SPARQL protocol over HTTP. <br>This environment loads the owl file or, otherwise, the ontology file through the reference link and enables one to work on the triples, making queries and verifying the correctness of the answer.<br> In the case of BikeOntology <b>13357 triples</b> were available.
+                          <h3 class="text-white">Publication</h3>
+                            <p class="mb-4">After the ontology population, each element within Protegé was commented to obtain a finished and fully described documentation through <b>WIDOCO</b>, enabling both text and visual representation of the ontology in a W3C fashion. The ontology was then ready and downloadable as an <b>owl file</b>.
+                            </p><h3 class="text-white">SPARQL queries</h3>
+                            <p class="mb-4"> The best source to query the database about the preliminary Competency Questions, translated into SPARQL language, proved to be the <b><a href="https://jena.apache.org/index.html">Apache Jena Fuseki</a></b> tool: an already developed endpoint and SPARQL server.<br> It provides REST-style SPARQL HTTP Update, SPARQL Query, and SPARQL Update using the SPARQL protocol over HTTP. <br>This environment loads the owl file or, otherwise, the ontology file through the reference link and enables one to work on the triples, making queries and verifying the correctness of the answer.<br> In the case of BikeOntology <b>13357 triples</b> were available.
 
-</p>
-                            <p class="mb-4"><h3>Results and testing</h3> We worked on the <b>9 Competency Questions</b> re-drafted during the work and the result can be seen here below.</p>
+                            </p><h3 class="text-white">Results and testing</h3>
+                            <p class="mb-4"> We worked on the <b>9 Competency Questions</b> re-drafted during the work and the result can be seen here below.</p>
                         </div>
                     </div>
                     </div>
@@ -178,8 +173,8 @@ Due to the absence of an existing ontology on this matter and thinking about the
             <div class="container px-4 px-lg-5">
                 <h2 class="text-center mt-0">Possible future developments</h2>
                 <hr class="divider" />
-                <div class="row gx-4 gx-lg-5">
-                    <div class="col-lg-8 text-align-left black-text">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 text-align-justify black-text">
                         <div class="mt-5">
                             <p class="mb-4">We found really interesting the idea to include in our ontology about bikes some information on <b>how to fix some common bike problems</b> that could occur.<br> Obviously, it wasn’t possible to cover so many issues and we decided to include the terminology within the T-Box but not populate the cases with pragmatic examples in the A-Box.<br> So, this implementation is only partial so that we give an idea of how the ontology could be in the future with further implementations, modeling the ontology not only as tool of knowledge representation but also as valid source for solving doubts and questions in case of problems with a bicycle. <br>
                             On a <b>Jupyter notebook</b> we collected 7 types of problems that could affect a bike, which are <b>Broken Part</b>, <b>Flat Tire</b>, <b>Puncture</b>, <b>Snapped Chain</b>, <b>Worn Brakes</b>, <b>Seat Height</b> and <b>Missing Spokes</b> and connected them to their possible solutions into a Json file.<br> The creation of the class of <b>Tools</b> was the natural next step to complete this extension of <b>BikeO</b>. Then we added all of them on Protegé, integrating the structure with the properties <b>isProblemOf/hasProblem</b>, <b>isSolutionOf/hasSolution</b>,
@@ -280,7 +275,7 @@ Due to the absence of an existing ontology on this matter and thinking about the
         </div>
         <!-- Contact-->
         <section class="page-section" id="team">
-                        <h2 class="mt-0 text-center">The team</h2>
+                        <h2 class="mt-0 text-white text-center">The team</h2>
                         <hr class="divider" />
               <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
@@ -313,7 +308,47 @@ Due to the absence of an existing ontology on this matter and thinking about the
 
             </div>
         </section>
+        <a href="https://front.codes/" class="logo" target="_blank">
+  <img src="https://assets.codepen.io/1462889/fcb.png" alt="">
+</a>
 
+<div class="section over-hide">
+  <div class="container">
+    <div class="row full-height justify-content-center">
+      <div class="col-12 text-center align-self-center py-5">
+        <div class="section text-center py-5 py-md-0">
+                <input class="pricing" type="checkbox" id="pricing" name="pricing"/>
+                <label for="pricing"><span class="block-diff">kayaking<span class="float-right">camping</span></span></label>
+          <div class="card-3d-wrap mx-auto">
+            <div class="card-3d-wrapper">
+              <div class="card-front">
+                <div class="pricing-wrap">
+                  <h4 class="mb-5">Luisa Ammirati</h4>
+                  <img id="luisaammirati" alt="Profile picture Luisa Ammirati" src="images/designer.jpg">
+                  <p class="mb-4">Napoli, Italy</p>
+
+
+
+
+                    </div>
+                  </div>
+              <div class="card-back">
+                <div class="pricing-wrap">
+                  <p class="mb-4">I hold a Bachelor in Conservation of Cultural Heritage and Performing Arts Management at Ca’ Foscari University of Venice with curricula in Economics and Management of Arts and Cultural Activities. I am currently attending the DHDK master’s degree at Bologna University, and I am always hungry…. For knowledge obviously. I am passionate about design, web technologies, UX, and I have a keen interest in 3d modeling and XR tools for innovation in cultural industries.</p>
+                  <a href="#0" class="link">Github</a>
+
+
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
         <!-- Footer-->
         <footer class="bg-light py-5">
             <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2022 - Company Name</div></div>

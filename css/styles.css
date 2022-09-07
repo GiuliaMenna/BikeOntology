@@ -7372,7 +7372,6 @@ textarea.form-control-lg {
 
 .mb-4 {
   margin-bottom: 1.5rem !important;
-  background-color: #F7C46A;
 }
 
 .mb-5 {
@@ -11702,7 +11701,6 @@ a:hover {
   letter-spacing: 3px;
   font-size: 22px;
   line-height: 1.7;
-  color: #102770;
   transform: translate3d(0, 0, 35px) perspective(100px);
 }
 .pricing-wrap h4:before{
@@ -11751,7 +11749,7 @@ a:hover {
 .pricing-wrap p{
   position: relative;
   width: 100%;
-  margin-top: 3%;
+  margin-top: 1%;
   display: block;
   text-align: center;
   font-family: 'Poppins', sans-serif;
@@ -11866,7 +11864,10 @@ a:hover {
 	width: auto;
 	display: block;
 }
+.cardbackground{
+  background-color: #f7c499;
 
-#luisaammirati{
+}
+.profilpic{
   width: 80%;
 }

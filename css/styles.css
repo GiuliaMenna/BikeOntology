@@ -11424,10 +11424,12 @@ header.masthead {
 }
 
 #cycling{
-  weight: 100%;
+  weight: inherit;
   pointer-events: none;
 }
-
+video{
+  weight: inherit;
+}
 header.masthead h1, header.masthead .h1 {
   font-size: 2.25rem;
 }

@@ -58,7 +58,9 @@
                         <hr class="divider" />
                     </div>
                     <div class="col-lg-8 align-self-baseline">
-                        <p class="mb-5 blue-text"><b>BikeOntology</b> is a project building an ontology about bicycles, born by the work of three bike lovers living in the city of Bologna. <br>The idea was to create a useful tool describing the characteristics of different types of bikes, deepening which problems can affect a bike and how they can be solved changing or adjusting some pieces. Surfing on the web was possible to find some interesting ontologies on vehicles in general, but nothing specific about bicycles. From the absence of an existing ontology on this matter and thinking on the usefulness of creating a new one the project began. </p>
+                        <p class="mb-5 blue-text"><b>BikeOntology</b>  is an ontology exploring the world of bicycles.<br> It was born by the work of three bike lovers living in the city of Bologna. The purpose was to create a useful tool describing the characteristics of bikes in general, deepening the mechanical structure mutual to every model.<br>  Then, the project evolved through the implementation of some problems that could affect a bike and how they can be fixed by changing or adjusting some pieces. Surfing the web there were some interesting ontologies on vehicles in general, but nothing bike specific.<br><a href="http://automotive-ontology.org/">Automotive ontology</a>, <a href="https://schema.org/docs/automotive.html">Schema</a>, and <a href="http://www.heppnetz.de/ontologies/vso/ns">The Vehicles Sales Ontology</a> were very useful sources for taking inspiration and reusing some existing data.
+Due to the absence of an existing ontology on this matter and thinking about the usefulness of a new environment built from scratch, the project began.
+</div>
                     </div>
                 </div>
             </div>
@@ -74,7 +76,22 @@
                     <div class="col-lg-8 text-align-left bike-text">
                         <h2 class="mt-0">The Development</h2>
                         <hr class="divider divider-light" />
-                        <p class="mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! Choose one of our open source, free to download, and easy to use themes! No strings attached! Start Bootstrap has everything you need to get your new website up and running in no time! Choose one of our open source, free to download, and easy to use themes! No strings attached!Start Bootstrap has everything you need to get your new website up and running in no time! Choose one of our open source, free to download, and easy to use themes! No strings attached!Start Bootstrap has everything you need to get your new website up and running in no time! Choose one of our open source, free to download, and easy to use themes! No strings attached!</p>
+                        <p class="mb-4"><h3>First steps</h3> The first step consisted of the elaboration of some <b>Competency Questions</b> in natural language, trying to cover the most popular aspects to analyze when dealing with a bike in general.<br>
+                      CQs represent a <b>starting and an ending point</b>: they are the questions to ask for shaping the first draft of the ontology and the questions the ontology should be able to answer at the end through SPARQL.
+                      Initial CQs:
+                      </p>
+                      <ul>
+                        <li>What are the most common problems of a city bike?</li>
+                      <li>How do I fix a flat tire?</li>
+                      <li>Which are the main elements of a mountain bike?</li>
+                      <li>Which elements are common to all types of bikes?</li>
+                      <li>What are the different types of bikes?</li>
+                      <li>Which tools do I need to fix a chain that slips?</li>
+                      <li>Which types of bikes have an electric motor?</li>
+                      <li>What is the heaviest type of bikes?</li>
+                      <li>How many types of wheels exist?</li>
+                      <li>Which size of wheel does a citybike need?</li>
+</ul>
                         <a class="btn btn-light btn-xl" href="#documentation">Go to the<br> documentation</a>
                     </div>
                 </div>
@@ -92,8 +109,37 @@
                     <div class="col-lg-8 text-align-left bike-text">
                         <h2 class="mt-0 text-center">Documentation</h2>
                         <hr class="divider divider-light" />
-                        <p class="mb-4">Quel ramo del lago di Como, che volge a mezzogiorno, tra due catene non interrotte di monti, tutto a seni e a golfi, a seconda dello sporgere e del rientrare di quelli, vien, quasi a un tratto, a ristringersi, e a prender corso e figura di fiume, tra un promontorio a destra, e un’ampia costiera dall’altra parte; e il ponte, che ivi congiunge le due rive, par che renda ancor più sensibile all’occhio questa trasformazione, e segni il punto in cui il lago cessa, e l’Adda rincomincia, per ripigliar poi nome di lago dove le rive, allontanandosi di nuovo, lascian l’acqua distendersi e rallentarsi in nuovi golfi e in nuovi seni. La costiera,formata dal deposito di tre grossi torrenti, scende appoggiata a due monti contigui, l’uno detto di san Martino, l’altro, con voce lombarda, il Resegone, dai molti suoi cocuzzoli in fila, che in vero lo fanno somigliare a una sega: talché non è chi, al primo vederlo, purché sia di fronte, come per esempio di su le mura di Milano che guardano a settentrione, non lo discerna tosto, a un tal contrassegno, in quella lunga e vasta giogaia, dagli altri monti di nome più oscuro e di forma più comune. Per un buon pezzo, la costa sale con un pendii lento e continuo; poi si rompe in poggi e in valloncelli, in erte e in ispianate,secondo l’ossatura de’ due monti, e il lavoro dell’acque. Il lembo estremo, tagliato dalle foci de’ torrenti, è quasi tutto ghiaia e ciottoloni; il resto, campi e vigne, sparse di terre, di ville, di casali; in qualche parte boschi, che si prolungano su per la montagna.
+                        <p class="mb-4">
+                        The development started with the creation of a <b>Conceptual Map</b>, focusing on the generic structure of the bike, trying to abstract all the most frequent types of bikes and all the pieces mutually present in every bicycle. From a non-specific sketch of the idea,  we rendered and then populated the map with finer details, it has been regularly modified, extended, and readapted during a step-by-step process.
+                        <h3>E/R Model</h3>
+                        <img height="600px" src="../BikeOntology/images/E_Rmodel.png">
+                        <h3>First sketch of the Theoretical model</h3>
+                        <img height="600px" src="../BikeOntology/images/TheoreticalModel.png">
+                        <h3>Final Theoretical model</h3>
+                        <img height="600px" src="../BikeOntology/images/lastschema.png">
+                        </p><p class="mb-4"><h3>Editing with Protegé</h3>
+                        Once the map was completed, it was possible to edit with <b>WebProtegé</b> co-working on the population of <b>classes, data and object properties</b>, obtaining in this way the <b>T-Box</b>, the terminology component serving the future <b>knowledge base</b>.<br> Our work, therefore, initially followed a <b>Bottom-Up approach</b>: from a definition of all the terminology to the meeting with an already existing database. The selected sample of bikes provides us with a big list of items, necessary for the <b>A-Box</b> implementation, which means the assertions using the vocabulary defined by the <b>T-Box</b> and populating the ontology.<br> The sample proved to be fully described in many characteristics, such as brand, weight, type of bike, year of production, measures of the tires, measures of the shifters, and so on.  The database comes from a bike shop online and is available at the following <a href="https://99spokes.com/en-EU">link</a>.<br> Coming across these data we realized our T-box could be improved and enriched with some details missed before, in order to be compliant with the sample, such as the three data properties classes of
+                        <b>hasChainRing</b>, <b>hasGearing</b> , <b>hasSize</b>, the classes <b>Motor</b> and <b>Battery</b> and we moved the individual describing the concept “type of bike” into the class <b>TypeOfBike</b>, in order to be able to directly extract this information from the database.
+                        <br>
+                        In summary, Bike Ontology is the result of a <b>balanced mix of the Bottom-Up and the Top-Down approaches</b>: its general structure allows the ontology to dialogue with different databases, but its level of details unveils the practical nature of the ontology.
                         </p>
+                        <p class="mb-4"><h3>Redrafting the Competency Questions</h3>
+                        As a result of this process, we returned to our first competency questions and adapted them to fit our ontology. For example, the sample only contains two different types of bikes and some questions didn’t make sense with the data available to us. On the other side, we included some questions relevant to the dataset that could arise for bike specialists out there.<br>
+                      </p><p class="mb-4"><ul>
+                        <li>What is the most common brand for bike cranks?</li>
+                        <li>How many bikes are there for each type in the dataset?</li>
+                        <li>What are the different size of tires?</li>
+                        <li>Which is the heaviest bike?</li>
+                        <li>Which motor is the most used for electric bikes?</li>
+                        <li>How many bikes are there for each gearing?</li>
+                        <li>Which brand produced more bikes in 2021?</li>
+                        <li>How many pieces produced by Shimano are there in a Cannondale bike model Synapse Carbon 4 2022?</li>
+                        <li>Which is the average weight of the bikes for each brand?</li>
+                        </ul>
+                        </p>
+                        <p class="mb-4"><h3>Populating the A-Box</h3>
+                          Once we downloaded the free sample from the <b>99spokes website</b>, we used a python script available at this link to extract information and populate our ontology.<br> Each row of the dataset instantiates a bike and the columns describe the bike parts, as well as the brands producing these parts, or some other characteristics of the bike such as its weight. We used the Python library Pandas to process the dataset and the library rdflib to create the knowledge graph. Then from each row of the dataset, we extracted the instance of the bike by attributing URIs and modeling the data according to the ontology for each part of the bike. The result is a Turtle file (bike_abox.ttl), which we joined with the T-Box on Protege to produce the final graph bikeo_w_data.owl.
+
                     </div>
                 </div>
             </div>

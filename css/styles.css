@@ -11418,8 +11418,8 @@ header.containermultimedia{
 header.masthead {
   padding-top: 1rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background-image: url('/Users/giuliamenna/Documents/BikeOntology/images/coverpage.jpeg');
-  background-position: contain;
+  background-image: url('../images/coverpage.jpeg');
+  background-position: cover;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
@@ -11539,4 +11539,10 @@ p{
 
 #hover:hover{
   transition: all 1s ease-in-out;
+}
+.paragraph2{
+  margin-top: 100px;
+}
+nav#mainNav{
+  background-color: #F5EEAC;
 }

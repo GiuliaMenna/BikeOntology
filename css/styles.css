@@ -17,7 +17,12 @@
   src: local('FKChain'), url('../font/FKChain.woff') format('woff');
   src: local('FKChain'), url('../font/FKChain.woff2') format('woff2');
 }
-
+@font-face {
+ font-family:'Montserrat';
+ src: local('Montserrat'), url('../font/Montserrat-Regular.ttf') format('ttf');
+ src: local('Montserrat'), url('../font/Montserrat-Regular.woff') format('woff');
+ src: local('Montserrat'), url('../font/Montserrat-Regular.ttf') format('woff2');
+}
 
 :root {
   --bs-blue: #0d6efd;
@@ -11540,4 +11545,10 @@ p{
 }
 nav#mainNav, .btn-primary{
   background-color: #4381a1;
+}
+body, h1, h2, h3{
+  font-family: 'Montserrat';
+}
+body{
+  background-color: #4391a1;
 }

@@ -11800,8 +11800,17 @@ a:hover {
   width:900px;
   margin-top: 20px;
 }
-.map1{
+.map1, .map2, .map3{
   margin-left: 0;
   padding-left:0;
   text-align: left;
+  margin-bottom: 30px;
+
+}
+.map3{
+  margin-right: 35%;
+}
+.map1:hover, .map2:hover, .map3:hover{
+  transform: scale(1.2);
+  transition: all 1s ease-in-out;
 }

@@ -11810,7 +11810,7 @@ a:hover {
 .map3{
   margin-right: 35%;
 }
-.map1:hover, .map2:hover, .map3:hover{
-  transform: scale(1.2);
+.map1:hover, .map2:hover, .map3:hover, .workflow:hover{
+  transform: scale(1.1);
   transition: all 1s ease-in-out;
 }

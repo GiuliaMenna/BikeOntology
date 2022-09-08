@@ -11545,6 +11545,8 @@ nav.navbar#mainNav{
   font-family: 'Montserrat';
 }
 
+/*Card Team*/
+
 a {
 	cursor: pointer;
   transition: all 200ms linear;
@@ -11729,23 +11731,7 @@ a:hover {
   70% { border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%; }
   84% { border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; }
 }
-.pricing-wrap h2{
-  position: relative;
-  width: 100%;
-  display: block;
-  margin-top: 5%;
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  letter-spacing: 1px;
-  font-size: 36px;
-  line-height: 1.1;
-  color: #102770;
-  transform: translate3d(0, 0, 30px) perspective(100px);
-}
-.pricing-wrap h2 sup{
-  font-size: 20px;
-}
+
 .pricing-wrap p{
   position: relative;
   width: 100%;
@@ -11796,78 +11782,133 @@ a:hover {
   height: auto;
   display: block;
 }
-.img-1{
-  position: absolute;
-  display: block;
-  left: -160px;
-  top: -50px;
-  z-index: 5;
-  width: calc(80% + 160px);
-  transform: translate3d(0, 0, 45px) perspective(100px);
-  opacity: 1;
-  pointer-events: auto;
-  transition: transform 400ms 1200ms ease, opacity 400ms 1200ms ease;
-}
-.pricing:checked ~ .card-3d-wrap .card-3d-wrapper .img-1 {
-  opacity: 0;
-  transform: translate3d(-50px, 25px, 45px) perspective(100px);
-  pointer-events: none;
-  transition: transform 400ms ease, opacity 200ms 150ms ease;
-}
 
-.pricing:checked ~ .card-3d-wrap .card-3d-wrapper .img-3 {
-  opacity: 0;
-  transform: translate3d(-50px, 5px, 55px) perspective(100px) scale(0.4);
-  pointer-events: none;
-  transition: transform 400ms ease, opacity 200ms 150ms ease;
-}
-
-.pricing:checked ~ .card-3d-wrap .card-3d-wrapper .img-6 {
-  opacity: 0;
-  transform: translate3d(0, 0, 25px) perspective(100px) scale(0.4);
-  pointer-events: none;
-  transition: transform 400ms ease, opacity 200ms 150ms ease;
-}
-
-
-.pricing:checked ~ .card-3d-wrap .card-3d-wrapper .img-4 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translate3d(0, 0, 45px) perspective(100px) scale(1);
-  transition: transform 400ms 1200ms ease, opacity 300ms 1200ms ease;
-}
-
-.pricing:checked ~ .card-3d-wrap .card-3d-wrapper .img-5 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translate3d(0, 0, 35px) perspective(100px) scale(1) rotate(10deg);
-  transition: transform 400ms 1300ms ease, opacity 300ms 1300ms ease;
-}
-
-.pricing:checked ~ .card-3d-wrap .card-3d-wrapper .img-7 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translate3d(0, 0, 35px) perspective(100px) scale(1);
-  transition: transform 400ms 1300ms ease, opacity 300ms 1300ms ease;
-}
-
-.logo {
-	position: fixed;
-	top: 30px;
-	right: 30px;
-	display: block;
-	z-index: 100;
-	transition: all 250ms linear;
-}
-.logo img {
-	height: 26px;
-	width: auto;
-	display: block;
-}
 .cardbackground{
   background-color: #f7c499;
 
 }
 .profilpic{
   width: 80%;
+}
+
+
+/*Giulia*/
+.gears{
+  padding-right: 100%;
+}
+.timelinecontainer{
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+/* Timeline Container */
+.timeline {
+  background: var(--primary-color);
+  margin: 20px auto;
+  padding: 20px;
+
+
+}
+
+/* Card container */
+.card {
+  position: relative;
+  max-width:400px;
+  font-size: 20px;
+
+}
+h3.title{
+  font-family: 'Montserrat';
+}
+
+/* setting padding based on even or odd */
+.card:nth-child(odd) {
+  padding:30px 0 30px 30px;
+}
+.card:nth-child(even) {
+  padding: 30px 30px 30px 0;
+}
+/* Global ::before */
+.card::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  border: solid  #4381a1;
+}
+
+/* Setting the border of top, bottom, left */
+.card:nth-child(odd)::before {
+  left: 0px;
+  top: -4.5px;
+  bottom: -4.5px;
+  border-width: 5px 0 5px 5px;
+  border-radius: 50px 0 0 50px;
+}
+
+/* Setting the border of top, bottom, right */
+.card:nth-child(even)::before {
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-width: 5px 5px 5px 0;
+  border-radius: 0 50px 50px 0;
+}
+
+/* Removing the border if it is the first card */
+.card:first-child::before {
+  border-top: 0;
+  border-top-left-radius: 0;
+}
+
+/* Removing the border if it is the last card  and it's odd */
+.card:last-child:nth-child(odd)::before {
+  border-bottom: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* Removing the border if it is the last card  and it's even */
+.card:last-child:nth-child(even)::before {
+  border-bottom: 0;
+  border-bottom-right-radius: 0;
+}
+
+/* Information about the timeline */
+.info {
+  display: flex;
+  flex-direction: column;
+  background: #E7E5E4;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Title of the card */
+.title {
+  color: #4381a1;
+  position: relative;
+}
+
+/* Timeline dot  */
+.title::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 999px;
+  border: 3px solid  #4381a1;
+}
+
+/* text right if the card is even  */
+.card:nth-child(even) > .info > .title {
+  text-align: right;
+}
+
+/* setting dot to the left if the card is odd */
+.card:nth-child(odd) > .info > .title::before {
+  left: -45px;
+}
+
+/* setting dot to the right if the card is odd */
+.card:nth-child(even) > .info > .title::before {
+  right: -45px;
 }

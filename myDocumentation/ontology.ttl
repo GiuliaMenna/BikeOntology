@@ -12,61 +12,6 @@
 #    Annotation properties
 #################################################################
 
-###  http://purl.org/ontology/bikeo#hasBrand
-:hasBrand rdf:type owl:AnnotationProperty ;
-          rdfs:range :Brand .
-
-
-###  http://purl.org/ontology/bikeo#hasChainRing
-:hasChainRing rdf:type owl:AnnotationProperty ;
-              rdfs:range xsd:string .
-
-
-###  http://purl.org/ontology/bikeo#hasGearing
-:hasGearing rdf:type owl:AnnotationProperty ;
-            rdfs:range xsd:string .
-
-
-###  http://purl.org/ontology/bikeo#hasPart
-:hasPart rdf:type owl:AnnotationProperty ;
-         rdfs:range :CommonPart .
-
-
-###  http://purl.org/ontology/bikeo#hasSize
-:hasSize rdf:type owl:AnnotationProperty ;
-         rdfs:range xsd:string .
-
-
-###  http://purl.org/ontology/bikeo#hasType
-:hasType rdf:type owl:AnnotationProperty ;
-         rdfs:range :TypeOfBike .
-
-
-###  http://purl.org/ontology/bikeo#isBrandOf
-:isBrandOf rdf:type owl:AnnotationProperty ;
-           rdfs:range :Bike .
-
-
-###  http://purl.org/ontology/bikeo#isPartOf
-:isPartOf rdf:type owl:AnnotationProperty ;
-          rdfs:range :Bike .
-
-
-###  http://purl.org/ontology/bikeo#isTypeOf
-:isTypeOf rdf:type owl:AnnotationProperty ;
-          rdfs:range :Bike .
-
-
-###  http://purl.org/ontology/bikeo#producedBy
-:producedBy rdf:type owl:AnnotationProperty ;
-            rdfs:range :Brand .
-
-
-###  http://purl.org/ontology/bikeo#produces
-:produces rdf:type owl:AnnotationProperty ;
-          rdfs:range :CommonPart .
-
-
 ###  http://purl.org/vso/ns#modelDate
 <http://purl.org/vso/ns#modelDate> rdf:type owl:AnnotationProperty .
 
@@ -98,14 +43,20 @@ owl:sameAs rdf:type owl:AnnotationProperty ;
 :hasBrand rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf owl:topObjectProperty ;
           owl:inverseOf :isBrandOf ;
-          rdfs:domain :Bike .
+          rdfs:domain :Bike ;
+          rdfs:range :Brand ;
+          rdfs:comment "is a property defining which bike in particular has a given brand."@en ;
+          rdfs:label "hasBrand"@en .
 
 
 ###  http://purl.org/ontology/bikeo#hasPart
 :hasPart rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf owl:topObjectProperty ;
          owl:inverseOf :isPartOf ;
-         rdfs:domain :Bike .
+         rdfs:domain :Bike ;
+         rdfs:range :CommonPart ;
+         rdfs:comment "is a property specifying how a bike is composed in its specific pieces."@en ;
+         rdfs:label "hasPart"@en .
 
 
 ###  http://purl.org/ontology/bikeo#hasProblem
@@ -132,13 +83,19 @@ owl:sameAs rdf:type owl:AnnotationProperty ;
 :hasType rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf owl:topObjectProperty ;
          owl:inverseOf :isTypeOf ;
-         rdfs:domain :Bike .
+         rdfs:domain :Bike ;
+         rdfs:range :TypeOfBike ;
+         rdfs:comment "is a property that defines the specific type of bike of a bike model."@en ;
+         rdfs:label "hasType"@en .
 
 
 ###  http://purl.org/ontology/bikeo#isBrandOf
 :isBrandOf rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf owl:topObjectProperty ;
-           rdfs:domain :Brand .
+           rdfs:domain :Brand ;
+           rdfs:range :Bike ;
+           rdfs:comment "is a property used for specifying which specific brand owns and produces a given bike model."@en ;
+           rdfs:label "isBrandOf"@en .
 
 
 ###  http://purl.org/ontology/bikeo#isComprisedIn
@@ -153,7 +110,10 @@ owl:sameAs rdf:type owl:AnnotationProperty ;
 ###  http://purl.org/ontology/bikeo#isPartOf
 :isPartOf rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf owl:topObjectProperty ;
-          rdfs:domain :CommonPart .
+          rdfs:domain :CommonPart ;
+          rdfs:range :Bike ;
+          rdfs:comment "is a property used for specifying which common parts are included in a bike."@en ;
+          rdfs:label "isPartOf"@en .
 
 
 ###  http://purl.org/ontology/bikeo#isProblemOf
@@ -187,20 +147,29 @@ owl:sameAs rdf:type owl:AnnotationProperty ;
 ###  http://purl.org/ontology/bikeo#isTypeOf
 :isTypeOf rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf owl:topObjectProperty ;
-          rdfs:domain :TypeOfBike .
+          rdfs:domain :TypeOfBike ;
+          rdfs:range :Bike ;
+          rdfs:comment "this property defines that a specific bike model is a type of bike."@en ;
+          rdfs:label "isTypeOf"@en .
 
 
 ###  http://purl.org/ontology/bikeo#producedBy
 :producedBy rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf owl:topObjectProperty ;
             owl:inverseOf :produces ;
-            rdfs:domain :CommonPart .
+            rdfs:domain :CommonPart ;
+            rdfs:range :Brand ;
+            rdfs:comment "defines the specific part of a bike that is produced by a given brand."@en ;
+            rdfs:label "producedBy"@en .
 
 
 ###  http://purl.org/ontology/bikeo#produces
 :produces rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf owl:topObjectProperty ;
-          rdfs:domain :Brand .
+          rdfs:domain :Brand ;
+          rdfs:range :CommonPart ;
+          rdfs:comment "is a property defining which brand produces a specific part of a bike."@en ;
+          rdfs:label "produces"@en .
 
 
 ###  http://purl.org/ontology/bikeo#requests
@@ -219,19 +188,28 @@ owl:sameAs rdf:type owl:AnnotationProperty ;
 ###  http://purl.org/ontology/bikeo#hasChainRing
 :hasChainRing rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf owl:topDataProperty ;
-              rdfs:domain :Crank .
+              rdfs:domain :Crank ;
+              rdfs:range xsd:string ;
+              rdfs:comment "is a property describing the chain ring(s) attached to the crank arm. The chainring, or sprocket, is a profiled wheel with teeth that mesh with the chain."@en ;
+              rdfs:label "hasChainRing"@en .
 
 
 ###  http://purl.org/ontology/bikeo#hasGearing
 :hasGearing rdf:type owl:DatatypeProperty ;
             rdfs:subPropertyOf owl:topDataProperty ;
-            rdfs:domain :Bike .
+            rdfs:domain :Bike ;
+            rdfs:range xsd:string ;
+            rdfs:comment "the value describing the gearing of a bike."@en ;
+            rdfs:label "hasGearing"@en .
 
 
 ###  http://purl.org/ontology/bikeo#hasSize
 :hasSize rdf:type owl:DatatypeProperty ;
          rdfs:subPropertyOf owl:topDataProperty ;
-         rdfs:domain :Tire .
+         rdfs:domain :Tire ;
+         rdfs:range xsd:string ;
+         rdfs:comment "the property for describing the width of tires."@en ;
+         rdfs:label "hasSize"@en .
 
 
 #################################################################
@@ -7604,8 +7582,8 @@ owl:sameAs rdf:type owl:AnnotationProperty ;
                                    :sram-force-d1-chain ,
                                    :sram-force-d1-dub-crank ,
                                    :sram-force-etap-axs-brakes ,
-                                   :sram-xplr-xg-1271-cogset ,
-                                   <http://purl.org/ontology/bikeo#sram-force-xplr-etap-axs-rearderailleur> ;
+                                   :sram-force-xplr-etap-axs-rearderailleur ,
+                                   :sram-xplr-xg-1271-cogset ;
                           :hasType :road ;
                           :hasGearing "1 × 12" ;
                           <http://purl.org/vso/ns#modelDate> 2022 ;
@@ -19425,54 +19403,6 @@ owl:sameAs rdf:type owl:AnnotationProperty ;
 
 
 #################################################################
-#    Annotations
-#################################################################
-
-:hasBrand rdfs:comment "is a property defining which bike in particular has a given brand."@en ;
-          rdfs:label "hasBrand"@en .
-
-
-:hasChainRing rdfs:comment "is a property describing the chain ring(s) attached to the crank arm. The chainring, or sprocket, is a profiled wheel with teeth that mesh with the chain."@en ;
-              rdfs:label "hasChainRing"@en .
-
-
-:hasGearing rdfs:comment "the value describing the gearing of a bike."@en ;
-            rdfs:label "hasGearing"@en .
-
-
-:hasPart rdfs:comment "is a property specifying how a bike is composed in its specific pieces."@en ;
-         rdfs:label "hasPart"@en .
-
-
-:hasSize rdfs:comment "the property for describing the width of tires."@en ;
-         rdfs:label "hasSize"@en .
-
-
-:hasType rdfs:comment "is a property that defines the specific type of bike of a bike model."@en ;
-         rdfs:label "hasType"@en .
-
-
-:isBrandOf rdfs:comment "is a property used for specifying which specific brand owns and produces a given bike model."@en ;
-           rdfs:label "isBrandOf"@en .
-
-
-:isPartOf rdfs:comment "is a property used for specifying which common parts are included in a bike."@en ;
-          rdfs:label "isPartOf"@en .
-
-
-:isTypeOf rdfs:comment "this property defines that a specific bike model is a type of bike."@en ;
-          rdfs:label "isTypeOf"@en .
-
-
-:producedBy rdfs:comment "defines the specific part of a bike that is produced by a given brand."@en ;
-            rdfs:label "producedBy"@en .
-
-
-:produces rdfs:comment "is a property defining which brand produces a specific part of a bike."@en ;
-          rdfs:label "produces"@en .
-
-
-#################################################################
 #    General axioms
 #################################################################
 
@@ -19530,6 +19460,18 @@ owl:sameAs rdf:type owl:AnnotationProperty ;
 
 
 [ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Bike
+                :Brand
+                :CommonPart
+                :Problem
+                :Solution
+                :Tool
+                :TypeOfBike
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
   owl:members ( :BrokenPart
                 :FlatTire
                 :MissingSpokes
@@ -19547,6 +19489,27 @@ owl:sameAs rdf:type owl:AnnotationProperty ;
                 :FrontSet
                 :SeatArea
                 :Wheel
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointProperties ;
+  owl:members ( :comprises
+                :hasBrand
+                :hasPart
+                :hasProblem
+                :hasSolution
+                :hasType
+                :isBrandOf
+                :isComprisedIn
+                :isPartOf
+                :isProblemOf
+                :isRequestedFor
+                :isSolutionOf
+                :isTypeOf
+                :producedBy
+                :produces
+                :requests
               )
 ] .
 

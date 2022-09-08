@@ -8,50 +8,6 @@
 # #################################################################
 # 
 # 
-# http://purl.org/ontology/bikeo#hasBrand
-<http://purl.org/ontology/bikeo#hasBrand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<http://purl.org/ontology/bikeo#hasBrand> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/ontology/bikeo#Brand> .
-# 
-# http://purl.org/ontology/bikeo#hasChainRing
-<http://purl.org/ontology/bikeo#hasChainRing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<http://purl.org/ontology/bikeo#hasChainRing> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-# 
-# http://purl.org/ontology/bikeo#hasGearing
-<http://purl.org/ontology/bikeo#hasGearing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<http://purl.org/ontology/bikeo#hasGearing> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-# 
-# http://purl.org/ontology/bikeo#hasPart
-<http://purl.org/ontology/bikeo#hasPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<http://purl.org/ontology/bikeo#hasPart> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/ontology/bikeo#CommonPart> .
-# 
-# http://purl.org/ontology/bikeo#hasSize
-<http://purl.org/ontology/bikeo#hasSize> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<http://purl.org/ontology/bikeo#hasSize> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-# 
-# http://purl.org/ontology/bikeo#hasType
-<http://purl.org/ontology/bikeo#hasType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<http://purl.org/ontology/bikeo#hasType> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/ontology/bikeo#TypeOfBike> .
-# 
-# http://purl.org/ontology/bikeo#isBrandOf
-<http://purl.org/ontology/bikeo#isBrandOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<http://purl.org/ontology/bikeo#isBrandOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/ontology/bikeo#Bike> .
-# 
-# http://purl.org/ontology/bikeo#isPartOf
-<http://purl.org/ontology/bikeo#isPartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<http://purl.org/ontology/bikeo#isPartOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/ontology/bikeo#Bike> .
-# 
-# http://purl.org/ontology/bikeo#isTypeOf
-<http://purl.org/ontology/bikeo#isTypeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<http://purl.org/ontology/bikeo#isTypeOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/ontology/bikeo#Bike> .
-# 
-# http://purl.org/ontology/bikeo#producedBy
-<http://purl.org/ontology/bikeo#producedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<http://purl.org/ontology/bikeo#producedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/ontology/bikeo#Brand> .
-# 
-# http://purl.org/ontology/bikeo#produces
-<http://purl.org/ontology/bikeo#produces> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<http://purl.org/ontology/bikeo#produces> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/ontology/bikeo#CommonPart> .
-# 
 # http://purl.org/vso/ns#modelDate
 <http://purl.org/vso/ns#modelDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
@@ -85,12 +41,18 @@
 <http://purl.org/ontology/bikeo#hasBrand> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 <http://purl.org/ontology/bikeo#hasBrand> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/ontology/bikeo#isBrandOf> .
 <http://purl.org/ontology/bikeo#hasBrand> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/bikeo#Bike> .
+<http://purl.org/ontology/bikeo#hasBrand> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/ontology/bikeo#Brand> .
+<http://purl.org/ontology/bikeo#hasBrand> <http://www.w3.org/2000/01/rdf-schema#comment> "is a property defining which bike in particular has a given brand."@en .
+<http://purl.org/ontology/bikeo#hasBrand> <http://www.w3.org/2000/01/rdf-schema#label> "hasBrand"@en .
 # 
 # http://purl.org/ontology/bikeo#hasPart
 <http://purl.org/ontology/bikeo#hasPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://purl.org/ontology/bikeo#hasPart> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 <http://purl.org/ontology/bikeo#hasPart> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/ontology/bikeo#isPartOf> .
 <http://purl.org/ontology/bikeo#hasPart> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/bikeo#Bike> .
+<http://purl.org/ontology/bikeo#hasPart> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/ontology/bikeo#CommonPart> .
+<http://purl.org/ontology/bikeo#hasPart> <http://www.w3.org/2000/01/rdf-schema#comment> "is a property specifying how a bike is composed in its specific pieces."@en .
+<http://purl.org/ontology/bikeo#hasPart> <http://www.w3.org/2000/01/rdf-schema#label> "hasPart"@en .
 # 
 # http://purl.org/ontology/bikeo#hasProblem
 <http://purl.org/ontology/bikeo#hasProblem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -115,11 +77,17 @@
 <http://purl.org/ontology/bikeo#hasType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 <http://purl.org/ontology/bikeo#hasType> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/ontology/bikeo#isTypeOf> .
 <http://purl.org/ontology/bikeo#hasType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/bikeo#Bike> .
+<http://purl.org/ontology/bikeo#hasType> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/ontology/bikeo#TypeOfBike> .
+<http://purl.org/ontology/bikeo#hasType> <http://www.w3.org/2000/01/rdf-schema#comment> "is a property that defines the specific type of bike of a bike model."@en .
+<http://purl.org/ontology/bikeo#hasType> <http://www.w3.org/2000/01/rdf-schema#label> "hasType"@en .
 # 
 # http://purl.org/ontology/bikeo#isBrandOf
 <http://purl.org/ontology/bikeo#isBrandOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://purl.org/ontology/bikeo#isBrandOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 <http://purl.org/ontology/bikeo#isBrandOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/bikeo#Brand> .
+<http://purl.org/ontology/bikeo#isBrandOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/ontology/bikeo#Bike> .
+<http://purl.org/ontology/bikeo#isBrandOf> <http://www.w3.org/2000/01/rdf-schema#comment> "is a property used for specifying which specific brand owns and produces a given bike model."@en .
+<http://purl.org/ontology/bikeo#isBrandOf> <http://www.w3.org/2000/01/rdf-schema#label> "isBrandOf"@en .
 # 
 # http://purl.org/ontology/bikeo#isComprisedIn
 <http://purl.org/ontology/bikeo#isComprisedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -133,6 +101,9 @@
 <http://purl.org/ontology/bikeo#isPartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://purl.org/ontology/bikeo#isPartOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 <http://purl.org/ontology/bikeo#isPartOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/bikeo#CommonPart> .
+<http://purl.org/ontology/bikeo#isPartOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/ontology/bikeo#Bike> .
+<http://purl.org/ontology/bikeo#isPartOf> <http://www.w3.org/2000/01/rdf-schema#comment> "is a property used for specifying which common parts are included in a bike."@en .
+<http://purl.org/ontology/bikeo#isPartOf> <http://www.w3.org/2000/01/rdf-schema#label> "isPartOf"@en .
 # 
 # http://purl.org/ontology/bikeo#isProblemOf
 <http://purl.org/ontology/bikeo#isProblemOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -163,17 +134,26 @@
 <http://purl.org/ontology/bikeo#isTypeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://purl.org/ontology/bikeo#isTypeOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 <http://purl.org/ontology/bikeo#isTypeOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/bikeo#TypeOfBike> .
+<http://purl.org/ontology/bikeo#isTypeOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/ontology/bikeo#Bike> .
+<http://purl.org/ontology/bikeo#isTypeOf> <http://www.w3.org/2000/01/rdf-schema#comment> "this property defines that a specific bike model is a type of bike."@en .
+<http://purl.org/ontology/bikeo#isTypeOf> <http://www.w3.org/2000/01/rdf-schema#label> "isTypeOf"@en .
 # 
 # http://purl.org/ontology/bikeo#producedBy
 <http://purl.org/ontology/bikeo#producedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://purl.org/ontology/bikeo#producedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 <http://purl.org/ontology/bikeo#producedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/ontology/bikeo#produces> .
 <http://purl.org/ontology/bikeo#producedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/bikeo#CommonPart> .
+<http://purl.org/ontology/bikeo#producedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/ontology/bikeo#Brand> .
+<http://purl.org/ontology/bikeo#producedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "defines the specific part of a bike that is produced by a given brand."@en .
+<http://purl.org/ontology/bikeo#producedBy> <http://www.w3.org/2000/01/rdf-schema#label> "producedBy"@en .
 # 
 # http://purl.org/ontology/bikeo#produces
 <http://purl.org/ontology/bikeo#produces> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://purl.org/ontology/bikeo#produces> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 <http://purl.org/ontology/bikeo#produces> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/bikeo#Brand> .
+<http://purl.org/ontology/bikeo#produces> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/ontology/bikeo#CommonPart> .
+<http://purl.org/ontology/bikeo#produces> <http://www.w3.org/2000/01/rdf-schema#comment> "is a property defining which brand produces a specific part of a bike."@en .
+<http://purl.org/ontology/bikeo#produces> <http://www.w3.org/2000/01/rdf-schema#label> "produces"@en .
 # 
 # http://purl.org/ontology/bikeo#requests
 <http://purl.org/ontology/bikeo#requests> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -196,16 +176,25 @@
 <http://purl.org/ontology/bikeo#hasChainRing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://purl.org/ontology/bikeo#hasChainRing> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
 <http://purl.org/ontology/bikeo#hasChainRing> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/bikeo#Crank> .
+<http://purl.org/ontology/bikeo#hasChainRing> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/ontology/bikeo#hasChainRing> <http://www.w3.org/2000/01/rdf-schema#comment> "is a property describing the chain ring(s) attached to the crank arm. The chainring, or sprocket, is a profiled wheel with teeth that mesh with the chain."@en .
+<http://purl.org/ontology/bikeo#hasChainRing> <http://www.w3.org/2000/01/rdf-schema#label> "hasChainRing"@en .
 # 
 # http://purl.org/ontology/bikeo#hasGearing
 <http://purl.org/ontology/bikeo#hasGearing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://purl.org/ontology/bikeo#hasGearing> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
 <http://purl.org/ontology/bikeo#hasGearing> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/bikeo#Bike> .
+<http://purl.org/ontology/bikeo#hasGearing> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/ontology/bikeo#hasGearing> <http://www.w3.org/2000/01/rdf-schema#comment> "the value describing the gearing of a bike."@en .
+<http://purl.org/ontology/bikeo#hasGearing> <http://www.w3.org/2000/01/rdf-schema#label> "hasGearing"@en .
 # 
 # http://purl.org/ontology/bikeo#hasSize
 <http://purl.org/ontology/bikeo#hasSize> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://purl.org/ontology/bikeo#hasSize> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
 <http://purl.org/ontology/bikeo#hasSize> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/bikeo#Tire> .
+<http://purl.org/ontology/bikeo#hasSize> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/ontology/bikeo#hasSize> <http://www.w3.org/2000/01/rdf-schema#comment> "the property for describing the width of tires."@en .
+<http://purl.org/ontology/bikeo#hasSize> <http://www.w3.org/2000/01/rdf-schema#label> "hasSize"@en .
 # 
 # 
 # 
@@ -7174,8 +7163,8 @@ _:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://purl.org/ontology/bikeo#cube-nuroad-c62-slt-2022> <http://purl.org/ontology/bikeo#hasPart> <http://purl.org/ontology/bikeo#sram-force-d1-chain> .
 <http://purl.org/ontology/bikeo#cube-nuroad-c62-slt-2022> <http://purl.org/ontology/bikeo#hasPart> <http://purl.org/ontology/bikeo#sram-force-d1-dub-crank> .
 <http://purl.org/ontology/bikeo#cube-nuroad-c62-slt-2022> <http://purl.org/ontology/bikeo#hasPart> <http://purl.org/ontology/bikeo#sram-force-etap-axs-brakes> .
+<http://purl.org/ontology/bikeo#cube-nuroad-c62-slt-2022> <http://purl.org/ontology/bikeo#hasPart> <http://purl.org/ontology/bikeo#sram-force-xplr-etap-axs-rearderailleur> .
 <http://purl.org/ontology/bikeo#cube-nuroad-c62-slt-2022> <http://purl.org/ontology/bikeo#hasPart> <http://purl.org/ontology/bikeo#sram-xplr-xg-1271-cogset> .
-<http://purl.org/ontology/bikeo#cube-nuroad-c62-slt-2022> <http://purl.org/ontology/bikeo#hasPart> <http://purl.org/ontology/bikeo#sram-force-xplr-etap-axs%99-rearderailleur> .
 <http://purl.org/ontology/bikeo#cube-nuroad-c62-slt-2022> <http://purl.org/ontology/bikeo#hasType> <http://purl.org/ontology/bikeo#road> .
 <http://purl.org/ontology/bikeo#cube-nuroad-c62-slt-2022> <http://purl.org/ontology/bikeo#hasGearing> "1 × 12" .
 <http://purl.org/ontology/bikeo#cube-nuroad-c62-slt-2022> <http://purl.org/vso/ns#modelDate> "2022"^^<http://www.w3.org/2001/XMLSchema#integer> .
@@ -18120,48 +18109,6 @@ _:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # 
 # #################################################################
 # #
-# #    Annotations
-# #
-# #################################################################
-# 
-# 
-<http://purl.org/ontology/bikeo#hasBrand> <http://www.w3.org/2000/01/rdf-schema#comment> "is a property defining which bike in particular has a given brand."@en .
-<http://purl.org/ontology/bikeo#hasBrand> <http://www.w3.org/2000/01/rdf-schema#label> "hasBrand"@en .
-# 
-<http://purl.org/ontology/bikeo#hasChainRing> <http://www.w3.org/2000/01/rdf-schema#comment> "is a property describing the chain ring(s) attached to the crank arm. The chainring, or sprocket, is a profiled wheel with teeth that mesh with the chain."@en .
-<http://purl.org/ontology/bikeo#hasChainRing> <http://www.w3.org/2000/01/rdf-schema#label> "hasChainRing"@en .
-# 
-<http://purl.org/ontology/bikeo#hasGearing> <http://www.w3.org/2000/01/rdf-schema#comment> "the value describing the gearing of a bike."@en .
-<http://purl.org/ontology/bikeo#hasGearing> <http://www.w3.org/2000/01/rdf-schema#label> "hasGearing"@en .
-# 
-<http://purl.org/ontology/bikeo#hasPart> <http://www.w3.org/2000/01/rdf-schema#comment> "is a property specifying how a bike is composed in its specific pieces."@en .
-<http://purl.org/ontology/bikeo#hasPart> <http://www.w3.org/2000/01/rdf-schema#label> "hasPart"@en .
-# 
-<http://purl.org/ontology/bikeo#hasSize> <http://www.w3.org/2000/01/rdf-schema#comment> "the property for describing the width of tires."@en .
-<http://purl.org/ontology/bikeo#hasSize> <http://www.w3.org/2000/01/rdf-schema#label> "hasSize"@en .
-# 
-<http://purl.org/ontology/bikeo#hasType> <http://www.w3.org/2000/01/rdf-schema#comment> "is a property that defines the specific type of bike of a bike model."@en .
-<http://purl.org/ontology/bikeo#hasType> <http://www.w3.org/2000/01/rdf-schema#label> "hasType"@en .
-# 
-<http://purl.org/ontology/bikeo#isBrandOf> <http://www.w3.org/2000/01/rdf-schema#comment> "is a property used for specifying which specific brand owns and produces a given bike model."@en .
-<http://purl.org/ontology/bikeo#isBrandOf> <http://www.w3.org/2000/01/rdf-schema#label> "isBrandOf"@en .
-# 
-<http://purl.org/ontology/bikeo#isPartOf> <http://www.w3.org/2000/01/rdf-schema#comment> "is a property used for specifying which common parts are included in a bike."@en .
-<http://purl.org/ontology/bikeo#isPartOf> <http://www.w3.org/2000/01/rdf-schema#label> "isPartOf"@en .
-# 
-<http://purl.org/ontology/bikeo#isTypeOf> <http://www.w3.org/2000/01/rdf-schema#comment> "this property defines that a specific bike model is a type of bike."@en .
-<http://purl.org/ontology/bikeo#isTypeOf> <http://www.w3.org/2000/01/rdf-schema#label> "isTypeOf"@en .
-# 
-<http://purl.org/ontology/bikeo#producedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "defines the specific part of a bike that is produced by a given brand."@en .
-<http://purl.org/ontology/bikeo#producedBy> <http://www.w3.org/2000/01/rdf-schema#label> "producedBy"@en .
-# 
-<http://purl.org/ontology/bikeo#produces> <http://www.w3.org/2000/01/rdf-schema#comment> "is a property defining which brand produces a specific part of a bike."@en .
-<http://purl.org/ontology/bikeo#produces> <http://www.w3.org/2000/01/rdf-schema#label> "produces"@en .
-# 
-# 
-# 
-# #################################################################
-# #
 # #    General axioms
 # #
 # #################################################################
@@ -18299,37 +18246,112 @@ _:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid147 .
 _:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid146 .
 _:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid145 .
 _:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/bikeo#WornBrakes> .
+_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/bikeo#TypeOfBike> .
 _:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/bikeo#SnappedChain> .
+_:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/bikeo#Tool> .
 _:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/bikeo#SeatHeight> .
+_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/bikeo#Solution> .
 _:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/bikeo#Puncture> .
+_:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/bikeo#Problem> .
 _:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/bikeo#MissingSpokes> .
+_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/bikeo#CommonPart> .
 _:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/bikeo#FlatTire> .
+_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/bikeo#Brand> .
 _:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/bikeo#BrokenPart> .
+_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/bikeo#Bike> .
 _:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 # 
 _:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid152 <http://www.w3.org/2002/07/owl#members> _:genid157 .
+_:genid152 <http://www.w3.org/2002/07/owl#members> _:genid159 .
+_:genid159 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid158 .
+_:genid158 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid157 .
 _:genid157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid156 .
 _:genid156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid155 .
 _:genid155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid154 .
 _:genid154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid153 .
 _:genid153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/bikeo#Wheel> .
+_:genid153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/bikeo#WornBrakes> .
 _:genid153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/bikeo#SeatArea> .
+_:genid154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/bikeo#SnappedChain> .
 _:genid154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/bikeo#FrontSet> .
+_:genid155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/bikeo#SeatHeight> .
 _:genid155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/bikeo#Frame> .
+_:genid156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/bikeo#Puncture> .
 _:genid156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/bikeo#ChainArea> .
+_:genid157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/bikeo#MissingSpokes> .
 _:genid157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid158 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/bikeo#FlatTire> .
+_:genid158 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid159 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/bikeo#BrokenPart> .
+_:genid159 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid160 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid160 <http://www.w3.org/2002/07/owl#members> _:genid165 .
+_:genid165 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid164 .
+_:genid164 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid163 .
+_:genid163 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid162 .
+_:genid162 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid161 .
+_:genid161 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid161 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/bikeo#Wheel> .
+_:genid161 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid162 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/bikeo#SeatArea> .
+_:genid162 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid163 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/bikeo#FrontSet> .
+_:genid163 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid164 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/bikeo#Frame> .
+_:genid164 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid165 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/bikeo#ChainArea> .
+_:genid165 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid166 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointProperties> .
+_:genid166 <http://www.w3.org/2002/07/owl#members> _:genid182 .
+_:genid182 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid181 .
+_:genid181 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid180 .
+_:genid180 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid179 .
+_:genid179 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid178 .
+_:genid178 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid177 .
+_:genid177 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid176 .
+_:genid176 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid175 .
+_:genid175 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid174 .
+_:genid174 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid173 .
+_:genid173 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid172 .
+_:genid172 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid171 .
+_:genid171 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid170 .
+_:genid170 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid169 .
+_:genid169 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid168 .
+_:genid168 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid167 .
+_:genid167 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid167 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/bikeo#requests> .
+_:genid167 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid168 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/bikeo#produces> .
+_:genid168 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid169 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/bikeo#producedBy> .
+_:genid169 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid170 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/bikeo#isTypeOf> .
+_:genid170 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid171 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/bikeo#isSolutionOf> .
+_:genid171 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid172 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/bikeo#isRequestedFor> .
+_:genid172 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid173 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/bikeo#isProblemOf> .
+_:genid173 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid174 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/bikeo#isPartOf> .
+_:genid174 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid175 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/bikeo#isComprisedIn> .
+_:genid175 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid176 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/bikeo#isBrandOf> .
+_:genid176 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid177 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/bikeo#hasType> .
+_:genid177 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid178 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/bikeo#hasSolution> .
+_:genid178 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid179 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/bikeo#hasProblem> .
+_:genid179 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid180 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/bikeo#hasPart> .
+_:genid180 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid181 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/bikeo#hasBrand> .
+_:genid181 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid182 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/bikeo#comprises> .
+_:genid182 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

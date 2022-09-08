@@ -178,19 +178,19 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
-      "@id" : "http://purl.org/ontology/bikeo#BrokenPart"
+      "@id" : "http://purl.org/ontology/bikeo#Bike"
     }, {
-      "@id" : "http://purl.org/ontology/bikeo#FlatTire"
+      "@id" : "http://purl.org/ontology/bikeo#Brand"
     }, {
-      "@id" : "http://purl.org/ontology/bikeo#MissingSpokes"
+      "@id" : "http://purl.org/ontology/bikeo#CommonPart"
     }, {
-      "@id" : "http://purl.org/ontology/bikeo#Puncture"
+      "@id" : "http://purl.org/ontology/bikeo#Problem"
     }, {
-      "@id" : "http://purl.org/ontology/bikeo#SeatHeight"
+      "@id" : "http://purl.org/ontology/bikeo#Solution"
     }, {
-      "@id" : "http://purl.org/ontology/bikeo#SnappedChain"
+      "@id" : "http://purl.org/ontology/bikeo#Tool"
     }, {
-      "@id" : "http://purl.org/ontology/bikeo#WornBrakes"
+      "@id" : "http://purl.org/ontology/bikeo#TypeOfBike"
     } ]
   } ]
 }, {
@@ -207,6 +207,35 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
+      "@id" : "http://purl.org/ontology/bikeo#BrokenPart"
+    }, {
+      "@id" : "http://purl.org/ontology/bikeo#FlatTire"
+    }, {
+      "@id" : "http://purl.org/ontology/bikeo#MissingSpokes"
+    }, {
+      "@id" : "http://purl.org/ontology/bikeo#Puncture"
+    }, {
+      "@id" : "http://purl.org/ontology/bikeo#SeatHeight"
+    }, {
+      "@id" : "http://purl.org/ontology/bikeo#SnappedChain"
+    }, {
+      "@id" : "http://purl.org/ontology/bikeo#WornBrakes"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/ontology/bikeo#comprises"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/ontology/bikeo#FrontDerailleur"
+  } ]
+}, {
+  "@id" : "_:genid160",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
       "@id" : "http://purl.org/ontology/bikeo#ChainArea"
     }, {
       "@id" : "http://purl.org/ontology/bikeo#Frame"
@@ -219,13 +248,42 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid16",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/ontology/bikeo#comprises"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://purl.org/ontology/bikeo#FrontDerailleur"
+  "@id" : "_:genid166",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointProperties" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/ontology/bikeo#comprises"
+    }, {
+      "@id" : "http://purl.org/ontology/bikeo#hasBrand"
+    }, {
+      "@id" : "http://purl.org/ontology/bikeo#hasPart"
+    }, {
+      "@id" : "http://purl.org/ontology/bikeo#hasProblem"
+    }, {
+      "@id" : "http://purl.org/ontology/bikeo#hasSolution"
+    }, {
+      "@id" : "http://purl.org/ontology/bikeo#hasType"
+    }, {
+      "@id" : "http://purl.org/ontology/bikeo#isBrandOf"
+    }, {
+      "@id" : "http://purl.org/ontology/bikeo#isComprisedIn"
+    }, {
+      "@id" : "http://purl.org/ontology/bikeo#isPartOf"
+    }, {
+      "@id" : "http://purl.org/ontology/bikeo#isProblemOf"
+    }, {
+      "@id" : "http://purl.org/ontology/bikeo#isRequestedFor"
+    }, {
+      "@id" : "http://purl.org/ontology/bikeo#isSolutionOf"
+    }, {
+      "@id" : "http://purl.org/ontology/bikeo#isTypeOf"
+    }, {
+      "@id" : "http://purl.org/ontology/bikeo#producedBy"
+    }, {
+      "@id" : "http://purl.org/ontology/bikeo#produces"
+    }, {
+      "@id" : "http://purl.org/ontology/bikeo#requests"
+    } ]
   } ]
 }, {
   "@id" : "_:genid17",
@@ -15863,9 +15921,9 @@
   }, {
     "@id" : "http://purl.org/ontology/bikeo#sram-force-etap-axs-brakes"
   }, {
-    "@id" : "http://purl.org/ontology/bikeo#sram-xplr-xg-1271-cogset"
+    "@id" : "http://purl.org/ontology/bikeo#sram-force-xplr-etap-axs-rearderailleur"
   }, {
-    "@id" : "http://purl.org/ontology/bikeo#sram-force-xplr-etap-axs-rearderailleur"
+    "@id" : "http://purl.org/ontology/bikeo#sram-xplr-xg-1271-cogset"
   } ],
   "http://purl.org/ontology/bikeo#hasType" : [ {
     "@id" : "http://purl.org/ontology/bikeo#road"
@@ -21605,7 +21663,7 @@
   } ]
 }, {
   "@id" : "http://purl.org/ontology/bikeo#hasBrand",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "is a property defining which bike in particular has a given brand."
@@ -21628,7 +21686,7 @@
   } ]
 }, {
   "@id" : "http://purl.org/ontology/bikeo#hasChainRing",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "is a property describing the chain ring(s) attached to the crank arm. The chainring, or sprocket, is a profiled wheel with teeth that mesh with the chain."
@@ -21648,7 +21706,7 @@
   } ]
 }, {
   "@id" : "http://purl.org/ontology/bikeo#hasGearing",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "the value describing the gearing of a bike."
@@ -21668,7 +21726,7 @@
   } ]
 }, {
   "@id" : "http://purl.org/ontology/bikeo#hasPart",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "is a property specifying how a bike is composed in its specific pieces."
@@ -21714,7 +21772,7 @@
   } ]
 }, {
   "@id" : "http://purl.org/ontology/bikeo#hasSize",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "the property for describing the width of tires."
@@ -21756,7 +21814,7 @@
   } ]
 }, {
   "@id" : "http://purl.org/ontology/bikeo#hasType",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "is a property that defines the specific type of bike of a bike model."
@@ -22284,7 +22342,7 @@
   } ]
 }, {
   "@id" : "http://purl.org/ontology/bikeo#isBrandOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "is a property used for specifying which specific brand owns and produces a given bike model."
@@ -22324,7 +22382,7 @@
   } ]
 }, {
   "@id" : "http://purl.org/ontology/bikeo#isPartOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "is a property used for specifying which common parts are included in a bike."
@@ -22407,7 +22465,7 @@
   } ]
 }, {
   "@id" : "http://purl.org/ontology/bikeo#isTypeOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "this property defines that a specific bike model is a type of bike."
@@ -23647,7 +23705,7 @@
   } ]
 }, {
   "@id" : "http://purl.org/ontology/bikeo#producedBy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "defines the specific part of a bike that is produced by a given brand."
@@ -23670,7 +23728,7 @@
   } ]
 }, {
   "@id" : "http://purl.org/ontology/bikeo#produces",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "is a property defining which brand produces a specific part of a bike."

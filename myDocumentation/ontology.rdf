@@ -24,105 +24,6 @@
     
 
 
-    <!-- http://purl.org/ontology/bikeo#hasBrand -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bikeo#hasBrand">
-        <rdfs:range rdf:resource="http://purl.org/ontology/bikeo#Brand"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.org/ontology/bikeo#hasChainRing -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bikeo#hasChainRing">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.org/ontology/bikeo#hasGearing -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bikeo#hasGearing">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.org/ontology/bikeo#hasPart -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bikeo#hasPart">
-        <rdfs:range rdf:resource="http://purl.org/ontology/bikeo#CommonPart"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.org/ontology/bikeo#hasSize -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bikeo#hasSize">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.org/ontology/bikeo#hasType -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bikeo#hasType">
-        <rdfs:range rdf:resource="http://purl.org/ontology/bikeo#TypeOfBike"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.org/ontology/bikeo#isBrandOf -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bikeo#isBrandOf">
-        <rdfs:range rdf:resource="http://purl.org/ontology/bikeo#Bike"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.org/ontology/bikeo#isPartOf -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bikeo#isPartOf">
-        <rdfs:range rdf:resource="http://purl.org/ontology/bikeo#Bike"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.org/ontology/bikeo#isTypeOf -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bikeo#isTypeOf">
-        <rdfs:range rdf:resource="http://purl.org/ontology/bikeo#Bike"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.org/ontology/bikeo#producedBy -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bikeo#producedBy">
-        <rdfs:range rdf:resource="http://purl.org/ontology/bikeo#Brand"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.org/ontology/bikeo#produces -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bikeo#produces">
-        <rdfs:range rdf:resource="http://purl.org/ontology/bikeo#CommonPart"/>
-    </owl:AnnotationProperty>
-    
-
-
     <!-- http://purl.org/vso/ns#modelDate -->
 
 
@@ -179,6 +80,9 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://purl.org/ontology/bikeo#isBrandOf"/>
         <rdfs:domain rdf:resource="http://purl.org/ontology/bikeo#Bike"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/bikeo#Brand"/>
+        <rdfs:comment xml:lang="en">is a property defining which bike in particular has a given brand.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasBrand</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -190,6 +94,9 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://purl.org/ontology/bikeo#isPartOf"/>
         <rdfs:domain rdf:resource="http://purl.org/ontology/bikeo#Bike"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/bikeo#CommonPart"/>
+        <rdfs:comment xml:lang="en">is a property specifying how a bike is composed in its specific pieces.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasPart</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -229,6 +136,9 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://purl.org/ontology/bikeo#isTypeOf"/>
         <rdfs:domain rdf:resource="http://purl.org/ontology/bikeo#Bike"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/bikeo#TypeOfBike"/>
+        <rdfs:comment xml:lang="en">is a property that defines the specific type of bike of a bike model.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasType</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -239,6 +149,9 @@
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/bikeo#isBrandOf">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://purl.org/ontology/bikeo#Brand"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/bikeo#Bike"/>
+        <rdfs:comment xml:lang="en">is a property used for specifying which specific brand owns and produces a given bike model.</rdfs:comment>
+        <rdfs:label xml:lang="en">isBrandOf</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -262,6 +175,9 @@
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/bikeo#isPartOf">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://purl.org/ontology/bikeo#CommonPart"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/bikeo#Bike"/>
+        <rdfs:comment xml:lang="en">is a property used for specifying which common parts are included in a bike.</rdfs:comment>
+        <rdfs:label xml:lang="en">isPartOf</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -312,6 +228,9 @@
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/bikeo#isTypeOf">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://purl.org/ontology/bikeo#TypeOfBike"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/bikeo#Bike"/>
+        <rdfs:comment xml:lang="en">this property defines that a specific bike model is a type of bike.</rdfs:comment>
+        <rdfs:label xml:lang="en">isTypeOf</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -323,6 +242,9 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://purl.org/ontology/bikeo#produces"/>
         <rdfs:domain rdf:resource="http://purl.org/ontology/bikeo#CommonPart"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/bikeo#Brand"/>
+        <rdfs:comment xml:lang="en">defines the specific part of a bike that is produced by a given brand.</rdfs:comment>
+        <rdfs:label xml:lang="en">producedBy</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -333,6 +255,9 @@
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/bikeo#produces">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://purl.org/ontology/bikeo#Brand"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/bikeo#CommonPart"/>
+        <rdfs:comment xml:lang="en">is a property defining which brand produces a specific part of a bike.</rdfs:comment>
+        <rdfs:label xml:lang="en">produces</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -368,6 +293,9 @@
     <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bikeo#hasChainRing">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://purl.org/ontology/bikeo#Crank"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">is a property describing the chain ring(s) attached to the crank arm. The chainring, or sprocket, is a profiled wheel with teeth that mesh with the chain.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasChainRing</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -378,6 +306,9 @@
     <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bikeo#hasGearing">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://purl.org/ontology/bikeo#Bike"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">the value describing the gearing of a bike.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasGearing</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -388,6 +319,9 @@
     <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bikeo#hasSize">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://purl.org/ontology/bikeo#Tire"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">the property for describing the width of tires.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasSize</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -9636,8 +9570,8 @@
         <hasPart rdf:resource="http://purl.org/ontology/bikeo#sram-force-d1-chain"/>
         <hasPart rdf:resource="http://purl.org/ontology/bikeo#sram-force-d1-dub-crank"/>
         <hasPart rdf:resource="http://purl.org/ontology/bikeo#sram-force-etap-axs-brakes"/>
+        <hasPart rdf:resource="http://purl.org/ontology/bikeo#sram-force-xplr-etap-axs-rearderailleur"/>
         <hasPart rdf:resource="http://purl.org/ontology/bikeo#sram-xplr-xg-1271-cogset"/>
-        <hasPart rdf:resource="http://purl.org/ontology/bikeo#sram-force-xplr-etap-axs-rearderailleur"/>
         <hasType rdf:resource="http://purl.org/ontology/bikeo#road"/>
         <hasGearing>1 × 12</hasGearing>
         <ns:modelDate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2022</ns:modelDate>
@@ -24969,62 +24903,6 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-
-    <rdf:Description rdf:about="http://purl.org/ontology/bikeo#hasBrand">
-        <rdfs:comment xml:lang="en">is a property defining which bike in particular has a given brand.</rdfs:comment>
-        <rdfs:label xml:lang="en">hasBrand</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/ontology/bikeo#hasChainRing">
-        <rdfs:comment xml:lang="en">is a property describing the chain ring(s) attached to the crank arm. The chainring, or sprocket, is a profiled wheel with teeth that mesh with the chain.</rdfs:comment>
-        <rdfs:label xml:lang="en">hasChainRing</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/ontology/bikeo#hasGearing">
-        <rdfs:comment xml:lang="en">the value describing the gearing of a bike.</rdfs:comment>
-        <rdfs:label xml:lang="en">hasGearing</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/ontology/bikeo#hasPart">
-        <rdfs:comment xml:lang="en">is a property specifying how a bike is composed in its specific pieces.</rdfs:comment>
-        <rdfs:label xml:lang="en">hasPart</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/ontology/bikeo#hasSize">
-        <rdfs:comment xml:lang="en">the property for describing the width of tires.</rdfs:comment>
-        <rdfs:label xml:lang="en">hasSize</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/ontology/bikeo#hasType">
-        <rdfs:comment xml:lang="en">is a property that defines the specific type of bike of a bike model.</rdfs:comment>
-        <rdfs:label xml:lang="en">hasType</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/ontology/bikeo#isBrandOf">
-        <rdfs:comment xml:lang="en">is a property used for specifying which specific brand owns and produces a given bike model.</rdfs:comment>
-        <rdfs:label xml:lang="en">isBrandOf</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/ontology/bikeo#isPartOf">
-        <rdfs:comment xml:lang="en">is a property used for specifying which common parts are included in a bike.</rdfs:comment>
-        <rdfs:label xml:lang="en">isPartOf</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/ontology/bikeo#isTypeOf">
-        <rdfs:comment xml:lang="en">this property defines that a specific bike model is a type of bike.</rdfs:comment>
-        <rdfs:label xml:lang="en">isTypeOf</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/ontology/bikeo#producedBy">
-        <rdfs:comment xml:lang="en">defines the specific part of a bike that is produced by a given brand.</rdfs:comment>
-        <rdfs:label xml:lang="en">producedBy</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/ontology/bikeo#produces">
-        <rdfs:comment xml:lang="en">is a property defining which brand produces a specific part of a bike.</rdfs:comment>
-        <rdfs:label xml:lang="en">produces</rdfs:label>
-    </rdf:Description>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
     // General axioms
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -25087,6 +24965,18 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/ontology/bikeo#Bike"/>
+            <rdf:Description rdf:about="http://purl.org/ontology/bikeo#Brand"/>
+            <rdf:Description rdf:about="http://purl.org/ontology/bikeo#CommonPart"/>
+            <rdf:Description rdf:about="http://purl.org/ontology/bikeo#Problem"/>
+            <rdf:Description rdf:about="http://purl.org/ontology/bikeo#Solution"/>
+            <rdf:Description rdf:about="http://purl.org/ontology/bikeo#Tool"/>
+            <rdf:Description rdf:about="http://purl.org/ontology/bikeo#TypeOfBike"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.org/ontology/bikeo#BrokenPart"/>
             <rdf:Description rdf:about="http://purl.org/ontology/bikeo#FlatTire"/>
             <rdf:Description rdf:about="http://purl.org/ontology/bikeo#MissingSpokes"/>
@@ -25104,6 +24994,27 @@
             <rdf:Description rdf:about="http://purl.org/ontology/bikeo#FrontSet"/>
             <rdf:Description rdf:about="http://purl.org/ontology/bikeo#SeatArea"/>
             <rdf:Description rdf:about="http://purl.org/ontology/bikeo#Wheel"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/ontology/bikeo#comprises"/>
+            <rdf:Description rdf:about="http://purl.org/ontology/bikeo#hasBrand"/>
+            <rdf:Description rdf:about="http://purl.org/ontology/bikeo#hasPart"/>
+            <rdf:Description rdf:about="http://purl.org/ontology/bikeo#hasProblem"/>
+            <rdf:Description rdf:about="http://purl.org/ontology/bikeo#hasSolution"/>
+            <rdf:Description rdf:about="http://purl.org/ontology/bikeo#hasType"/>
+            <rdf:Description rdf:about="http://purl.org/ontology/bikeo#isBrandOf"/>
+            <rdf:Description rdf:about="http://purl.org/ontology/bikeo#isComprisedIn"/>
+            <rdf:Description rdf:about="http://purl.org/ontology/bikeo#isPartOf"/>
+            <rdf:Description rdf:about="http://purl.org/ontology/bikeo#isProblemOf"/>
+            <rdf:Description rdf:about="http://purl.org/ontology/bikeo#isRequestedFor"/>
+            <rdf:Description rdf:about="http://purl.org/ontology/bikeo#isSolutionOf"/>
+            <rdf:Description rdf:about="http://purl.org/ontology/bikeo#isTypeOf"/>
+            <rdf:Description rdf:about="http://purl.org/ontology/bikeo#producedBy"/>
+            <rdf:Description rdf:about="http://purl.org/ontology/bikeo#produces"/>
+            <rdf:Description rdf:about="http://purl.org/ontology/bikeo#requests"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>

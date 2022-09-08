@@ -11582,58 +11582,21 @@ a:hover {
 }
 .pricing:checked + label,
 .pricing:not(:checked) + label{
-  position: relative;
-  display: block;
-  text-align: center;
-  width: 260px;
   height: 44px;
-  border-radius: 4px;
-  padding: 0;
-  margin: 0 auto;
   cursor: pointer;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 14px;
-  letter-spacing: 1px;
-  line-height: 44px;
-  padding: 0 25px;
-  padding-right: 27px;
-  overflow: hidden;
-  color: #fff;
-  text-align: left;
 }
-.pricing:checked + label:before,
-.pricing:not(:checked) + label:before{
-  position: absolute;
-  content: '';
-  z-index: -2;
-  background-color: #102770;
-  width: 100%;
-  height: 100%;
-  display: block;
-  top: 0;
-  left: 0;
-}
+
 .pricing:checked + label:after,
 .pricing:not(:checked) + label:after{
-  position: absolute;
-  content: '';
-  z-index: -1;
-  background-color: #f7c499;
-  width: 128px;
-  height: 40px;
-  display: block;
-  top: 2px;
-  left: 2px;
-  border-radius: 2px;
   transition: left 300ms linear;
 }
+
 .pricing:checked + label:after {
   left: 130px;
 }
+
 .block-diff {
-  display: block;
+/*  display: block;*/
   mix-blend-mode: difference;
 }
 
@@ -11645,7 +11608,7 @@ a:hover {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   perspective: 1000px;
-  margin-top: 90px;
+  margin-top: 50px;
 }
 .card-3d-wrapper {
   width: 100%;
@@ -11676,10 +11639,22 @@ a:hover {
 .card-back {
   transform: rotateY(180deg);
 }
-.pricing:checked ~ .card-3d-wrap .card-3d-wrapper {
+/* animazione card wrap Luisa*/
+.luisa:checked ~ .luisa-wrap .luisa-wrapper {
   transform: rotateY(180deg);
   transition: transform 700ms 400ms ease-out;
 }
+/* animazione card wrap Consti*/
+.consti:checked ~ .consti-wrap .consti-wrapper {
+  transform: rotateY(180deg);
+  transition: transform 700ms 400ms ease-out;
+}
+/* animazione card wrap Giulia*/
+.giulia:checked ~ .giulia-wrap .giulia-wrapper {
+  transform: rotateY(180deg);
+  transition: transform 700ms 400ms ease-out;
+}
+
 .pricing-wrap{
   position: relative;
   padding-top: 15%;

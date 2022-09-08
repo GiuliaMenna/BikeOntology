@@ -63,7 +63,7 @@
                     </div>
                     <div class="col-lg-8 align-self-baseline">
                         <img class="gears" src="./images/cogs-icon_34462.png">
-                        <p class="mb-5 blue-text"><b>BikeOntology</b>  is an ontology exploring the world of bicycles.<br> It was born by the work of three bike lovers living in the city of Bologna. The purpose was to create a useful tool describing the characteristics of bikes in general, deepening the mechanical structure mutual to every model.<br>  Then, the project evolved through the implementation of some problems that could affect a bike and how they can be fixed by changing or adjusting some pieces. Surfing the web there were some interesting ontologies on vehicles in general, but nothing bike specific.<br><a href="http://automotive-ontology.org/" target="_blank">Automotive ontology</a>, <a href="https://schema.org/docs/automotive.html" target="_blank">Schema</a>, and <a href="http://www.heppnetz.de/ontologies/vso/ns" target="_blank">The Vehicles Sales Ontology</a> were very useful sources for taking inspiration and reusing some existing data.
+                        <p class="mb-5 blue-text"><b>BikeOntology</b>  is an ontology exploring the world of bicycles.<br> It was born by the work of three bike lovers living in the city of Bologna. The purpose was to create a useful tool describing the characteristics of bikes in general, deepening the mechanical structure mutual to every model.<br>  Then, the project evolved through the implementation of some problems that could affect a bike and how they can be fixed by changing or adjusting some pieces. Surfing the web there were some interesting ontologies on vehicles in general, but nothing bike specific.<br><a href="http://automotive-ontology.org/">Automotive ontology</a>, <a href="https://schema.org/docs/automotive.html">Schema</a>, and <a href="http://www.heppnetz.de/ontologies/vso/ns">The Vehicles Sales Ontology</a> were very useful sources for taking inspiration and reusing some existing data.
                         Due to the absence of an existing ontology on this matter and thinking about the usefulness of a new environment built from scratch, the project began.
                         </div>
                     </div>
@@ -132,7 +132,7 @@
                       <div class="col-lg-8 text-center bike-text">
                         <h3>Editing with Protegé</h3>
                         <p class="mb-4">
-                        Once the map was completed, it was possible to edit with <b>WebProtegé</b> co-working on the population of <b>classes, data and object properties</b>, obtaining in this way the <b>T-Box</b>, the terminology component serving the future <b>knowledge base</b>.<br> Our work, therefore, initially followed a <b>Bottom-Up approach</b>: from a definition of all the terminology to the meeting with an already existing database. The selected sample of bikes provides us with a big list of items, necessary for the <b>A-Box</b> implementation, which means the assertions using the vocabulary defined by the <b>T-Box</b> and populating the ontology.<br> The sample proved to be fully described in many characteristics, such as brand, weight, type of bike, year of production, measures of the tires, measures of the shifters, and so on.  The database comes from a bike shop online and is available at the following <a href="https://99spokes.com/en-EU" target="_blank">link</a>.<br> Coming across these data we realized our T-box could be improved and enriched with some details missed before, in order to be compliant with the sample, such as the three data properties classes of
+                        Once the map was completed, it was possible to edit with <b>WebProtegé</b> co-working on the population of <b>classes, data and object properties</b>, obtaining in this way the <b>T-Box</b>, the terminology component serving the future <b>knowledge base</b>.<br> Our work, therefore, initially followed a <b>Bottom-Up approach</b>: from a definition of all the terminology to the meeting with an already existing database. The selected sample of bikes provides us with a big list of items, necessary for the <b>A-Box</b> implementation, which means the assertions using the vocabulary defined by the <b>T-Box</b> and populating the ontology.<br> The sample proved to be fully described in many characteristics, such as brand, weight, type of bike, year of production, measures of the tires, measures of the shifters, and so on.  The database comes from a bike shop online and is available at the following <a href="https://99spokes.com/en-EU">link</a>.<br> Coming across these data we realized our T-box could be improved and enriched with some details missed before, in order to be compliant with the sample, such as the three data properties classes of
                         <b>hasChainRing</b>, <b>hasGearing</b> , <b>hasSize</b>, the classes <b>Motor</b> and <b>Battery</b> and we moved the individual describing the concept “type of bike” into the class <b>TypeOfBike</b>, in order to be able to directly extract this information from the database.
                         <br>
                         In summary, Bike Ontology is the result of a <b>balanced mix of the Bottom-Up and the Top-Down approaches</b>: its general structure allows the ontology to dialogue with different databases, but its level of details unveils the practical nature of the ontology.
@@ -152,7 +152,7 @@
                         </ul>
                         <h3>Populating the A-Box</h3>
                         <p class="mb-4">
-                          Once we downloaded the free sample from the <b>99spokes website</b>, we used a python script available at this <a href="https://github.com/GiuliaMenna/BikeOntology/tree/main/.ipynb_checkpoints" target="_blank">link</a> to extract information and populate our ontology.<br> Each row of the dataset instantiates a bike and the columns describe the bike parts, as well as the brands producing these parts, or some other characteristics of the bike such as its weight. We used the Python library Pandas to process the dataset and the library rdflib to create the knowledge graph. Then from each row of the dataset, we extracted the instance of the bike by attributing URIs and modeling the data according to the ontology for each part of the bike. The result is a Turtle file (bike_abox.ttl), which we joined with the T-Box on Protege to produce the <b>final graph bikeo_w_data.owl</b>.</p>
+                          Once we downloaded the free sample from the <b>99spokes website</b>, we used a python script available at this link ADD LINK to extract information and populate our ontology.<br> Each row of the dataset instantiates a bike and the columns describe the bike parts, as well as the brands producing these parts, or some other characteristics of the bike such as its weight. We used the Python library Pandas to process the dataset and the library rdflib to create the knowledge graph. Then from each row of the dataset, we extracted the instance of the bike by attributing URIs and modeling the data according to the ontology for each part of the bike. The result is a Turtle file (bike_abox.ttl), which we joined with the T-Box on Protege to produce the <b>final graph bikeo_w_data.owl</b>.</p>
 
                     </div>
                 </div>
@@ -171,7 +171,7 @@
                           <h3 class="text-white">Publication</h3>
                             <p class="mb-4">After the ontology population, each element within Protegé was commented to obtain a finished and fully described documentation through <b>WIDOCO</b>, enabling both text and visual representation of the ontology in a W3C fashion. The ontology was then ready and downloadable as an <b>owl file</b>.
                             </p><h3 class="text-white">SPARQL queries</h3>
-                            <p class="mb-4"> The best source to query the database about the preliminary Competency Questions, translated into SPARQL language, proved to be the <b><a href="https://jena.apache.org/index.html" target="_blank">Apache Jena Fuseki</a></b> tool: an already developed endpoint and SPARQL server.<br> It provides REST-style SPARQL HTTP Update, SPARQL Query, and SPARQL Update using the SPARQL protocol over HTTP. <br>This environment loads the owl file or, otherwise, the ontology file through the reference link and enables one to work on the triples, making queries and verifying the correctness of the answer.<br> In the case of BikeOntology <b>13357 triples</b> were available.
+                            <p class="mb-4"> The best source to query the database about the preliminary Competency Questions, translated into SPARQL language, proved to be the <b><a href="https://jena.apache.org/index.html">Apache Jena Fuseki</a></b> tool: an already developed endpoint and SPARQL server.<br> It provides REST-style SPARQL HTTP Update, SPARQL Query, and SPARQL Update using the SPARQL protocol over HTTP. <br>This environment loads the owl file or, otherwise, the ontology file through the reference link and enables one to work on the triples, making queries and verifying the correctness of the answer.<br> In the case of BikeOntology <b>13357 triples</b> were available.
 
                             </p><h3 class="text-white">Results and testing</h3>
                             <p class="mb-4"> We worked on the <b>9 Competency Questions</b> re-drafted during the work and the result can be seen here below.</p>
@@ -183,7 +183,6 @@
             <div class="container px-4 px-lg-5">
                 <h2 class="text-center mt-0">Possible future developments</h2>
                 <hr class="divider" />
-                <img class="gears" src="./images/gears_cogwheel_settings_icon_187128.png">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 text-align-justify black-text">
                         <div class="mt-5">
@@ -297,7 +296,7 @@
               <div class="col-12 text-center align-self-center py-5">
                 <div class="section text-center py-5 py-md-0">
                         <input class="pricing" type="checkbox" id="pricing" name="pricing">
-                        <label for="pricing"><span class="block-diff">kayaking <span class="float-right"> Bio</span></span></label>
+                        <label for="pricing"><span class="block-diff"><img src="images/rotating-circular-arrow.png"><span class="float-right"> Bio</span></span></label>
                   <div class="card-3d-wrap mx-auto">
                     <div class="card-3d-wrapper">
                       <div class="card-front">
@@ -309,8 +308,8 @@
                           </div>
                       <div class="card-back">
                         <div class="pricing-wrap">
-                          <p class="mb-4 cardbackground">I hold a Bachelor in Conservation of Cultural Heritage and Performing Arts Management at Ca’ Foscari University of Venice with curricula in Economics and Management of Arts and Cultural Activities. I am currently attending the DHDK master’s degree at Bologna University, and I am always hungry…. For knowledge obviously. I am passionate about design, web technologies, UX, and I have a keen interest in 3d modeling and XR tools for innovation in cultural industries.</p>
-                          <a href="#0" class="link" target="_blank">Github</a>
+                          <p class="mb-4 cardbackground">I graduated in Humanities (Modern Curriculum) at Federico II in Naples. I’m currently attending Digital Humanities and Digital Knowledge at the Alma Mater Studiorum University in Bologna. I am a huge fan of photography: after studying and practicing digital photography (and postproduction in Photoshop) for years, I have also extended my knowledge to analogic photography.  The image-based modelling, the 3d modelling and the graphic design represent fields of knowledge that I would have a sincere pleasure to deepen. </p>
+                          <a href="#0" class="link">Github</a>
                             </div>
                           </div>
                         </div>
@@ -342,8 +341,8 @@
                         </div>
                     <div class="card-back">
                       <div class="pricing-wrap">
-                        <p class="mb-4 cardbackground">I hold a Bachelor in Conservation of Cultural Heritage and Performing Arts Management at Ca’ Foscari University of Venice with curricula in Economics and Management of Arts and Cultural Activities. I am currently attending the DHDK master’s degree at Bologna University, and I am always hungry…. For knowledge obviously. I am passionate about design, web technologies, UX, and I have a keen interest in 3d modeling and XR tools for innovation in cultural industries.</p>
-                        <a href="#0" class="link" target="_blank">Github</a>
+                        <p class="mb-4 cardbackground">After graduating in General History and Computer Science for the Humanities at the University of my hometown Geneva, I am currently attending the Master's Degree in Digital Humanities and Digital Knowledge at the University of Bologna. I came to Italy to learn everything about Digital Humanities, but also for the amazing food, obviously! My main interests are programming, web development, digital libraries/archives, and data extraction and organization.</p>
+                        <a href="#0" class="link">Github</a>
                           </div>
                         </div>
                       </div>
@@ -375,8 +374,8 @@
                           </div>
                       <div class="card-back">
                         <div class="pricing-wrap">
-                          <p class="mb-4 cardbackground">I hold a Bachelor in Conservation of Cultural Heritage and Performing Arts Management at Ca’ Foscari University of Venice with curricula in Economics and Management of Arts and Cultural Activities. I am currently attending the DHDK master’s degree at Bologna University, and I am always hungry…. For knowledge obviously. I am passionate about design, web technologies, UX, and I have a keen interest in 3d modeling and XR tools for innovation in cultural industries.</p>
-                          <a href="#0" class="link" target="_blank">Github</a>
+                          <p class="mb-4 cardbackground">I graduated in Humanities, Modern Curriculum, at the university of Milan and I am currently attending DHDK Master’s degree at the University of Bologna. I’ve been for so long mainly a Literature enthusiast, but now my personal interests expanded to Computational Linguistics, Natural Language Processing, Web technologies and, last but not least, to cooking experiments!</p>
+                          <a href="#0" class="link">Github</a>
                             </div>
                           </div>
                         </div>
@@ -393,7 +392,7 @@
 
         <!-- Footer-->
         <footer class="bg-light py-5">
-            <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2022 - BikeOntology team</div></div>
+            <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2022 - Company Name</div></div>
         </footer>
 
       </div>

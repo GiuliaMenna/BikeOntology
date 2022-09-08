@@ -11412,14 +11412,18 @@ header.masthead {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+}
+
+.paragraph, .about{
+  opacity: 0;
   transform: translateY(50px);
   transition: all 1s ease-out;
-
 }
-.masthead.fade-in{
+.paragraph.fade-in, .about.fade-in{
   opacity: 1;
   transform: translateY(0);
 }
+
 #BikeOntology{
   font-family:"FKChain";
 }
@@ -11544,6 +11548,67 @@ section.section2, section.section4, #futuredevelopments{
 nav.navbar#mainNav{
   font-family: 'Montserrat';
 }
+
+
+/*Competency question 10*/
+.list {
+    /* center the elements horizontally */
+    background-size: 120px, 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* replace the default list-style with a custom counter */
+ol {
+    list-style: none;
+    counter-reset: days-counter;
+    font-size: 1rem;
+    position: relative;
+}
+/* increment the custom counter */
+ol li {
+    counter-increment: days-counter;
+    /* center the content in the viewport */
+    height: 4vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* position relative to absolute position the pseudo element behind the text */
+    z-index: 5;
+}
+/* display the custom counter with the :before pseudo element, in the very center of the list item */
+ol li:before {
+    content: counter(days-counter);
+    position: absolute;
+    opacity: 0.5;
+    font-size: 4vh;
+    transform: translate(-50%, 0%);
+}
+
+/* position the custom counter to the left/right for odd/even list items */
+ol li:nth-child(odd):before {
+    left: -15%;
+}
+ol li:nth-child(even):before {
+    left: 115%;
+}
+
+/* add position sticky and position each subsequent list item 7.5vh from the previous */
+ol li {
+    position: sticky;
+}
+/* ! have the list items occupy enough vertical space to cover (viewport - vertical offset)
+otherwise the elements would collapse to the top once the page reaches the last item
+*/
+@for $counter from 1 through 10 {
+    ol li:nth-child(#{$counter}) {
+        top: #{($counter - 1) * 7.5vh};
+        height: #{100vh - ($counter - 1) * 7.5vh};
+    }
+}
+/*fine list competency question*/
 
 /*Card Team*/
 
@@ -11721,16 +11786,13 @@ a:hover {
   color: #102770;
   transform: translate3d(0, 0, 30px) perspective(100px);
 }
-.card-back h2,
-.card-back p,
-.card-back h4{
-  color: #0c1c00;
-}
+
 .link {
   position: relative;
   transition: all 200ms linear;
   transform: translate3d(0, 0, 30px) perspective(100px);
 }
+
 .card-icon{
   width: 15%
 }

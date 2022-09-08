@@ -81,10 +81,17 @@ $(document).ready(function(){
 // Init ScrollMagic
 var controller = new ScrollMagic.Controller();
 
-build a scene for textual part (2)
+// build a scene for textual part
 var oursScene = new ScrollMagic.Scene({
-    triggerElement: '#paragraph2'
+    triggerElement: '.paragraph'
 })
-.setClassToggle('#paragraph2', 'fade-in') //add class to paragraph2
+.setClassToggle('.paragraph', 'fade-in') //add class to paragraph
+.addTo(controller);
+
+// build a scene for About
+var oursScene = new ScrollMagic.Scene({
+    triggerElement: '.about'
+})
+.setClassToggle('.about', 'fade-in') //add class to about section
 .addTo(controller);
 })

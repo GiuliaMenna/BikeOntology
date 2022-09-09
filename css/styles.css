@@ -11576,6 +11576,9 @@ nav.navbar#mainNav{
   border-radius: 0;
   letter-spacing: -1px;
 }
+#longCQ{
+  font-size: x-large;
+}
 ul,li{
   list-style:none;
 }
@@ -11888,5 +11891,5 @@ a:hover{
   color: #02CBA6;
 }
 .gears3{
-  padding-bottom: 20px; 
+  padding-bottom: 20px;
 }

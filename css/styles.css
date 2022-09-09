@@ -11513,11 +11513,6 @@ p {
   column-count: 1;
 }
 
-.title{
-  font-family: "DESIGNERRegular";
-  font-weight: 1200;
-  margin-top: 60%;
-}
 a.btn.btn-primary{
   background-color: #4381a1;
   margin-top: 50%;
@@ -11631,6 +11626,85 @@ ul li{
   margin:1em;
 }
 /*fine list competency question*/
+/*list CQ with SPARQL question*/
+.CQcontainer {
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+	margin: 0px auto;
+	padding: 20px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.element-card {
+	position: relative;
+	width: 100%;
+	height: 120px;
+	transform-style: preserve-3d;
+	transform: rotatey(0deg) translatex(0px) translatey(0px);
+	transition: all 0.9s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+	box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+	margin: 3px;
+	cursor: pointer;
+}
+
+.element-card:hover {
+		transform: rotatey(20deg) translatex(0px) translatey(0px);
+	}
+
+.element-card.open {
+		width: 200%;
+		height: 240px;
+		transform: rotatey(-180deg) translatex(0px) translatey(0px);
+	}
+
+.front-facing {
+		transform: rotateY( 0deg ) translateZ(2px );
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background-color: #ccf;
+		border-radius: 10px;
+  }
+
+.title {
+			text-transform: uppercase;
+			text-align: center;
+		}
+
+.atomic-number {
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			font-size: 1em;
+	}
+
+.back-facing {
+		transform: rotateY( 180deg ) translateZ( 0px );
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background-color: #ffc;
+		border-radius: 5px;
+		padding: 20px;
+		overflow: hidden;
+}
+
+/*fine list CQ with SPARL*/
 
 /*Card Team*/
 

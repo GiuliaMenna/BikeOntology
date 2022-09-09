@@ -117,6 +117,23 @@ var oursScene = new ScrollMagic.Scene({
 .setClassToggle('.future', 'fade-in') //add class to future developments section
 .addTo(controller);
 })
+
+//CQ with SPARQL Results
+$(document).ready(function(){
+
+	$('.element-card').on('click', function(){
+
+		if ( $(this).hasClass('open') ) {
+			$(this).removeClass('open');
+		} else {
+			$('.element-card').removeClass('open');
+			$(this).addClass('open');
+		}
+
+	});
+
+});
+
 //INGRANDIMENTO MAPPE
 $('.zoom').click(function() {
 

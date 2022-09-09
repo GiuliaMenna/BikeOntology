@@ -11414,12 +11414,12 @@ header.masthead {
   background-size: cover;
 }
 
-.paragraph, .about{
+.paragraph, .about, .documentation, .editing, .ontology, .future{
   opacity: 0;
   transform: translateY(50px);
   transition: all 1s ease-out;
 }
-.paragraph.fade-in, .about.fade-in{
+.paragraph.fade-in, .about.fade-in, .documentation.fade-in, .editing.fade-in, .ontology.fade-in, .future.fade-in{
   opacity: 1;
   transform: translateY(0);
 }

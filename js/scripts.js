@@ -83,15 +83,37 @@ var controller = new ScrollMagic.Controller();
 
 // build a scene for textual part
 var oursScene = new ScrollMagic.Scene({
-    triggerElement: '.paragraph'
-})
+    triggerElement: '.paragraph'})
 .setClassToggle('.paragraph', 'fade-in') //add class to paragraph
 .addTo(controller);
 
 // build a scene for About
 var oursScene = new ScrollMagic.Scene({
-    triggerElement: '.about'
-})
+    triggerElement: '.about'})
 .setClassToggle('.about', 'fade-in') //add class to about section
+.addTo(controller);
+
+// build a scene for Documentation
+var oursScene = new ScrollMagic.Scene({
+    triggerElement: '.documentation'})
+.setClassToggle('.documentation', 'fade-in') //add class to documentation section
+.addTo(controller);
+
+// build a scene for Editing with Protegé
+var oursScene = new ScrollMagic.Scene({
+    triggerElement: '.editing'})
+.setClassToggle('.editing', 'fade-in') //add class to editing section
+.addTo(controller);
+
+// build a scene for Ontology
+var oursScene = new ScrollMagic.Scene({
+    triggerElement: '.ontology'})
+.setClassToggle('.ontology', 'fade-in') //add class to ontology section
+.addTo(controller);
+
+// build a scene for future developments
+var oursScene = new ScrollMagic.Scene({
+    triggerElement: '.future'})
+.setClassToggle('.future', 'fade-in') //add class to future developments section
 .addTo(controller);
 })

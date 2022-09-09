@@ -189,7 +189,64 @@
                         </p>
                         <h3>Redrafting the Competency Questions</h3><p class="mb-4">
                         As a result of this process, we returned to our first competency questions and adapted them to fit our ontology. For example, the sample only contains two different types of bikes and some questions didn’t make sense with the data available to us. On the other side, we included some questions relevant to the dataset that could arise for bike specialists out there.<br>
-                      </p><ul class="list">
+                      </p>
+                      <ul class="CQlist">
+                        <li>
+                          <div>
+                            <h2 class="number">#1</h2>
+                            <p class="CQ">What is the most common brand for bike cranks?</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div>
+                            <h2 class="number">#2</h2>
+                            <p class="CQ">How many bikes are there for each type in the dataset?</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div>
+                            <h2 class="number">#3</h2>
+                            <p class="CQ">What are the different size of tires?</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div>
+                            <h2 class="number">#4</h2>
+                            <p class="CQ">Which is the heaviest bike?</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div>
+                            <h2 class="number">#5</h2>
+                            <p class="CQ">Which motor is the most used for electric bikes?</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div>
+                            <h2 class="number">#6</h2>
+                            <p class="CQ">How many bikes are there for each gearing?</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div>
+                            <h2 class="number">#7</h2>
+                            <p class="CQ">Which brand produced more bikes in 2021?</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div>
+                            <h2 class="number">#8</h2>
+                            <p class="CQ">How many pieces produced by Shimano are there in a Cannondale bike model Synapse Carbon 4 2022?</p>
+                        </div>
+                       <li>
+                          <div>
+                            <h2 class="number">#9</h2>
+                            <p class="CQ">Which is the average weight of the bikes for each brand?</p>
+                        </div>
+                       
+                      </ul>
+
+                      <ul class="list">
                         <li>What is the most common brand for bike cranks?</li>
                         <li>How many bikes are there for each type in the dataset?</li>
                         <li>What are the different size of tires?</li>
@@ -200,6 +257,7 @@
                         <li>How many pieces produced by Shimano are there in a Cannondale bike model Synapse Carbon 4 2022?</li>
                         <li>Which is the average weight of the bikes for each brand?</li>
                         </ul>
+
                         <h3>Populating the A-Box</h3>
                         <p class="mb-4">
                           Once we downloaded the free sample from the <b>99spokes website</b>, we used a python script available at this link ADD LINK to extract information and populate our ontology.<br> Each row of the dataset instantiates a bike and the columns describe the bike parts, as well as the brands producing these parts, or some other characteristics of the bike such as its weight. We used the Python library Pandas to process the dataset and the library rdflib to create the knowledge graph. Then from each row of the dataset, we extracted the instance of the bike by attributing URIs and modeling the data according to the ontology for each part of the bike. The result is a Turtle file (bike_abox.ttl), which we joined with the T-Box on Protege to produce the <b>final graph bikeo_w_data.owl</b>.</p>

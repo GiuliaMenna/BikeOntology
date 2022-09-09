@@ -24,6 +24,14 @@
  src: local('Montserrat'), url('../font/Montserrat-Regular.ttf') format('woff2');
 }
 
+@font-face {
+ font-family:'CalligraphyOfAdonai-Regular';
+ src: local('CalligraphyOfAdonai-Regular'), url('../font/CalligraphyOfAdonai-Regular.ttf') format('ttf');
+ src: local('CalligraphyOfAdonai-Regular'), url('../font/CalligraphyOfAdonai-Regular.woff') format('woff');
+ src: local('CalligraphyOfAdonai-Regular'), url('../font/CalligraphyOfAdonai-Regular.woff2') format('woff2');
+}
+
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11551,62 +11559,73 @@ nav.navbar#mainNav{
 
 
 /*Competency question 10*/
-.list {
-    /* center the elements horizontally */
-    background-size: 120px, 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.CQlist{
+  margin:0;
+  padding:0;
 }
 
-/* replace the default list-style with a custom counter */
-ol {
-    list-style: none;
-    counter-reset: days-counter;
-    font-size: 1rem;
-    position: relative;
+.number {
+  font-weight: bold;
+  font-size: 1rem;
 }
-/* increment the custom counter */
-ol li {
-    counter-increment: days-counter;
-    /* center the content in the viewport */
-    height: 4vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    /* position relative to absolute position the pseudo element behind the text */
-    z-index: 5;
+.CQ {
+  font-family: 'CalligraphyOfAdonai-Regular';
+  font-size: 17px;
+  padding: 0;
+  background-color: transparent;
+  border-radius: 0;
+  letter-spacing: -1px;
 }
-/* display the custom counter with the :before pseudo element, in the very center of the list item */
-ol li:before {
-    content: counter(days-counter);
-    position: absolute;
-    opacity: 0.5;
-    font-size: 4vh;
-    transform: translate(-50%, 0%);
+ul,li{
+  list-style:none;
+}
+ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-direction: row;
+}
+ul li div{
+  text-decoration:none;
+  color:#000;
+  background:#ffc;
+  display:block;
+  height:10em;
+  width:10em;
+  padding:1em;
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  transform: rotate(-6deg);
+  transition: transform .15s linear;
 }
 
-/* position the custom counter to the left/right for odd/even list items */
-ol li:nth-child(odd):before {
-    left: -15%;
+ul li:nth-child(even) div{
+  transform:rotate(4deg);
+  position:relative;
+  top:5px;
+  background:#CEE;
 }
-ol li:nth-child(even):before {
-    left: 115%;
+ul li:nth-child(3n) div{
+  transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+  background:#ccf;
+}
+ul li:nth-child(5n) div{
+  transform:rotate(5deg);
+  position:relative;
+  top:-10px;
 }
 
-/* add position sticky and position each subsequent list item 7.5vh from the previous */
-ol li {
-    position: sticky;
+ul li div:hover,ul li div:focus{
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  transform: scale(1.25);
+  position:relative;
+  z-index:5;
 }
-/* ! have the list items occupy enough vertical space to cover (viewport - vertical offset)
-otherwise the elements would collapse to the top once the page reaches the last item
-*/
-@for $counter from 1 through 10 {
-    ol li:nth-child(#{$counter}) {
-        top: #{($counter - 1) * 7.5vh};
-        height: #{100vh - ($counter - 1) * 7.5vh};
-    }
+
+ul li{
+  margin:1em;
 }
 /*fine list competency question*/
 
@@ -11783,7 +11802,6 @@ a:hover {
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 1px;
-  color: #102770;
   transform: translate3d(0, 0, 30px) perspective(100px);
 }
 

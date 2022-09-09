@@ -11880,3 +11880,13 @@ a:hover {
    height: 100%;
    width: 100%;
 }
+b, a{
+  color: #4381a1;
+  font-weight: bolder;
+}
+a:hover{
+  color: #02CBA6;
+}
+.gears3{
+  padding-bottom: 20px; 
+}

@@ -11632,11 +11632,10 @@ ul li{
 	width: 100%;
 	min-height: 100%;
 	margin: 0px auto;
-	padding: 20px;
 	box-sizing: border-box;
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	justify-content: center;
 	align-items: center;
 }
@@ -11658,8 +11657,8 @@ ul li{
 	}
 
 .element-card.open {
-		width: 200%;
-		height: 240px;
+		width: 500%;
+		height: 30vh;
 		transform: rotatey(-180deg) translatex(0px) translatey(0px);
 	}
 
@@ -11670,7 +11669,7 @@ ul li{
 		left: 0;
 		bottom: 0;
 		right: 0;
-		background-color: #ccf;
+		background-color: white;
 		border-radius: 10px;
   }
 
@@ -11698,8 +11697,8 @@ ul li{
 		left: 0;
 		bottom: 0;
 		right: 0;
-		background-color: #ffc;
-		border-radius: 5px;
+		background-color: white;
+		border-radius: 10px;
 		padding: 20px;
 		overflow: hidden;
 }

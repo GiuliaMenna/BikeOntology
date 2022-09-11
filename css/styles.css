@@ -268,7 +268,6 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
 }
 
 pre,
-code,
 kbd,
 samp {
   font-family: 'Montserrat';
@@ -290,11 +289,6 @@ pre code {
   word-break: normal;
 }
 
-code {
-  font-size: 0.875em;
-  color: #d63384;
-  word-wrap: break-word;
-}
 a > code {
   color: inherit;
 }
@@ -322,33 +316,6 @@ svg {
   padding: 0;
 }
 
-table {
-  caption-side: bottom;
-  border-collapse: collapse;
-}
-
-caption {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  color: #6c757d;
-  text-align: left;
-}
-
-th {
-  text-align: inherit;
-  text-align: -webkit-match-parent;
-}
-
-thead,
-tbody,
-tfoot,
-tr,
-td,
-th {
-  border-color: inherit;
-  border-style: solid;
-  border-width: 0;
-}
 
 label {
   display: inline-block;
@@ -11626,6 +11593,16 @@ ul li{
   margin:1em;
 }
 /*fine list competency question*/
+.panel{
+  display: none;
+  opacity: 0.7;
+  margin-bottom: 1em;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px 10px 10px 10px;
+}
+.CQquestionDef{
+}
 /*list CQ with SPARQL question*/
 .CQcontainer {
 	position: relative;
@@ -11635,7 +11612,7 @@ ul li{
 	box-sizing: border-box;
 	display: flex;
 	flex-direction: row;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 }
@@ -11687,11 +11664,6 @@ ul li{
 
 .back-facing {
 		transform: rotateY( 180deg ) translateZ( 0px );
-		display: flex;
-		flex-direction: column;
-		flex-wrap: nowrap;
-		justify-content: center;
-		align-items: center;
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -11703,6 +11675,9 @@ ul li{
 		overflow: hidden;
 }
 
+.SPARQLimages{
+  width: 100%;
+}
 /*fine list CQ with SPARL*/
 
 /*Card Team*/

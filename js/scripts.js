@@ -134,6 +134,38 @@ $(document).ready(function(){
 
 });
 
+//CQ with SPARQL slidetoggle
+// to slide top and down the paragraphs of the documentation
+$(document).ready(function(){
+  $("#firstquestion").click(function(){
+    $("#panel1").slideToggle("slow");
+  });
+  $("#secondquestion").click(function(){
+    $("#panel2").slideToggle("slow");
+  });
+  $("#thirdquestion").click(function(){
+    $("#panel3").slideToggle("slow");
+  });
+  $("#fourthquestion").click(function(){
+    $("#panel4").slideToggle("slow");
+  });
+  $("#fifthquestion").click(function(){
+    $("#panel5").slideToggle("slow");
+  });
+  $("#sixthquestion").click(function(){
+    $("#panel6").slideToggle("slow");
+  });
+  $("#seventhquestion").click(function(){
+    $("#panel7").slideToggle("slow");
+  });
+  $("#eightquestion").click(function(){
+    $("#panel8").slideToggle("slow");
+  });
+  $("#ninethquestion").click(function(){
+    $("#panel9").slideToggle("slow");
+  });
+});
+
 //INGRANDIMENTO MAPPE
 $('.zoom').click(function() {
 

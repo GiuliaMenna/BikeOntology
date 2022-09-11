@@ -268,70 +268,352 @@
                               <br>The ontology was then ready and downloadable as an <b>owl file</b>.
                             </p><h3 class="text-white">SPARQL queries</h3>
                             <p class="mb-4"> The best source to query the database about the preliminary Competency Questions, translated into SPARQL language, proved to be the <b><a href="https://jena.apache.org/index.html" target="_blank">Apache Jena Fuseki</a></b> tool: an already developed endpoint and SPARQL server.<br> It provides REST-style SPARQL HTTP Update, SPARQL Query, and SPARQL Update using the SPARQL protocol over HTTP. <br>This environment loads the owl file or, otherwise, the ontology file through the reference link and enables one to work on the triples, making queries and verifying the correctness of the answer.<br> In the case of BikeOntology <b>13357 triples</b> were available.
-
-                            </p><h3 class="text-white">Results and testing</h3>
+                            </p>
+                            <h3 class="text-white">Results and testing</h3>
                             <p class="mb-4"> We worked on the <b>9 Competency Questions</b> re-drafted during the work and the result can be seen here below.</p>
-                            <div class="CQcontainer">
-                            	<div class="element-card">
-                            		<div class="front-facing">
-                            			<div class="title">What is the most common brand for bike cranks?</div>
-                            			<span class="atomic-number">1</span>
-                            		</div>
-                            		<div class="back-facing">
-                            			<div><code class="w3-codespan">PREFIX owl: <http://www.w3.org/2002/07/owl#>
-                                  PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-                                  PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-                                  PREFIX vso: <http://purl.org/vso/ns#>
-                                  PREFIX bikeo:<http://purl.org/ontology/bikeo#>
+                            <!--first question-->
+                              <p class="CQquestionDef" id="firstquestion">What is the most common brand for bike cranks?</p>
+                                  <div class="panel" id="panel1">
 
-                                  SELECT ?brandlabel (COUNT (DISTINCT ?crank) AS ?count) <br>
-                                  WHERE {?brand bikeo:produces ?crank. <br>
-                                                ?crank a bikeo:Crank. <br>
-                                  		?brand rdfs:label ?brandlabel} <br>
-                                  GROUP BY ?brand ?brandlabel <br>
-                                  ORDER BY DESC(?count) <br>
-                                  LIMIT 1
-                                  </code>
-                                </div>
-                            		</div>
-                            	</div>
+                                    <code class="language-sql hljs">
+                                    PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt; <br>
+                                    PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;<br>
+                                    PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;<br>
+                                    PREFIX vso: &lt;http://purl.org/vso/ns#&gt;<br>
+                                    PREFIX bikeo: &lt;http://purl.org/ontology/bikeo#&gt;<br> <br>
 
-                            	<div class="element-card">
-                            		<div class="front-facing">
-                            			<div class="title">How many bikes are there for each type in the dataset?</div>
-                            			<span class="atomic-number">2</span>
-                            		</div>
-                            		<div class="back-facing">
-                            			<div>Silver is the metallic element with the atomic number 47. Its symbol is Ag, from the Latin argentum, derived from the Greek ὰργὀς, and ultimately from a Proto-Indo-European language root reconstructed as *h2erǵ-, "grey" or "shining".</div>
+                                    SELECT ?brandlabel (COUNT (DISTINCT ?crank) AS ?count) <br>
+                                    WHERE {?brand bikeo:produces ?crank. <br>
+                                                  ?crank a bikeo:Crank. <br>
+                                    		?brand rdfs:label ?brandlabel} <br>
+                                    GROUP BY ?brand ?brandlabel <br>
+                                    ORDER BY DESC(?count) <br>
+                                    LIMIT 1
+                                    </code>
 
-                            		</div>
-                            	</div>
+                                    <table>
+                                    	<caption>Result</caption>
+                                    	<thead>
+                                    	 <tr>
+                                         <th></th>
+                                    	   <th>brandlabel</th>
+                                         <th>count</th>
+                                    	 </tr>
+                                    	</thead>
+                                    	<tbody>
+                                    	 <tr>
+                                         <td>1</td>
+                                    	  <td>Shimano</td>
+                                        <td>"43"^^<http://www.w3.org/2002/XMLSchema#integer></td>
+                                    	 </tr>
+                                    	</tbody>
+                                    </table>
+                                  </div>
 
-                            	<div class="element-card">
-                            		<div class="front-facing">
-                            			<div class="title">What are the different size of tires?</div>
-                            			<span class="atomic-number">3</span>
-                            		</div>
-                            		<div class="back-facing">
-                            			<div>Gold is a chemical element with symbol Au and atomic number 79. In its purest form, it is a bright, slightly reddish yellow, dense, soft, malleable, and ductile metal. Chemically, gold is a transition metal and a group 11 element.</div>
-                            		</div>
-                            	</div>
 
-                            	<div class="element-card">
-                            		<div class="front-facing">
-                            			<div class="title">Which is the heaviest bike?</div>
-                            			<span class="atomic-number">4</span>
-                            		</div>
-                            		<div class="back-facing">
-                            			<div>Roentgenium is a chemical element with symbol Rg and atomic number 111. It is an extremely radioactive synthetic element (an element that can be created in a laboratory but is not found in nature).</div>
-                            		</div>
-                            	</div>
-                            </div>
+                                  <!--second question-->
+                                <p class="CQquestionDef" id="secondquestion">How many bikes are there for each type in the dataset?</p>
+                                        <div class="panel" id="panel2">
+                                          <code class="w3-codespan">
+                                            PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt; <br>
+                                            PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;<br>
+                                            PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;<br>
+                                            PREFIX vso: &lt;http://purl.org/vso/ns#&gt;<br>
+                                            PREFIX bikeo: &lt;http://purl.org/ontology/bikeo#&gt;<br> <br>
+
+                                            SELECT ?type (COUNT (DISTINCT ?bike) AS ?count) <br>
+                                            WHERE { ?bike a bikeo:Bike.<br>
+                                              		?type a bikeo:TypeOfBike;<br>
+                                             			 	bikeo:isTypeOf ?bike.}<br>
+                                            GROUP BY ?type <br>
+                                            ORDER BY DESC(?count)<br>
+
+                                          </code>
+                                          <table>
+                                            <caption>Result</caption>
+                                            <thead>
+                                             <tr>
+                                               <th></th>
+                                               <th>brandlabel</th>
+                                               <th>count</th>
+                                             </tr>
+                                            </thead>
+                                            <tbody>
+                                             <tr>
+                                               <td>1</td>
+                                              <td>Shimano</td>
+                                              <td>"43"^^<http://www.w3.org/2002/XMLSchema#integer></td>
+                                             </tr>
+                                            </tbody>
+                                          </table>
+                                        </div>
+
+                                <!--third question-->
+                                <p class="CQquestionDef" id="thirdquestion">How many bikes are there for each type in the dataset?</p>
+                                        <div class="panel" id="panel3">
+                                          <code class="w3-codespan">
+                                            PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt; <br>
+                                            PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;<br>
+                                            PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;<br>
+                                            PREFIX vso: &lt;http://purl.org/vso/ns#&gt;<br>
+                                            PREFIX bikeo: &lt;http://purl.org/ontology/bikeo#&gt;<br> <br>
+
+                                            SELECT ?type (COUNT (DISTINCT ?bike) AS ?count) <br>
+                                            WHERE { ?bike a bikeo:Bike.<br>
+                                                  ?type a bikeo:TypeOfBike;<br>
+                                                    bikeo:isTypeOf ?bike.}<br>
+                                            GROUP BY ?type <br>
+                                            ORDER BY DESC(?count)<br>
+
+                                          </code>
+                                          <table>
+                                            <caption>Result</caption>
+                                            <thead>
+                                             <tr>
+                                               <th></th>
+                                               <th>brandlabel</th>
+                                               <th>count</th>
+                                             </tr>
+                                            </thead>
+                                            <tbody>
+                                             <tr>
+                                               <td>1</td>
+                                              <td>Shimano</td>
+                                              <td>"43"^^<http://www.w3.org/2002/XMLSchema#integer></td>
+                                             </tr>
+                                            </tbody>
+                                          </table>
+                                        </div>
+
+                                <!--fourth question-->
+                                <p class="CQquestionDef" id="fourthquestion">How many bikes are there for each type in the dataset?</p>
+                                        <div class="panel" id="panel4">
+                                          <code class="w3-codespan">
+                                            PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt; <br>
+                                            PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;<br>
+                                            PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;<br>
+                                            PREFIX vso: &lt;http://purl.org/vso/ns#&gt;<br>
+                                            PREFIX bikeo: &lt;http://purl.org/ontology/bikeo#&gt;<br> <br>
+
+                                            SELECT ?type (COUNT (DISTINCT ?bike) AS ?count) <br>
+                                            WHERE { ?bike a bikeo:Bike.<br>
+                                                  ?type a bikeo:TypeOfBike;<br>
+                                                    bikeo:isTypeOf ?bike.}<br>
+                                            GROUP BY ?type <br>
+                                            ORDER BY DESC(?count)<br>
+
+                                          </code>
+                                          <table>
+                                            <caption>Result</caption>
+                                            <thead>
+                                             <tr>
+                                               <th></th>
+                                               <th>brandlabel</th>
+                                               <th>count</th>
+                                             </tr>
+                                            </thead>
+                                            <tbody>
+                                             <tr>
+                                               <td>1</td>
+                                              <td>Shimano</td>
+                                              <td>"43"^^<http://www.w3.org/2002/XMLSchema#integer></td>
+                                             </tr>
+                                            </tbody>
+                                          </table>
+                                        </div>
+
+                                <!--fifth question-->
+                                <p class="CQquestionDef" id="fifthquestion">How many bikes are there for each type in the dataset?</p>
+                                        <div class="panel" id="panel5">
+                                          <code class="w3-codespan">
+                                            PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt; <br>
+                                            PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;<br>
+                                            PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;<br>
+                                            PREFIX vso: &lt;http://purl.org/vso/ns#&gt;<br>
+                                            PREFIX bikeo: &lt;http://purl.org/ontology/bikeo#&gt;<br> <br>
+
+                                            SELECT ?type (COUNT (DISTINCT ?bike) AS ?count) <br>
+                                            WHERE { ?bike a bikeo:Bike.<br>
+                                                  ?type a bikeo:TypeOfBike;<br>
+                                                    bikeo:isTypeOf ?bike.}<br>
+                                            GROUP BY ?type <br>
+                                            ORDER BY DESC(?count)<br>
+
+                                          </code>
+                                          <table>
+                                            <caption>Result</caption>
+                                            <thead>
+                                             <tr>
+                                               <th></th>
+                                               <th>brandlabel</th>
+                                               <th>count</th>
+                                             </tr>
+                                            </thead>
+                                            <tbody>
+                                             <tr>
+                                               <td>1</td>
+                                              <td>Shimano</td>
+                                              <td>"43"^^<http://www.w3.org/2002/XMLSchema#integer></td>
+                                             </tr>
+                                            </tbody>
+                                          </table>
+                                        </div>
+
+                                <!--sixth question-->
+                                <p class="CQquestionDef" id="sixthquestion">How many bikes are there for each type in the dataset?</p>
+                                        <div class="panel" id="panel6">
+                                          <code class="w3-codespan">
+                                            PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt; <br>
+                                            PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;<br>
+                                            PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;<br>
+                                            PREFIX vso: &lt;http://purl.org/vso/ns#&gt;<br>
+                                            PREFIX bikeo: &lt;http://purl.org/ontology/bikeo#&gt;<br> <br>
+
+                                            SELECT ?type (COUNT (DISTINCT ?bike) AS ?count) <br>
+                                            WHERE { ?bike a bikeo:Bike.<br>
+                                                  ?type a bikeo:TypeOfBike;<br>
+                                                    bikeo:isTypeOf ?bike.}<br>
+                                            GROUP BY ?type <br>
+                                            ORDER BY DESC(?count)<br>
+
+                                          </code>
+                                          <table>
+                                            <caption>Result</caption>
+                                            <thead>
+                                             <tr>
+                                               <th></th>
+                                               <th>brandlabel</th>
+                                               <th>count</th>
+                                             </tr>
+                                            </thead>
+                                            <tbody>
+                                             <tr>
+                                               <td>1</td>
+                                              <td>Shimano</td>
+                                              <td>"43"^^<http://www.w3.org/2002/XMLSchema#integer></td>
+                                             </tr>
+                                            </tbody>
+                                          </table>
+                                        </div>
+
+                                <!--seventh question-->
+                                <p class="CQquestionDef" id="seventhquestion">How many bikes are there for each type in the dataset?</p>
+                                        <div class="panel" id="panel7">
+                                          <code class="w3-codespan">
+                                            PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt; <br>
+                                            PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;<br>
+                                            PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;<br>
+                                            PREFIX vso: &lt;http://purl.org/vso/ns#&gt;<br>
+                                            PREFIX bikeo: &lt;http://purl.org/ontology/bikeo#&gt;<br> <br>
+
+                                            SELECT ?type (COUNT (DISTINCT ?bike) AS ?count) <br>
+                                            WHERE { ?bike a bikeo:Bike.<br>
+                                                  ?type a bikeo:TypeOfBike;<br>
+                                                    bikeo:isTypeOf ?bike.}<br>
+                                            GROUP BY ?type <br>
+                                            ORDER BY DESC(?count)<br>
+
+                                          </code>
+                                          <table>
+                                            <caption>Result</caption>
+                                            <thead>
+                                             <tr>
+                                               <th></th>
+                                               <th>brandlabel</th>
+                                               <th>count</th>
+                                             </tr>
+                                            </thead>
+                                            <tbody>
+                                             <tr>
+                                               <td>1</td>
+                                              <td>Shimano</td>
+                                              <td>"43"^^<http://www.w3.org/2002/XMLSchema#integer></td>
+                                             </tr>
+                                            </tbody>
+                                          </table>
+                                        </div>
+
+                                <!--eight question-->
+                                <p class="CQquestionDef" id="eightquestion">How many bikes are there for each type in the dataset?</p>
+                                        <div class="panel" id="panel8">
+                                          <code class="w3-codespan">
+                                            PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt; <br>
+                                            PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;<br>
+                                            PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;<br>
+                                            PREFIX vso: &lt;http://purl.org/vso/ns#&gt;<br>
+                                            PREFIX bikeo: &lt;http://purl.org/ontology/bikeo#&gt;<br> <br>
+
+                                            SELECT ?type (COUNT (DISTINCT ?bike) AS ?count) <br>
+                                            WHERE { ?bike a bikeo:Bike.<br>
+                                                  ?type a bikeo:TypeOfBike;<br>
+                                                    bikeo:isTypeOf ?bike.}<br>
+                                            GROUP BY ?type <br>
+                                            ORDER BY DESC(?count)<br>
+
+                                          </code>
+                                          <table>
+                                            <caption>Result</caption>
+                                            <thead>
+                                             <tr>
+                                               <th></th>
+                                               <th>brandlabel</th>
+                                               <th>count</th>
+                                             </tr>
+                                            </thead>
+                                            <tbody>
+                                             <tr>
+                                               <td>1</td>
+                                              <td>Shimano</td>
+                                              <td>"43"^^<http://www.w3.org/2002/XMLSchema#integer></td>
+                                             </tr>
+                                            </tbody>
+                                          </table>
+                                        </div>
+
+                                <!--nineth question-->
+                                <p class="CQquestionDef" id="ninethquestion">How many bikes are there for each type in the dataset?</p>
+                                        <div class="panel" id="panel9">
+                                          <code class="w3-codespan">
+                                            PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt; <br>
+                                            PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;<br>
+                                            PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;<br>
+                                            PREFIX vso: &lt;http://purl.org/vso/ns#&gt;<br>
+                                            PREFIX bikeo: &lt;http://purl.org/ontology/bikeo#&gt;<br> <br>
+
+                                            SELECT ?type (COUNT (DISTINCT ?bike) AS ?count) <br>
+                                            WHERE { ?bike a bikeo:Bike.<br>
+                                                  ?type a bikeo:TypeOfBike;<br>
+                                                    bikeo:isTypeOf ?bike.}<br>
+                                            GROUP BY ?type <br>
+                                            ORDER BY DESC(?count)<br>
+
+                                          </code>
+                                          <table>
+                                            <caption>Result</caption>
+                                            <thead>
+                                             <tr>
+                                               <th></th>
+                                               <th>brandlabel</th>
+                                               <th>count</th>
+                                             </tr>
+                                            </thead>
+                                            <tbody>
+                                             <tr>
+                                               <td>1</td>
+                                              <td>Shimano</td>
+                                              <td>"43"^^<http://www.w3.org/2002/XMLSchema#integer></td>
+                                             </tr>
+                                            </tbody>
+                                          </table>
+                                        </div>
+
                         </div>
                     </div>
                     </div>
                 </div>
-        </section><section class="page-section" id="futuredevelopments">
+        </section>
+
+        <section class="page-section" id="futuredevelopments">
             <div class="container px-4 px-lg-5 future">
                 <h2 class="text-center mt-0">Possible future developments</h2>
                 <hr class="divider" />

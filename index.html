@@ -291,24 +291,30 @@
                                     LIMIT 1
                                     </code>
 
-                                    <table>
-                                    	<caption>Result</caption>
-                                    	<thead>
-                                    	 <tr>
-                                         <th></th>
-                                    	   <th>brandlabel</th>
-                                         <th>count</th>
-                                    	 </tr>
-                                    	</thead>
-                                    	<tbody>
-                                    	 <tr>
-                                         <td>1</td>
-                                    	  <td>Shimano</td>
-                                        <td>"43"^^<http://www.w3.org/2002/XMLSchema#integer></td>
-                                    	 </tr>
-                                    	</tbody>
-                                    </table>
-                                  </div>
+                                    <h2>Result</h2>
+
+                                          <div class="table-responsive" data-pattern="priority-columns">
+                                            <table summary="This table shows how to create responsive tables using RWD-Table-Patterns' functionality" class="table table-bordered table-hover">
+
+                                              <thead>
+                                                <tr>
+                                                  <th></th>
+                                                  <th data-priority="1">brandlabel</th>
+                                                  <th data-priority="2">count</th>
+                                                </tr>
+                                              </thead>
+                                              <tbody>
+                                                <tr>
+                                                  <td>1</td>
+                                                  <td>Shimano</td>
+                                                  <td>"43"^^&lt;http://www.w3.org/2002/XMLSchema#integer&gt;</td>
+                                                </tr>
+                                                <tr>
+                                            </tbody>
+
+                                            </table>
+                                          </div><!--end of .table-responsive-->
+                                  </div><!--end of the panel-->
 
 
                                   <!--second question-->
@@ -329,24 +335,35 @@
                                             ORDER BY DESC(?count)<br>
 
                                           </code>
-                                          <table>
-                                            <caption>Result</caption>
-                                            <thead>
-                                             <tr>
-                                               <th></th>
-                                               <th>brandlabel</th>
-                                               <th>count</th>
-                                             </tr>
-                                            </thead>
-                                            <tbody>
-                                             <tr>
-                                               <td>1</td>
-                                              <td>Shimano</td>
-                                              <td>"43"^^<http://www.w3.org/2002/XMLSchema#integer></td>
-                                             </tr>
-                                            </tbody>
-                                          </table>
-                                        </div>
+                                          <h2>Result</h2>
+
+                                                <div class="table-responsive" data-pattern="priority-columns">
+                                                  <table summary="This table shows how to create responsive tables using RWD-Table-Patterns' functionality" class="table table-bordered table-hover">
+
+                                                    <thead>
+                                                      <tr>
+                                                        <th></th>
+                                                        <th data-priority="1">Type</th>
+                                                        <th data-priority="2">count</th>
+                                                      </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                      <tr>
+                                                        <td>1</td>
+                                                        <td>&lt;http://purl.org/ontology/bikeo#Road&gt;</td>
+                                                        <td>"253"^^&lt;http://www.w3.org/2002/XMLSchema#integer&gt;</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>2</td>
+                                                        <td>&lt;http://purl.org/ontology/bikeo#ElecticROad&gt;</td>
+                                                        <td>"37"^^&lt;http://www.w3.org/2002/XMLSchema#integer&gt;</td>
+                                                      </tr>
+                                                    </tbody>
+
+                                                  </table>
+                                                </div><!--end of .table-responsive-->
+                                        </div><!--end of the panel-->
+
 
                                 <!--third question-->
                                 <p class="CQquestionDef" id="thirdquestion">What are the different size of tires?</p>
@@ -479,24 +496,74 @@
 
 
                                           </code>
-                                          <table>
-                                            <caption>Result</caption>
-                                            <thead>
-                                             <tr>
-                                               <th></th>
-                                               <th>brandlabel</th>
-                                               <th>count</th>
-                                             </tr>
-                                            </thead>
-                                            <tbody>
-                                             <tr>
-                                               <td>1</td>
-                                              <td>Shimano</td>
-                                              <td>"43"^^<http://www.w3.org/2002/XMLSchema#integer></td>
-                                             </tr>
-                                            </tbody>
-                                          </table>
-                                        </div>
+                                          <h2>Result</h2>
+
+                                                <div class="table-responsive" data-pattern="priority-columns">
+                                                  <table summary="This table shows how to create responsive tables using RWD-Table-Patterns' functionality" class="table table-bordered table-hover">
+
+                                                    <thead>
+                                                      <tr>
+                                                        <th></th>
+                                                        <th data-priority="1">gearing</th>
+                                                        <th data-priority="2">count</th>
+                                                      </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                      <tr>
+                                                        <td>1</td>
+                                                        <td> 2 x 11</td>
+                                                        <td>"98"^^&lt;http://www.w3.org/2002/XMLSchema#integer&gt;</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>2</td>
+                                                        <td>2 x 10</td>
+                                                        <td>"44"^^&lt;http://www.w3.org/2002/XMLSchema#integer&gt;</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>3</td>
+                                                        <td>2 x 12</td>
+                                                        <td>"44"^^&lt;http://www.w3.org/2002/XMLSchema#integer&gt;</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>4</td>
+                                                        <td>1 x 11</td>
+                                                        <td>"35"^^&lt;http://www.w3.org/2002/XMLSchema#integer&gt;</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>5</td>
+                                                        <td>1 x 12</td>
+                                                        <td>"30"^^&lt;http://www.w3.org/2002/XMLSchema#integer&gt;</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>6</td>
+                                                        <td>2 x 9</td>
+                                                        <td>"18"^^&lt;http://www.w3.org/2002/XMLSchema#integer&gt;</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>7</td>
+                                                        <td>2 x 8</td>
+                                                        <td>"9"^^&lt;http://www.w3.org/2002/XMLSchema#integer&gt;</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>8</td>
+                                                        <td>3 x 9</td>
+                                                        <td>"2"^^&lt;http://www.w3.org/2002/XMLSchema#integer&gt;</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>9</td>
+                                                        <td>1 x 10</td>
+                                                        <td>"1"^^&lt;http://www.w3.org/2002/XMLSchema#integer&gt;</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>10</td>
+                                                        <td>1 x 13</td>
+                                                        <td>"1"^^&lt;http://www.w3.org/2002/XMLSchema#integer&gt;</td>
+                                                      </tr>
+                                                    </tbody>
+
+                                                  </table>
+                                                </div><!--end of .table-responsive-->
+                                          </div><!--end of the panel-->
 
                                 <!--seventh question-->
                                 <p class="CQquestionDef" id="seventhquestion">Which brand produced more bikes in 2021?</p>
@@ -597,24 +664,49 @@
 
 
                                           </code>
-                                          <table>
-                                            <caption>Result</caption>
-                                            <thead>
-                                             <tr>
-                                               <th></th>
-                                               <th>brandlabel</th>
-                                               <th>count</th>
-                                             </tr>
-                                            </thead>
-                                            <tbody>
-                                             <tr>
-                                               <td>1</td>
-                                              <td>Shimano</td>
-                                              <td>"43"^^<http://www.w3.org/2002/XMLSchema#integer></td>
-                                             </tr>
-                                            </tbody>
-                                          </table>
-                                        </div>
+                                          <h2>Result</h2>
+
+                                                <div class="table-responsive" data-pattern="priority-columns">
+                                                  <table summary="This table shows how to create responsive tables using RWD-Table-Patterns' functionality" class="table table-bordered table-hover">
+
+                                                    <thead>
+                                                      <tr>
+                                                        <th></th>
+                                                        <th data-priority="1">average</th>
+                                                        <th data-priority="2">brand</th>
+                                                      </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                      <tr>
+                                                        <td>1</td>
+                                                        <td>"1.82"^^&lt;http://www.w3.org/2002/XMLSchema#float&gt;</td>
+                                                        <td>&lt;http://purl.org/ontology/bikeo#giant&gt;</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>2</td>
+                                                        <td>"10.583125"^^&lt;http://www.w3.org/2002/XMLSchema#float&gt;</td>
+                                                        <td>&lt;http://purl.org/ontology/bikeo#trek&gt;</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>3</td>
+                                                        <td>"9.865383"^^&lt;http://www.w3.org/2002/XMLSchema#float&gt;</td>
+                                                        <td>&lt;http://purl.org/ontology/bikeo#cube&gt;</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>4</td>
+                                                        <td>"9.587434"^^&lt;http://www.w3.org/2002/XMLSchema#float&gt;</td>
+                                                        <td>&lt;http://purl.org/ontology/bikeo#canyon&gt;</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>5</td>
+                                                        <td>"9.17"^^&lt;http://www.w3.org/2002/XMLSchema#float&gt;</td>
+                                                        <td>&lt;http://purl.org/ontology/bikeo#cannondale&gt;</td> 
+                                                      </tr>
+                                                    </tbody>
+
+                                                  </table>
+                                                </div><!--end of .table-responsive-->
+                                          </div><!--end of the panel-->
 
                         </div>
                     </div>

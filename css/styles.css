@@ -11595,9 +11595,11 @@ ul li{
   margin:1em;
 }
 /*fine list competency question*/
+
+/*list CQ with SPARQL question*/
 .panel{
   display: none;
-  opacity: 0.7;
+  opacity: 0.9;
   margin-bottom: 1em;
   background-color: white;
   padding: 30px;
@@ -11605,8 +11607,110 @@ ul li{
 }
 .CQquestionDef{
 }
-/*list CQ with SPARQL question*/
-
+#firstquestion:before{
+      position: absolute;
+      content: '1';
+      font-size: x-large;
+      background: linear-gradient(217deg, #b5523a, #efa980);
+      width: 50px;
+      height: 50px;
+      display: block;
+      transform: translate(-110%, -50%);
+      animation: border-transform 6s linear infinite;
+}
+#secondquestion:before{
+      position: absolute;
+      content: '2';
+      font-size: x-large;
+      background: linear-gradient(217deg, #b5523a, #efa980);
+      width: 50px;
+      height: 50px;
+      display: block;
+      transform: translate(-110%, -50%);
+      animation: border-transform 6s linear infinite;
+}
+#thirdquestion:before{
+      position: absolute;
+      content: '3';
+      font-size: x-large;
+      background: linear-gradient(217deg, #b5523a, #efa980);
+      width: 50px;
+      height: 50px;
+      display: block;
+      transform: translate(-110%, -50%);
+      animation: border-transform 6s linear infinite;
+}
+#fourthquestion:before{
+      position: absolute;
+      content: '4';
+      font-size: x-large;
+      background: linear-gradient(217deg, #b5523a, #efa980);
+      width: 50px;
+      height: 50px;
+      display: block;
+      transform: translate(-110%, -50%);
+      animation: border-transform 6s linear infinite;
+}
+#fifthquestion:before{
+      position: absolute;
+      content: '5';
+      font-size: x-large;
+      background: linear-gradient(217deg, #b5523a, #efa980);
+      width: 50px;
+      height: 50px;
+      display: block;
+      transform: translate(-110%, -50%);
+      animation: border-transform 6s linear infinite;
+}
+#sixthquestion:before{
+      position: absolute;
+      content: '6';
+      font-size: x-large;
+      background: linear-gradient(217deg, #b5523a, #efa980);
+      width: 50px;
+      height: 50px;
+      display: block;
+      transform: translate(-110%, -50%);
+      animation: border-transform 6s linear infinite;
+}
+#seventhquestion:before{
+      position: absolute;
+      content: '7';
+      font-size: x-large;
+      background: linear-gradient(217deg, #b5523a, #efa980);
+      width: 50px;
+      height: 50px;
+      display: block;
+      transform: translate(-110%, -50%);
+      animation: border-transform 6s linear infinite;
+}
+#eightquestion:before{
+      position: absolute;
+      content: '8';
+      font-size: x-large;
+      background: linear-gradient(217deg, #b5523a, #efa980);
+      width: 50px;
+      height: 50px;
+      display: block;
+      transform: translate(-110%, -50%);
+      animation: border-transform 6s linear infinite;
+}
+#ninethquestion:before{
+      position: absolute;
+      content: '9';
+      font-size: x-large;
+      background: linear-gradient(217deg, #b5523a, #efa980);
+      width: 50px;
+      height: 50px;
+      display: block;
+      transform: translate(-110%, -50%);
+      animation: border-transform 6s linear infinite;
+}
+.result{
+  text-align: center;
+  font-size: larger;
+  margin-top: revert;
+}
 .table-bordered {
   border: 1px solid black !important;
 }
@@ -11614,6 +11718,7 @@ ul li{
 .table {
   font-size: 14px;
   border-collapse: collapse;
+  background: #f7c499;
 }
 /*fine list CQ with SPARL*/
 

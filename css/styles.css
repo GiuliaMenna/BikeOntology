@@ -11402,7 +11402,7 @@ header.masthead {
 #BikeOntology{
   font-family:"FKChain";
   color: #a00505;
-  padding-top: 50%;
+  padding-top: 40%;
 }
 
 #cycling{
@@ -11484,7 +11484,7 @@ p {
 
 a.btn.btn-primary{
   background-color: #4381a1;
-  margin-top: 23%;
+  margin-top: 15%;
 }
 p, ul.list{
   background-color: white;

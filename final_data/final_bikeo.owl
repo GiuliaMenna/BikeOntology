@@ -10286,7 +10286,7 @@
 	<rdfs:label>FSA Bosch E-Bike</rdfs:label>
 </rdf:Description>
 <!--  -->
-<!-- http://purl.org/ontology/bikeo#fsa-bosch-e-bike-w--custom-ai-offset-crank -->
+<!-- http://purl.org/ontology/bikeo#fsa-bosch-e-bike-w-custom-ai-offset-crank -->
 
 <rdf:Description rdf:about="http://purl.org/ontology/bikeo#fsa-bosch-e-bike-w--custom-ai-offset-crank">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
@@ -10621,7 +10621,7 @@
 	<rdfs:label>Full Carbon</rdfs:label>
 </rdf:Description>
 <!--  -->
-<!-- http://purl.org/ontology/bikeo#future-shock-1.5-w--smooth-boot-fork -->
+<!-- http://purl.org/ontology/bikeo#future-shock-1.5-w-smooth-boot-fork -->
 
 <rdf:Description rdf:about="http://purl.org/ontology/bikeo#future-shock-1.5-w--smooth-boot-fork">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
@@ -10646,7 +10646,7 @@
 	<rdfs:label>Future Shock 1.5 w/Smooth Boot</rdfs:label>
 </rdf:Description>
 <!--  -->
-<!-- http://purl.org/ontology/bikeo#future-shock-2.0-w--damper-fork -->
+<!-- http://purl.org/ontology/bikeo#future-shock-2.0-w-damper-fork -->
 
 <rdf:Description rdf:about="http://purl.org/ontology/bikeo#future-shock-2.0-w--damper-fork">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
@@ -10659,7 +10659,7 @@
 	<rdfs:label>Future Shock 2.0 w/ Damper</rdfs:label>
 </rdf:Description>
 <!--  -->
-<!-- http://purl.org/ontology/bikeo#future-shock-2.0-w--smooth-boot-fork -->
+<!-- http://purl.org/ontology/bikeo#future-shock-2.0-w-smooth-boot-fork -->
 
 <rdf:Description rdf:about="http://purl.org/ontology/bikeo#future-shock-2.0-w--smooth-boot-fork">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
@@ -12875,7 +12875,7 @@
 	<rdfs:label>KMC X11SL-1</rdfs:label>
 </rdf:Description>
 <!--  -->
-<!-- http://purl.org/ontology/bikeo#kmc-x8-w--missing-link-chain -->
+<!-- http://purl.org/ontology/bikeo#kmc-x8-w-missing-link-chain -->
 
 <rdf:Description rdf:about="http://purl.org/ontology/bikeo#kmc-x8-w--missing-link-chain">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>

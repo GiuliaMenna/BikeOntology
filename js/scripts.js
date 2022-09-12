@@ -165,6 +165,13 @@ $(document).ready(function(){
     $("#panel9").slideToggle("slow");
   });
 });
+// CQ rotate fa-angle
+$(document).ready(function(){
+  //jquery for togle sub menus
+  $('.CQquestionDef').click(function(){
+    $(this).find('.dropdown').toggleClass('rotate');
+  });
+});
 
 //INGRANDIMENTO MAPPE
 $('.zoom').click(function() {

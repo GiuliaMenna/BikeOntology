@@ -11607,8 +11607,23 @@ ul li{
 }
 .CQquestionDef{
 }
+.dropdown{
+  position: absolute;
+  right: 40vh;
+  transition: 0.3s ease;
+}
+.rotate {
+    transform: rotate(90deg);
+}
+.fa-angle-right:before {
+    content: "\f105";
+}
+.fa-angle-right:hover{
+  cursor: pointer;
+}
 #firstquestion:before{
       position: absolute;
+      padding-left: 1.5vh;
       content: '1';
       font-size: x-large;
       background: linear-gradient(217deg, #b5523a, #efa980);
@@ -11620,6 +11635,7 @@ ul li{
 }
 #secondquestion:before{
       position: absolute;
+      padding-left: 1.5vh;
       content: '2';
       font-size: x-large;
       background: linear-gradient(217deg, #b5523a, #efa980);
@@ -11631,6 +11647,7 @@ ul li{
 }
 #thirdquestion:before{
       position: absolute;
+      padding-left: 1.5vh;
       content: '3';
       font-size: x-large;
       background: linear-gradient(217deg, #b5523a, #efa980);
@@ -11642,6 +11659,7 @@ ul li{
 }
 #fourthquestion:before{
       position: absolute;
+      padding-left: 1.5vh;
       content: '4';
       font-size: x-large;
       background: linear-gradient(217deg, #b5523a, #efa980);
@@ -11653,6 +11671,7 @@ ul li{
 }
 #fifthquestion:before{
       position: absolute;
+      padding-left: 1.5vh;
       content: '5';
       font-size: x-large;
       background: linear-gradient(217deg, #b5523a, #efa980);
@@ -11664,6 +11683,7 @@ ul li{
 }
 #sixthquestion:before{
       position: absolute;
+      padding-left: 1.5vh;
       content: '6';
       font-size: x-large;
       background: linear-gradient(217deg, #b5523a, #efa980);
@@ -11675,6 +11695,7 @@ ul li{
 }
 #seventhquestion:before{
       position: absolute;
+      padding-left: 1.5vh;
       content: '7';
       font-size: x-large;
       background: linear-gradient(217deg, #b5523a, #efa980);
@@ -11686,6 +11707,7 @@ ul li{
 }
 #eightquestion:before{
       position: absolute;
+      padding-left: 1.5vh;
       content: '8';
       font-size: x-large;
       background: linear-gradient(217deg, #b5523a, #efa980);
@@ -11697,6 +11719,7 @@ ul li{
 }
 #ninethquestion:before{
       position: absolute;
+      padding-left: 1.5vh;
       content: '9';
       font-size: x-large;
       background: linear-gradient(217deg, #b5523a, #efa980);

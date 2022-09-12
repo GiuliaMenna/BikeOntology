@@ -349,7 +349,7 @@
                                         </div>
 
                                 <!--third question-->
-                                <p class="CQquestionDef" id="thirdquestion">How many bikes are there for each type in the dataset?</p>
+                                <p class="CQquestionDef" id="thirdquestion">What are the different size of tires?</p>
                                         <div class="panel" id="panel3">
                                           <code class="w3-codespan">
                                             PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt; <br>
@@ -358,12 +358,9 @@
                                             PREFIX vso: &lt;http://purl.org/vso/ns#&gt;<br>
                                             PREFIX bikeo: &lt;http://purl.org/ontology/bikeo#&gt;<br> <br>
 
-                                            SELECT ?type (COUNT (DISTINCT ?bike) AS ?count) <br>
-                                            WHERE { ?bike a bikeo:Bike.<br>
-                                                  ?type a bikeo:TypeOfBike;<br>
-                                                    bikeo:isTypeOf ?bike.}<br>
-                                            GROUP BY ?type <br>
-                                            ORDER BY DESC(?count)<br>
+                                            SELECT DISTINCT ?size <br>
+                                            WHERE { ?tire a bikeo:Tire. <br>
+                                              		?tire bikeo:hasSize ?size.} <br>
 
                                           </code>
                                           <table>
@@ -386,7 +383,7 @@
                                         </div>
 
                                 <!--fourth question-->
-                                <p class="CQquestionDef" id="fourthquestion">How many bikes are there for each type in the dataset?</p>
+                                <p class="CQquestionDef" id="fourthquestion">Which is the heaviest bike?</p>
                                         <div class="panel" id="panel4">
                                           <code class="w3-codespan">
                                             PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt; <br>
@@ -395,12 +392,13 @@
                                             PREFIX vso: &lt;http://purl.org/vso/ns#&gt;<br>
                                             PREFIX bikeo: &lt;http://purl.org/ontology/bikeo#&gt;<br> <br>
 
-                                            SELECT ?type (COUNT (DISTINCT ?bike) AS ?count) <br>
-                                            WHERE { ?bike a bikeo:Bike.<br>
-                                                  ?type a bikeo:TypeOfBike;<br>
-                                                    bikeo:isTypeOf ?bike.}<br>
-                                            GROUP BY ?type <br>
-                                            ORDER BY DESC(?count)<br>
+                                            SELECT ?weight ?bike ?bikelabel  <br>
+                                            WHERE { ?bike a bikeo:Bike; <br>
+                                              		rdfs:label ?bikelabel. <br>
+                                              		?bike vso:weight ?weight.}	 <br>
+                                            ORDER BY DESC(?weight) <br>
+                                            LIMIT 1 <br>
+
 
                                           </code>
                                           <table>
@@ -423,7 +421,7 @@
                                         </div>
 
                                 <!--fifth question-->
-                                <p class="CQquestionDef" id="fifthquestion">How many bikes are there for each type in the dataset?</p>
+                                <p class="CQquestionDef" id="fifthquestion">Which motor is the most used for electric bikes?</p>
                                         <div class="panel" id="panel5">
                                           <code class="w3-codespan">
                                             PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt; <br>
@@ -432,12 +430,16 @@
                                             PREFIX vso: &lt;http://purl.org/vso/ns#&gt;<br>
                                             PREFIX bikeo: &lt;http://purl.org/ontology/bikeo#&gt;<br> <br>
 
-                                            SELECT ?type (COUNT (DISTINCT ?bike) AS ?count) <br>
-                                            WHERE { ?bike a bikeo:Bike.<br>
-                                                  ?type a bikeo:TypeOfBike;<br>
-                                                    bikeo:isTypeOf ?bike.}<br>
-                                            GROUP BY ?type <br>
+                                            SELECT ?motor ?motorlabel (COUNT (DISTINCT ?bike) AS ?count)<br>
+                                            WHERE {?bike a bikeo:Bike;<br>
+                                              		bikeo:hasType bikeo:electricRoad;<br>
+                                              		bikeo:hasPart ?motor.<br>
+                                                  	?motor a bikeo:Motor;<br>
+                                            		rdfs:label ?motorlabel}<br>
+                                            GROUP BY ?motor ?motorlabel<br>
                                             ORDER BY DESC(?count)<br>
+                                            LIMIT 1<br>
+
 
                                           </code>
                                           <table>
@@ -460,7 +462,7 @@
                                         </div>
 
                                 <!--sixth question-->
-                                <p class="CQquestionDef" id="sixthquestion">How many bikes are there for each type in the dataset?</p>
+                                <p class="CQquestionDef" id="sixthquestion">How many bikes are there for each gearing?</p>
                                         <div class="panel" id="panel6">
                                           <code class="w3-codespan">
                                             PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt; <br>
@@ -469,12 +471,12 @@
                                             PREFIX vso: &lt;http://purl.org/vso/ns#&gt;<br>
                                             PREFIX bikeo: &lt;http://purl.org/ontology/bikeo#&gt;<br> <br>
 
-                                            SELECT ?type (COUNT (DISTINCT ?bike) AS ?count) <br>
-                                            WHERE { ?bike a bikeo:Bike.<br>
-                                                  ?type a bikeo:TypeOfBike;<br>
-                                                    bikeo:isTypeOf ?bike.}<br>
-                                            GROUP BY ?type <br>
+                                            SELECT ?gearing (COUNT (DISTINCT ?bike) AS ?count)<br>
+                                            WHERE {?bike a bikeo:Bike;<br>
+                                              		bikeo:hasGearing ?gearing.}<br>
+                                            GROUP BY ?gearing <br>
                                             ORDER BY DESC(?count)<br>
+
 
                                           </code>
                                           <table>
@@ -497,7 +499,7 @@
                                         </div>
 
                                 <!--seventh question-->
-                                <p class="CQquestionDef" id="seventhquestion">How many bikes are there for each type in the dataset?</p>
+                                <p class="CQquestionDef" id="seventhquestion">Which brand produced more bikes in 2021?</p>
                                         <div class="panel" id="panel7">
                                           <code class="w3-codespan">
                                             PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt; <br>
@@ -506,12 +508,16 @@
                                             PREFIX vso: &lt;http://purl.org/vso/ns#&gt;<br>
                                             PREFIX bikeo: &lt;http://purl.org/ontology/bikeo#&gt;<br> <br>
 
-                                            SELECT ?type (COUNT (DISTINCT ?bike) AS ?count) <br>
-                                            WHERE { ?bike a bikeo:Bike.<br>
-                                                  ?type a bikeo:TypeOfBike;<br>
-                                                    bikeo:isTypeOf ?bike.}<br>
-                                            GROUP BY ?type <br>
+                                            SELECT ?brandlabel ?brand ?year (COUNT (DISTINCT ?bike) AS ?count)<br>
+                                            WHERE {?brand a bikeo:Brand;<br>
+                                              		bikeo:isBrandOf ?bike;<br>
+                                                	rdfs:label ?brandlabel.<br>
+                                            		?bike vso:modelDate ?year.<br>
+                                            		FILTER (?year = 2021)}<br>
+                                            GROUP BY ?brandlabel ?brand ?year<br>
                                             ORDER BY DESC(?count)<br>
+                                            LIMIT 1<br>
+
 
                                           </code>
                                           <table>
@@ -534,7 +540,7 @@
                                         </div>
 
                                 <!--eight question-->
-                                <p class="CQquestionDef" id="eightquestion">How many bikes are there for each type in the dataset?</p>
+                                <p class="CQquestionDef" id="eightquestion">How many pieces produced by Shimano are there in a Cannondale bike model Synapse Carbon 4 2022?</p>
                                         <div class="panel" id="panel8">
                                           <code class="w3-codespan">
                                             PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt; <br>
@@ -543,12 +549,13 @@
                                             PREFIX vso: &lt;http://purl.org/vso/ns#&gt;<br>
                                             PREFIX bikeo: &lt;http://purl.org/ontology/bikeo#&gt;<br> <br>
 
-                                            SELECT ?type (COUNT (DISTINCT ?bike) AS ?count) <br>
-                                            WHERE { ?bike a bikeo:Bike.<br>
-                                                  ?type a bikeo:TypeOfBike;<br>
-                                                    bikeo:isTypeOf ?bike.}<br>
-                                            GROUP BY ?type <br>
-                                            ORDER BY DESC(?count)<br>
+                                            SELECT (COUNT(*) AS ?count){<br>
+                                            SELECT ?bikePart <br>
+                                            WHERE {bikeo:cannondale-synapse-carbon-4-2022 bikeo:hasPart ?bikePart.<br>
+                                              		?bikePart bikeo:producedBy bikeo:shimano.<br>
+                                            }<br>
+                                            GROUP BY ?bikePart<br>
+                                          }<br>
 
                                           </code>
                                           <table>
@@ -571,7 +578,7 @@
                                         </div>
 
                                 <!--nineth question-->
-                                <p class="CQquestionDef" id="ninethquestion">How many bikes are there for each type in the dataset?</p>
+                                <p class="CQquestionDef" id="ninethquestion">Which is the average weight of the bikes for each brand?</p>
                                         <div class="panel" id="panel9">
                                           <code class="w3-codespan">
                                             PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt; <br>
@@ -580,12 +587,14 @@
                                             PREFIX vso: &lt;http://purl.org/vso/ns#&gt;<br>
                                             PREFIX bikeo: &lt;http://purl.org/ontology/bikeo#&gt;<br> <br>
 
-                                            SELECT ?type (COUNT (DISTINCT ?bike) AS ?count) <br>
-                                            WHERE { ?bike a bikeo:Bike.<br>
-                                                  ?type a bikeo:TypeOfBike;<br>
-                                                    bikeo:isTypeOf ?bike.}<br>
-                                            GROUP BY ?type <br>
-                                            ORDER BY DESC(?count)<br>
+                                            SELECT (AVG(xsd:float(?weight)) AS ?average) ?brand<br>
+                                            WHERE {<br>
+                                              		?bike bikeo:hasBrand ?brand.<br>
+                                              		?bike vso:weight ?weight.<br>
+                                            }<br>
+                                            GROUP BY ?brand<br>
+                                            ORDER BY DESC(?average)<br>
+
 
                                           </code>
                                           <table>

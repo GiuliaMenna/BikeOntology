@@ -179,7 +179,6 @@ $('.zoom').click(function() {
      var optionalProperty = '';
    }
 $('body').prepend('<div class="zoomOpen"><div style="background-image: url(' + imageUrl + ')' + optionalProperty + '"></div></div>');
-$('html').css('overflow', 'hidden');
 $('.zoomOpen').animate({
       opacity: 1,
       zoom: 1

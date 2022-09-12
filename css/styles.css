@@ -11263,6 +11263,7 @@ textarea.form-control-lg {
 html {
   height: 100%;
   scroll-padding-top: calc(4.5rem - 1px);
+  overflow: hidden;
 }
 
 body {
@@ -11400,6 +11401,8 @@ header.masthead {
 
 #BikeOntology{
   font-family:"FKChain";
+  color: #a00505;
+  padding-top: 50%;
 }
 
 #cycling{
@@ -11481,7 +11484,7 @@ p {
 
 a.btn.btn-primary{
   background-color: #4381a1;
-  margin-top: 50%;
+  margin-top: 23%;
 }
 p, ul.list{
   background-color: white;

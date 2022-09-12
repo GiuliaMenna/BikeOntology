@@ -11392,7 +11392,7 @@ header.masthead {
 .paragraph, .about, .documentation, .editing, .ontology, .future{
   opacity: 0;
   transform: translateY(50px);
-  transition: all 1s ease-out;
+  transition: all 0.5s ease-out;
 }
 .paragraph.fade-in, .about.fade-in, .documentation.fade-in, .editing.fade-in, .ontology.fade-in, .future.fade-in{
   opacity: 1;
@@ -11542,6 +11542,7 @@ nav.navbar#mainNav{
 }
 #longCQ{
   font-size: x-large;
+  margin-bottom: 4vh;
 }
 ul,li{
   list-style:none;

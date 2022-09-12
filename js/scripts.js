@@ -118,22 +118,6 @@ var oursScene = new ScrollMagic.Scene({
 .addTo(controller);
 })
 
-//CQ with SPARQL Results
-$(document).ready(function(){
-
-	$('.element-card').on('click', function(){
-
-		if ( $(this).hasClass('open') ) {
-			$(this).removeClass('open');
-		} else {
-			$('.element-card').removeClass('open');
-			$(this).addClass('open');
-		}
-
-	});
-
-});
-
 //CQ with SPARQL slidetoggle
 // to slide top and down the paragraphs of the documentation
 $(document).ready(function(){

@@ -148,6 +148,9 @@ $(document).ready(function(){
   $("#ninethquestion").click(function(){
     $("#panel9").slideToggle("slow");
   });
+  $("#tenthquestion").click(function(){
+    $("#panel10").slideToggle("slow");
+  });
 });
 // CQ rotate fa-angle
 $(document).ready(function(){
